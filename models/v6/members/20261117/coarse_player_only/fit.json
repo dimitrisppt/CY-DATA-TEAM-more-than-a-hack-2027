@@ -1,0 +1,7802 @@
+{
+  "payload": {
+    "checkpoint_sha256": "b98452e22a0b6f949d6dc2b9ff801b427b2cfa8fcc465b8f7518c9a910491704",
+    "derivation_sha256": "a0613bc0ad819b9ecce7b35df60da55e46eb05dc9db9216ac287407267c4f0a4",
+    "identity": {
+      "name": "coarse_player_only",
+      "protocol_sha256": "b65af6f47fe5498195c8ebd67de88a1f742e7f656b60f484c7f712951dd778f0",
+      "seed": 2877491534,
+      "spec_sha256": "a2b3533c07da874a9deaf677c50dde287341ffbee38ddad37a61f38ebcf00397",
+      "train_matches": [
+        "DFL-MAT-J03WMX",
+        "DFL-MAT-J03WN1",
+        "DFL-MAT-J03WOH",
+        "DFL-MAT-J03WOY",
+        "DFL-MAT-J03WPY",
+        "DFL-MAT-J03WQQ",
+        "DFL-MAT-J03WR9"
+      ]
+    },
+    "invocation_seconds": 50.05449608294293,
+    "parameters": 26085,
+    "progress": {
+      "augmentation_counts": {
+        "ball_outage": 3556,
+        "team_swap": 3698
+      },
+      "boundary_negative_count": 1357237,
+      "boundary_positive_count": 25013,
+      "center_ball_frames": 230400,
+      "center_ball_missing_fraction": 1.0,
+      "center_ball_missing_frames": 230400,
+      "center_player_observed_fraction": 0.5454755859375,
+      "last_step_losses": {
+        "boundary": 0.4410848319530487,
+        "live": 0.1346053183078766,
+        "owner": 0.2018226981163025,
+        "step": 7200,
+        "total": 0.3364280164241791
+      },
+      "sampled_training_loss_trace": [
+        {
+          "boundary": 0.9733080863952637,
+          "live": 2.6332476139068604,
+          "owner": 0.6925675272941589,
+          "step": 1,
+          "total": 3.325815200805664
+        },
+        {
+          "boundary": 0.5756692290306091,
+          "live": 0.32703155279159546,
+          "owner": 0.6968876719474792,
+          "step": 100,
+          "total": 1.0239192247390747
+        },
+        {
+          "boundary": 0.8682110905647278,
+          "live": 0.5058070421218872,
+          "owner": 0.6915813684463501,
+          "step": 200,
+          "total": 1.1973884105682373
+        },
+        {
+          "boundary": 0.49221083521842957,
+          "live": 0.7957764863967896,
+          "owner": 0.6935991048812866,
+          "step": 300,
+          "total": 1.4893755912780762
+        },
+        {
+          "boundary": 0.5370020270347595,
+          "live": 0.18571904301643372,
+          "owner": 0.694692075252533,
+          "step": 400,
+          "total": 0.8804111480712891
+        },
+        {
+          "boundary": 0.626414954662323,
+          "live": 0.9365174174308777,
+          "owner": 0.70704185962677,
+          "step": 500,
+          "total": 1.643559217453003
+        },
+        {
+          "boundary": 0.5765147805213928,
+          "live": 0.2649330794811249,
+          "owner": 0.6938802003860474,
+          "step": 600,
+          "total": 0.9588133096694946
+        },
+        {
+          "boundary": 0.6510277390480042,
+          "live": 0.6781224012374878,
+          "owner": 0.6929023861885071,
+          "step": 700,
+          "total": 1.3710248470306396
+        },
+        {
+          "boundary": 0.8039492964744568,
+          "live": 0.09584714472293854,
+          "owner": 0.6904898285865784,
+          "step": 800,
+          "total": 0.7863369584083557
+        },
+        {
+          "boundary": 0.8427668213844299,
+          "live": 0.3779224157333374,
+          "owner": 0.6904702186584473,
+          "step": 900,
+          "total": 1.0683926343917847
+        },
+        {
+          "boundary": 0.7881717681884766,
+          "live": 0.2958030700683594,
+          "owner": 0.7009960412979126,
+          "step": 1000,
+          "total": 0.996799111366272
+        },
+        {
+          "boundary": 1.0490479469299316,
+          "live": 0.33334773778915405,
+          "owner": 0.6841709017753601,
+          "step": 1100,
+          "total": 1.0175186395645142
+        },
+        {
+          "boundary": 0.629550039768219,
+          "live": 0.8150510191917419,
+          "owner": 0.6958568692207336,
+          "step": 1200,
+          "total": 1.5109078884124756
+        },
+        {
+          "boundary": 0.674869954586029,
+          "live": 0.8518558740615845,
+          "owner": 0.6980369687080383,
+          "step": 1300,
+          "total": 1.5498929023742676
+        },
+        {
+          "boundary": 0.5717753171920776,
+          "live": 0.5648645162582397,
+          "owner": 0.6915598511695862,
+          "step": 1400,
+          "total": 1.2564244270324707
+        },
+        {
+          "boundary": 1.0170751810073853,
+          "live": 0.022342197597026825,
+          "owner": 0.6939443349838257,
+          "step": 1500,
+          "total": 0.7162865400314331
+        },
+        {
+          "boundary": 0.73224276304245,
+          "live": 0.7287294268608093,
+          "owner": 0.7135515213012695,
+          "step": 1600,
+          "total": 1.4422810077667236
+        },
+        {
+          "boundary": 0.7535088658332825,
+          "live": 0.9112448692321777,
+          "owner": 0.7192347645759583,
+          "step": 1700,
+          "total": 1.6304795742034912
+        },
+        {
+          "boundary": 0.7599382400512695,
+          "live": 0.4963330626487732,
+          "owner": 0.6813564300537109,
+          "step": 1800,
+          "total": 1.177689552307129
+        },
+        {
+          "boundary": 0.9780059456825256,
+          "live": 0.190434992313385,
+          "owner": 0.6791982650756836,
+          "step": 1900,
+          "total": 0.8696332573890686
+        },
+        {
+          "boundary": 0.9678236842155457,
+          "live": 0.6959782838821411,
+          "owner": 0.6814225316047668,
+          "step": 2000,
+          "total": 1.3774008750915527
+        },
+        {
+          "boundary": 0.6065168380737305,
+          "live": 0.06360061466693878,
+          "owner": 0.7146565318107605,
+          "step": 2100,
+          "total": 0.7782571315765381
+        },
+        {
+          "boundary": 0.7426870465278625,
+          "live": 0.3415086269378662,
+          "owner": 0.7094205021858215,
+          "step": 2200,
+          "total": 1.050929069519043
+        },
+        {
+          "boundary": 0.9518641829490662,
+          "live": 0.49328896403312683,
+          "owner": 0.6951679587364197,
+          "step": 2300,
+          "total": 1.1884568929672241
+        },
+        {
+          "boundary": 0.7733357548713684,
+          "live": 0.1178673729300499,
+          "owner": 0.6863875985145569,
+          "step": 2400,
+          "total": 0.804254949092865
+        },
+        {
+          "boundary": 0.5658849477767944,
+          "live": 0.1453583985567093,
+          "owner": 0.6817354559898376,
+          "step": 2500,
+          "total": 0.8270938396453857
+        },
+        {
+          "boundary": 0.6877229809761047,
+          "live": 0.49872905015945435,
+          "owner": 0.734298825263977,
+          "step": 2600,
+          "total": 1.2330279350280762
+        },
+        {
+          "boundary": 0.4200897514820099,
+          "live": 0.010353267192840576,
+          "owner": 0.0,
+          "step": 2700,
+          "total": 0.010353267192840576
+        },
+        {
+          "boundary": 0.4830015003681183,
+          "live": 1.6440012454986572,
+          "owner": 0.779369592666626,
+          "step": 2800,
+          "total": 2.423370838165283
+        },
+        {
+          "boundary": 1.019938349723816,
+          "live": 0.09109355509281158,
+          "owner": 0.7168766856193542,
+          "step": 2900,
+          "total": 0.8079702258110046
+        },
+        {
+          "boundary": 0.51559978723526,
+          "live": 0.022826451808214188,
+          "owner": 0.0,
+          "step": 3000,
+          "total": 0.022826451808214188
+        },
+        {
+          "boundary": 0.9924798011779785,
+          "live": 1.5320854187011719,
+          "owner": 0.6662324070930481,
+          "step": 3100,
+          "total": 2.198317766189575
+        },
+        {
+          "boundary": 0.833993136882782,
+          "live": 0.6341493725776672,
+          "owner": 0.6938748955726624,
+          "step": 3200,
+          "total": 1.3280242681503296
+        },
+        {
+          "boundary": 0.8252266049385071,
+          "live": 0.16454026103019714,
+          "owner": 0.6936255693435669,
+          "step": 3300,
+          "total": 0.8581658601760864
+        },
+        {
+          "boundary": 0.9257018566131592,
+          "live": 0.10420260578393936,
+          "owner": 0.6282991766929626,
+          "step": 3400,
+          "total": 0.7325018048286438
+        },
+        {
+          "boundary": 0.5560758113861084,
+          "live": 1.2167930603027344,
+          "owner": 0.6858622431755066,
+          "step": 3500,
+          "total": 1.9026553630828857
+        },
+        {
+          "boundary": 0.7453663945198059,
+          "live": 0.3318612277507782,
+          "owner": 0.6083792448043823,
+          "step": 3600,
+          "total": 0.9402405023574829
+        },
+        {
+          "boundary": 0.7987915873527527,
+          "live": 0.08191975951194763,
+          "owner": 0.5376449823379517,
+          "step": 3700,
+          "total": 0.6195647716522217
+        },
+        {
+          "boundary": 0.9777023196220398,
+          "live": 0.016504524275660515,
+          "owner": 0.5397453308105469,
+          "step": 3800,
+          "total": 0.5562498569488525
+        },
+        {
+          "boundary": 0.4295140206813812,
+          "live": 0.0035552307963371277,
+          "owner": 0.0,
+          "step": 3900,
+          "total": 0.0035552307963371277
+        },
+        {
+          "boundary": 0.6221590638160706,
+          "live": 0.33179721236228943,
+          "owner": 0.6099031567573547,
+          "step": 4000,
+          "total": 0.9417003393173218
+        },
+        {
+          "boundary": 0.5593700408935547,
+          "live": 0.03148242086172104,
+          "owner": 0.6481553316116333,
+          "step": 4100,
+          "total": 0.6796377301216125
+        },
+        {
+          "boundary": 0.7036480903625488,
+          "live": 0.21762263774871826,
+          "owner": 0.766325831413269,
+          "step": 4200,
+          "total": 0.9839484691619873
+        },
+        {
+          "boundary": 0.6157807111740112,
+          "live": 0.37471240758895874,
+          "owner": 0.5965731739997864,
+          "step": 4300,
+          "total": 0.9712855815887451
+        },
+        {
+          "boundary": 0.5490729808807373,
+          "live": 0.19246825575828552,
+          "owner": 0.5900880694389343,
+          "step": 4400,
+          "total": 0.7825562953948975
+        },
+        {
+          "boundary": 0.4946495294570923,
+          "live": 0.28488636016845703,
+          "owner": 0.49180179834365845,
+          "step": 4500,
+          "total": 0.7766881585121155
+        },
+        {
+          "boundary": 0.6116965413093567,
+          "live": 0.02659514546394348,
+          "owner": 0.5168407559394836,
+          "step": 4600,
+          "total": 0.5434359312057495
+        },
+        {
+          "boundary": 0.5053216814994812,
+          "live": 0.21295695006847382,
+          "owner": 0.6965978145599365,
+          "step": 4700,
+          "total": 0.9095547795295715
+        },
+        {
+          "boundary": 0.3676328659057617,
+          "live": 0.002300858497619629,
+          "owner": 0.0,
+          "step": 4800,
+          "total": 0.002300858497619629
+        },
+        {
+          "boundary": 0.5802091360092163,
+          "live": 3.6448163986206055,
+          "owner": 0.06997707486152649,
+          "step": 4900,
+          "total": 3.7147934436798096
+        },
+        {
+          "boundary": 0.6742411255836487,
+          "live": 0.3965274393558502,
+          "owner": 0.34889155626296997,
+          "step": 5000,
+          "total": 0.7454190254211426
+        },
+        {
+          "boundary": 0.503196120262146,
+          "live": 0.5170241594314575,
+          "owner": 0.5238029956817627,
+          "step": 5100,
+          "total": 1.0408271551132202
+        },
+        {
+          "boundary": 0.6554834246635437,
+          "live": 0.14119291305541992,
+          "owner": 0.6479793787002563,
+          "step": 5200,
+          "total": 0.7891722917556763
+        },
+        {
+          "boundary": 0.7848671078681946,
+          "live": 0.06029023975133896,
+          "owner": 0.5775007605552673,
+          "step": 5300,
+          "total": 0.6377909779548645
+        },
+        {
+          "boundary": 0.6847658753395081,
+          "live": 0.3029647767543793,
+          "owner": 0.5908969640731812,
+          "step": 5400,
+          "total": 0.8938617706298828
+        },
+        {
+          "boundary": 0.5119581818580627,
+          "live": 0.4902336299419403,
+          "owner": 0.2669799029827118,
+          "step": 5500,
+          "total": 0.7572135329246521
+        },
+        {
+          "boundary": 0.5806741118431091,
+          "live": 0.024517841637134552,
+          "owner": 0.4798583686351776,
+          "step": 5600,
+          "total": 0.504376232624054
+        },
+        {
+          "boundary": 0.40390536189079285,
+          "live": 0.257357120513916,
+          "owner": 0.4861772954463959,
+          "step": 5700,
+          "total": 0.7435344457626343
+        },
+        {
+          "boundary": 0.4699680805206299,
+          "live": 0.03098408505320549,
+          "owner": 0.1502794772386551,
+          "step": 5800,
+          "total": 0.18126356601715088
+        },
+        {
+          "boundary": 0.5447438955307007,
+          "live": 1.9559413194656372,
+          "owner": 0.7906714677810669,
+          "step": 5900,
+          "total": 2.746612787246704
+        },
+        {
+          "boundary": 0.3903640806674957,
+          "live": 0.17413412034511566,
+          "owner": 0.3255149722099304,
+          "step": 6000,
+          "total": 0.4996491074562073
+        },
+        {
+          "boundary": 0.4754147529602051,
+          "live": 0.640912652015686,
+          "owner": 0.32152408361434937,
+          "step": 6100,
+          "total": 0.9624367356300354
+        },
+        {
+          "boundary": 0.4581446349620819,
+          "live": 0.0940885990858078,
+          "owner": 0.44314154982566833,
+          "step": 6200,
+          "total": 0.5372301340103149
+        },
+        {
+          "boundary": 0.45022451877593994,
+          "live": 0.0620964914560318,
+          "owner": 0.13309346139431,
+          "step": 6300,
+          "total": 0.1951899528503418
+        },
+        {
+          "boundary": 0.47513511776924133,
+          "live": 0.35510268807411194,
+          "owner": 0.08496551215648651,
+          "step": 6400,
+          "total": 0.44006818532943726
+        },
+        {
+          "boundary": 0.47397759556770325,
+          "live": 0.052398502826690674,
+          "owner": 0.5440548062324524,
+          "step": 6500,
+          "total": 0.5964533090591431
+        },
+        {
+          "boundary": 0.45987746119499207,
+          "live": 1.006483793258667,
+          "owner": 0.5096360445022583,
+          "step": 6600,
+          "total": 1.5161198377609253
+        },
+        {
+          "boundary": 0.4505155086517334,
+          "live": 0.2380085587501526,
+          "owner": 0.5366794466972351,
+          "step": 6700,
+          "total": 0.7746880054473877
+        },
+        {
+          "boundary": 0.5849187970161438,
+          "live": 0.6466176509857178,
+          "owner": 0.5380606651306152,
+          "step": 6800,
+          "total": 1.184678316116333
+        },
+        {
+          "boundary": 0.4405250549316406,
+          "live": 0.45692282915115356,
+          "owner": 0.5215796828269958,
+          "step": 6900,
+          "total": 0.9785025119781494
+        },
+        {
+          "boundary": 0.3530806005001068,
+          "live": 0.25555455684661865,
+          "owner": 0.10957082360982895,
+          "step": 7000,
+          "total": 0.3651253879070282
+        },
+        {
+          "boundary": 0.46756255626678467,
+          "live": 0.8594216704368591,
+          "owner": 0.6827552914619446,
+          "step": 7100,
+          "total": 1.5421769618988037
+        },
+        {
+          "boundary": 0.4410848319530487,
+          "live": 0.1346053183078766,
+          "owner": 0.2018226981163025,
+          "step": 7200,
+          "total": 0.3364280164241791
+        }
+      ],
+      "steps": 7200,
+      "tracking_augmentation": {
+        "applied_windows": 0,
+        "max_strength": 0.0,
+        "mean_strength": 0.0,
+        "operation_counts": {},
+        "selected_operation_counts": {}
+      },
+      "train_counts": {
+        "boundary": 230375,
+        "live": 230400,
+        "owner": 137164
+      },
+      "train_loss": 0.993259161857515,
+      "train_losses": {
+        "boundary": 0.6615160315867293,
+        "live": 0.4180241279863468,
+        "owner": 0.5752350338711681,
+        "total": 0.993259161857515
+      },
+      "train_possible": {
+        "boundary": 230375,
+        "live": 230400,
+        "owner": 230400
+      },
+      "trained_halves": [
+        "DFL-MAT-J03WMX_half1.npz",
+        "DFL-MAT-J03WMX_half2.npz",
+        "DFL-MAT-J03WN1_half1.npz",
+        "DFL-MAT-J03WN1_half2.npz",
+        "DFL-MAT-J03WOH_half1.npz",
+        "DFL-MAT-J03WOH_half2.npz",
+        "DFL-MAT-J03WOY_half1.npz",
+        "DFL-MAT-J03WOY_half2.npz",
+        "DFL-MAT-J03WPY_half1.npz",
+        "DFL-MAT-J03WPY_half2.npz",
+        "DFL-MAT-J03WQQ_half1.npz",
+        "DFL-MAT-J03WQQ_half2.npz",
+        "DFL-MAT-J03WR9_half1.npz",
+        "DFL-MAT-J03WR9_half2.npz"
+      ],
+      "training_schedule_blocks": [
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOH_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WN1_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WMX_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WOY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WQQ_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half2.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WPY_half1.npz",
+          "steps": 4
+        },
+        {
+          "half": "DFL-MAT-J03WR9_half2.npz",
+          "steps": 4
+        }
+      ],
+      "training_window_sha256": "5b7797ba9abc64e2917f540c8ea9085265fc35249268f6fcaff92d960b5b13e3"
+    },
+    "schema": "coarse_member_fit_v1",
+    "steps": 7200
+  },
+  "sha256": "84db214b2e42d0ccb59c9cb638c0528ee6ed8c3c464b4b706b5e88886bc8700a"
+}

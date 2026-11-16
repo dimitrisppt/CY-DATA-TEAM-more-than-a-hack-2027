@@ -1,0 +1,57 @@
+{
+  "payload": {
+    "checkpoint_sha256": "de0aa7f13cc14ce115c88ab0437a9a52c5f2949b195dd66c5dadf262fc4d402b",
+    "ema_sha256": "29479f603ec7342cf7041f685f1ceb920be756ee1a6fd68c644e547c3b2de30f",
+    "identity_sha256": "999bfe960709dad1822146a8ffc7c5b830d63f0f1bc1a60d246c10f1ba0d7f56",
+    "inputs": {
+      "baseline_checkpoint_sha256": "090c801ec200aa8c611d81963e3a2dd0ad1d88734a9a7093a79cfbf5bca58215",
+      "end_state_sha256": "0ba17ee23d4b0522aa4e17923f829c7c6ae8aa2e72a834bd3a974b54b1831f19",
+      "source_bundle_manifest_sha256": "8b78fb71fc0e1fb6b1673d7594e98cc0ff6380ff70fc9276b77b7315d57fd841",
+      "source_fit_sha256": "45ebe783866fc417c4966940e8ff1ea294b52700f683aa02e3ac44ef9bcbcd51",
+      "start_state_sha256": "17c9b4d079497da4552e4519fea9d343fda246a0180d13c18823db9bf2454b15"
+    },
+    "member_id": "mean_007",
+    "model_path": "model.pt",
+    "raw_parity": {
+      "compared_optimizer_rng_transcript_and_counters": true,
+      "end_steps": 7200,
+      "raw_training_progress_matches_endpoint": true,
+      "raw_weights_match_baseline_checkpoint": true,
+      "raw_weights_match_endpoint_state": true,
+      "start_steps": 7000
+    },
+    "schema": "final_tail_ema_fit_v1",
+    "seed": 20261117,
+    "spec_sha256": "4a5cbe90da82d346b5fdd434a4fdda3c3d4b245607512d1be7f32eb02e5435f2",
+    "steps": 7200,
+    "tail_ema": {
+      "decay": 0.99,
+      "end_steps": 7200,
+      "initialization": "raw model state at step 7000",
+      "interpretation": "200-update tail EMA, not full-run EMA",
+      "kind": "tail_ema",
+      "raw_parity": {
+        "compared_optimizer_rng_transcript_and_counters": true,
+        "end_steps": 7200,
+        "raw_training_progress_matches_endpoint": true,
+        "raw_weights_match_baseline_checkpoint": true,
+        "raw_weights_match_endpoint_state": true,
+        "start_steps": 7000
+      },
+      "start_steps": 7000,
+      "updates": 200
+    },
+    "train_matches": [
+      "DFL-MAT-J03WMX",
+      "DFL-MAT-J03WN1",
+      "DFL-MAT-J03WOH",
+      "DFL-MAT-J03WOY",
+      "DFL-MAT-J03WPY",
+      "DFL-MAT-J03WQQ",
+      "DFL-MAT-J03WR9"
+    ],
+    "training_config_sha256": "b307cf096765fb0a21f2d38cb8a93697442f004482454f21cc550703ba242cac",
+    "validation_matches": []
+  },
+  "sha256": "20f31c8b91328d13a5a26187933caa358f093bd89c10dc404c5c783ef1e7177c"
+}

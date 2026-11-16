@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metrica-possession"
+version = "0.1.0"
+description = "Reproducible possession inference from football tracking"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2,<3", "pandas>=2,<4"]
+
+[project.optional-dependencies]
+learn = ["torch>=2.5,<3"]
+tune = ["optuna>=5,<6", "scikit-learn>=1.9,<2", "numba>=0.68,<1"]
+dev = ["pytest>=8,<10", "ruff>=0.8,<1"]
+
+[project.scripts]
+possession = "possession.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["possession", "experiments"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"games.py" = "games.py"
+"evaluation/possession_metrics.py" = "evaluation/possession_metrics.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

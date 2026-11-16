@@ -1,0 +1,1245 @@
+{
+  "analysis_source_sha256": "9e958cf8d0c85885fddcaadb10334e6a101a3ea3a5ac983c1e17e61e9b62a660",
+  "assessment_match_count": 2,
+  "assessment_matches": [
+    "DFL-MAT-J03WOH",
+    "DFL-MAT-J03WOY"
+  ],
+  "baseline_matches_published_v6": true,
+  "batches": [
+    "batch_1",
+    "batch_2"
+  ],
+  "completed_assessment_folds": 1,
+  "completed_fits": 11,
+  "groups": {
+    "completed_two_fine_seeds": {
+      "seeds": [
+        8101,
+        8102
+      ],
+      "variants": [
+        "baseline",
+        "control",
+        "spell_balanced"
+      ]
+    },
+    "matched_single_fine_seed": {
+      "seeds": [
+        8101
+      ],
+      "variants": [
+        "baseline",
+        "control",
+        "spell_balanced",
+        "masked_teacher"
+      ]
+    }
+  },
+  "independent_test": false,
+  "inference_run": false,
+  "label_array_hashes": {
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_1_clean": "d427ebeda28d660608149755e4752d70acc026c9d337c3d8b780a0999934519e",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_1_long": "e9018b67bd306ad7baf6bfef87d31fc82f0e69b4642c569ba2e32eef80f74165",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_1_replay": "e6a97aac1fe2ac7b31a9acef25e1696a015115eabebcfd0d63b08c731f4e5ffb",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_1_short": "e0be6db5bdf3c879ced3928671c71dd6f0618c6200bfee19109f52cdd2f45d21",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_2_clean": "5a0bd74241285936182f1db619fe35bf3d328eb3093584ec87aa2aca45dfa4a7",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_2_long": "c79bfd26af3b5adff97b8a6bbbc47b9a0c41c83f581fa2a8a6a4704a7267afa4",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_2_replay": "b8da5258e3b649bf69203fcf19b60c3ae946d01873665ad42e5a0eeb05ad8ced",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_2_short": "41ee22b3ead6ec75942ebacf0ede95dcfa2182110e071badc3d693bc2ee48577",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_1_clean": "f6cf5355961a1c99f68b75b1f66e5e874de0ec16fd6562301de31d64fe540250",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_1_long": "8e76fffffe3ad76f5e541978642a0023cd7bd9476a7c48e8546f943679cecdff",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_1_replay": "bf5f2e3970a615004cd082a9731f7e7722d5dad52a7e10eb782882e55ce0bf86",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_1_short": "746ef6ae23257217121192d902ce751f70011b49c1b6d3238af9538afb7f5245",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_2_clean": "5f736bf5c883177c9f3ba4f95d045bae3d7e46d55d8e7f2f68e87af7b7b09bb4",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_2_long": "69d1c0a85a015a3753b12c720638f45bbd25977618a1214c4234b2349cfcefec",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_2_replay": "dbf19ff690c4695b3bc6f85a5acfac473bab5eb2283cde1c41666b68edcc66b0",
+    "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_2_short": "a6833f1ceab55a998ec8f0d3462cc4d08f09b996c0aeb7d7fa69152dbdc8fc25",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_1_clean": "d427ebeda28d660608149755e4752d70acc026c9d337c3d8b780a0999934519e",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_1_long": "0879265c1f9933b1abb159583d13b96561280a2b6845244fd6d4a93ffeb7f651",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_1_replay": "e6a97aac1fe2ac7b31a9acef25e1696a015115eabebcfd0d63b08c731f4e5ffb",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_1_short": "247b00e781b26f4305c6dae2da19601123cab814f826c567a16849f60bf605b7",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_2_clean": "5a0bd74241285936182f1db619fe35bf3d328eb3093584ec87aa2aca45dfa4a7",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_2_long": "adec4913a10140bcbf7ab4134da61dd706a9f6f6137d16e5e1b0185a6169f4d0",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_2_replay": "b8da5258e3b649bf69203fcf19b60c3ae946d01873665ad42e5a0eeb05ad8ced",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_2_short": "cf3c810cd28ccfe174c04758cd1d3ff0c9610a1b29c27b38710cc5a26e5157a5",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_1_clean": "f6cf5355961a1c99f68b75b1f66e5e874de0ec16fd6562301de31d64fe540250",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_1_long": "b063b5c5bdd296fe8b290199f9f76e6ee371c89697502b7c1e81fd451ac16424",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_1_replay": "bf5f2e3970a615004cd082a9731f7e7722d5dad52a7e10eb782882e55ce0bf86",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_1_short": "8c5187ab4c8df84d7ff571fe99ea016c69fd40b670c85b542d3c58634d9da2aa",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_2_clean": "5f736bf5c883177c9f3ba4f95d045bae3d7e46d55d8e7f2f68e87af7b7b09bb4",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_2_long": "3b2bb35815a9a461f27875fbd148de00f91087e5d7b36c6c7c9f1fb75ccf2ab7",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_2_replay": "dbf19ff690c4695b3bc6f85a5acfac473bab5eb2283cde1c41666b68edcc66b0",
+    "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_2_short": "08175bea3030b6f2f9180393c83a3d90143699e266b6650b5bdef4d3b16a98a9",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_1_clean": "1b48d92e16f41deb56e5f509af1e86b840bf361d2c3cda3fc78fe60e126b45a6",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_1_long": "46d44e3ffa51ca231ee9c81b965b013b3516e756f56958fbf8cdfec8ecb19746",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_1_replay": "101971134178319754544ac4fa82501ea6ee603980ee4f761fab4ced921536e8",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_1_short": "6a09ad30e212608d71255f907ac2019efb7890b7e2f6db3671bf1000a393fbe6",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_2_clean": "807b86ef09ec702969556db789962ce0d7e163a8c1de8a652fd82591052eb863",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_2_long": "c225b13e3ed7f4e0ccd6698f80db83cf0053e26fbda3cd94141418098da0c1aa",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_2_replay": "3248d804c6c44bdd4170d0728a96d3f33ad49038d033ab37d0b33c15cbc43206",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_2_short": "62080305b8c0e39d748b1ea19f503c82dd17e490f601af256bad7e9e7ac527ba",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_1_clean": "3371e22aaa734c91516e221f4cb32fc6896eb52c0303ea4805442280336e2496",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_1_long": "d00d6c1c33d855369a2c8cc139eb69780a18338fbe7fe13fd513f7a869b629dd",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_1_replay": "6c97b3039cf8c56ba1178db768ab14ef96745dd9bcd0188740dec078c76d8a0c",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_1_short": "a8cfcf5ce2610f4ac88858599d236fea5adecb4a878f446d2a84554ce39afef1",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_2_clean": "1756b30dadc19be9976eb0e9d4adead1e39d1402d24d8f9601b8d1228d528ffa",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_2_long": "530f7a9c1c6d2dc78fcda6171c93de04c6a4784bb9aaa6e8ad918388c9e92604",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_2_replay": "74ba3193703e06ccbf050dba859fdd95a5b9774357bb911fbf40a3f76f3e9d75",
+    "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_2_short": "39b43bee224e841a4a1d9aaaa284c5d32edefc26e18f14d03ed54497738f1155",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_1_clean": "1b48d92e16f41deb56e5f509af1e86b840bf361d2c3cda3fc78fe60e126b45a6",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_1_long": "f048dc1bebffaaf09b5b32b2213c0068ddb1a831a87e0c5b5b47303da439d6fc",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_1_replay": "101971134178319754544ac4fa82501ea6ee603980ee4f761fab4ced921536e8",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_1_short": "64416bae306ee8e8b04b5562f89fbf271f32a4fcf1d974c59dc45785716e967f",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_2_clean": "807b86ef09ec702969556db789962ce0d7e163a8c1de8a652fd82591052eb863",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_2_long": "7a4fe1aeec4b6a2df184ae7a20b848c23e24aa18b7920c4a2c7b649d2cdc7632",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_2_replay": "3248d804c6c44bdd4170d0728a96d3f33ad49038d033ab37d0b33c15cbc43206",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_2_short": "f5701f3f4c01edc4d1c77d7abc8b86e825032d4d4a7072f9f95367d2ae87ac6e",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_1_clean": "3371e22aaa734c91516e221f4cb32fc6896eb52c0303ea4805442280336e2496",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_1_long": "30bcce7e31a212653f3136b1631bfffa0dad85a848a5de57032525ef230ae880",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_1_replay": "6c97b3039cf8c56ba1178db768ab14ef96745dd9bcd0188740dec078c76d8a0c",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_1_short": "74e47711620e6b683d97427d73f118d416861e060e0b4282ab5993234784c35b",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_2_clean": "1756b30dadc19be9976eb0e9d4adead1e39d1402d24d8f9601b8d1228d528ffa",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_2_long": "70dcf724b3351ba0712d37c61b384d27b092fe73bcfe20c5948dddc61681deb6",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_2_replay": "74ba3193703e06ccbf050dba859fdd95a5b9774357bb911fbf40a3f76f3e9d75",
+    "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_2_short": "978d8235f2fe0cdba52cc592863df6830d28b95ddfa1a28e5561b9a8ca838e25",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_1_clean": "ffad8ec7265391d4f9d74c460b869d368cf3c4af709691188c564a000bfec8a7",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_1_long": "f10eac66e2fbb99d7c69a637252462989c7f124272ff8ea421dd9b8a2ad81b8e",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_1_replay": "50e879fded9c2736c144c27175aacfac45e24805a9f1d13b29ba0aaa6dcc1b38",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_1_short": "48a78ae2253cb8a20418ff4fc98e3e04dec0f2b44dc8c10a3439d18a9563d4e5",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_2_clean": "290630e3cb49190a2664daba61ddfda3457bf67c34ff59b2ab3e9a1778c93fc4",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_2_long": "a7f1520400a600eb0985942d7f366ea395c8bdd8260571d30aed04de5e7d7c8a",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_2_replay": "6fea0f7ee98fe746ad04045dfa0af416e7fc038300b3a94d755c6b382d7ddfd7",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_2_short": "52fb5cc3e1896401e4e10007ea2efd0e80697b82f25d809e3d43f05d6dd27409",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_1_clean": "fcd498dfa96a419496aafb76c60f432dc0dff0b33c19963a224d8c20688d6442",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_1_long": "dfb55042225b858a1895aed3ae6b8dd3983d473895b9ae3746d74293d3586600",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_1_replay": "bd99a079a450691fa066eec1247b1660566b095461015468b650f6ece4221ca7",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_1_short": "ea4a81ba809eede8ac56e49ab7fb9a59aa45f2dd5e2c06637963ac43661ddf9c",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_2_clean": "e11f43d3beef924dba1df7a4a548c2b0dd374c58f0e7159dbb4e1689038c8ff7",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_2_long": "0ea87846558acb0d1369c65d52eece14bfa54def03c26db2a55d505846688a3f",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_2_replay": "b9ce98d68d2a7d7fa4bfce1be6ebdbe3170be5f12e9154bb57e8c699b9f43900",
+    "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_2_short": "624b5dc924b3e3d5a9bc0de44e11490b48b4313ee673f5aa2836e82f0a808afb",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_1_clean": "ffad8ec7265391d4f9d74c460b869d368cf3c4af709691188c564a000bfec8a7",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_1_long": "71121757cdefa87bab101c3656bf571eb34df6b2e3ccebef81d292b64fbf5094",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_1_replay": "50e879fded9c2736c144c27175aacfac45e24805a9f1d13b29ba0aaa6dcc1b38",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_1_short": "588aa8c30a6b3104cff5a6b870a47f8eacf0d7da51def39d0d0e5c6a56294b38",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_2_clean": "290630e3cb49190a2664daba61ddfda3457bf67c34ff59b2ab3e9a1778c93fc4",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_2_long": "38d5b9aa985cb291922b7f4b8d699b3302fc6df6f40016712cec67e541f8be1f",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_2_replay": "6fea0f7ee98fe746ad04045dfa0af416e7fc038300b3a94d755c6b382d7ddfd7",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_2_short": "7d7acf0477ecb1b0134c126aaadddebc1690018cc8a4f5ea3b265ec58017ce7d",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_1_clean": "fcd498dfa96a419496aafb76c60f432dc0dff0b33c19963a224d8c20688d6442",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_1_long": "a5e38e954a6a0d544441fab3f20dde1c32cf7169e1d61e0c693e3eaeddc188b4",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_1_replay": "bd99a079a450691fa066eec1247b1660566b095461015468b650f6ece4221ca7",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_1_short": "7fd743c0bba6421626f0b1d277b8ffded7c27e062f94b95967707847f4e98a89",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_2_clean": "e11f43d3beef924dba1df7a4a548c2b0dd374c58f0e7159dbb4e1689038c8ff7",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_2_long": "85c37f3f73ee82c2334b85dfee58d14a159ca569100c23455264a61355e7f59b",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_2_replay": "b9ce98d68d2a7d7fa4bfce1be6ebdbe3170be5f12e9154bb57e8c699b9f43900",
+    "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_2_short": "03e50aabeb12956aa4a61a35f08d9e190cf96d390f56f56484b0ff0923bbb178",
+    "gt_DFL-MAT-J03WOH_1": "84ac1180b9b5884c1e3488a4c3d22f49b70280a8913073f61946be5baf7efe84",
+    "gt_DFL-MAT-J03WOH_2": "ec73a31af364c026d736cc687879fdb6892326d8969ac25491be65b928424dc1",
+    "gt_DFL-MAT-J03WOY_1": "432c422274b7093f4123f87621b2f131ce20e174bb815dfcf54c7690dd08fe09",
+    "gt_DFL-MAT-J03WOY_2": "b3da606dc69823354170ff64df21ba5bca766e13a04348ee56618c499394c81c",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_1_clean": "66c99beb285b059d518269c35b9b6ca531eb8f85120cfb0186c4d09132958558",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_1_long": "58def9b2cc13433b13e1f344b51ab9faf51dc22f9668fbe8301a6a705c032f3b",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_1_replay": "dc0c77442bd7a1120ee005f45db7ad751f63b5f51396a371a2d89fd6b85ac726",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_1_short": "324420da10848359b5cafd2fdf763372a2cee3b731366cfacfb68e6889b40d98",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_2_clean": "d8abab16456b69f9e538375254a6cb70c464966498e344097b6841c39cdaad54",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_2_long": "45843a3df20ad52fb7f3425483e05dff39333b87d554d2749d3c91200a9d31ab",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_2_replay": "51e466cff73ace5540edea5bb4b5246e7bc345bf99ed5a8bc947de15d069eb4c",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_2_short": "0538c3409f7ae28bf39eb0ddca24fd2ce98a86241b59101f8b45a7651ba499c1",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_1_clean": "c2e5867990044d7e22ace9cadf263ce24a8a7a0f4ee73e0f382679c599add0ba",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_1_long": "82d9c02f250fbe0b653b1d378bfa5455950590d840a2d4eb967b773a63110596",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_1_replay": "3a91a96c39415a9ccb58e6a6027dd0f4e74decbdddc6f2893696b9c09767763a",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_1_short": "34b9823debe6a3301006733b7f91164f57da04f7f2232a7e1716a5db5107ce44",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_2_clean": "7fe8cfb94738e91d9fd95fd62865db5ee254cdc1aea4ec19df845592c5bb058d",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_2_long": "ce0a231538a7422ea2c60aa896aa3315160f4be25fc706df739635a3ab0fb669",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_2_replay": "a25b40e741d4c73a566262f686ab146e79e5c4b58c042ec1e42a0bd82343c20c",
+    "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_2_short": "48e6b92db81fed90a45bbcd8e1f559e525ca60b4dea0c444c856e673d993a534",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_1_clean": "66c99beb285b059d518269c35b9b6ca531eb8f85120cfb0186c4d09132958558",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_1_long": "56dbb239d7057dc6f3f1ca440baed5fb5bdb55d2732c612a1d235e7a50418a12",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_1_replay": "dc0c77442bd7a1120ee005f45db7ad751f63b5f51396a371a2d89fd6b85ac726",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_1_short": "df4b76d4a36488156ab5c1550807c7ff6ee55c2c320290012fd9c597abeb37c1",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_2_clean": "d8abab16456b69f9e538375254a6cb70c464966498e344097b6841c39cdaad54",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_2_long": "451d695576b696c7512e333839cf99fdcc32ecac9ec44a1483880a0ad4f3304f",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_2_replay": "51e466cff73ace5540edea5bb4b5246e7bc345bf99ed5a8bc947de15d069eb4c",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_2_short": "e78ef1a92969b058193bf4612cbbe25541f0f4b7201c217a1f7608a9f04500fc",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_1_clean": "c2e5867990044d7e22ace9cadf263ce24a8a7a0f4ee73e0f382679c599add0ba",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_1_long": "a3dce225b57ce170ab12d84e5eb1d9ce3d60844a300807f67cedcae7608bcd77",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_1_replay": "3a91a96c39415a9ccb58e6a6027dd0f4e74decbdddc6f2893696b9c09767763a",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_1_short": "50ad5b9b76e975c0cb1428eb3865e97d97630f059b8b0b6fd11b9188b695ac23",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_2_clean": "7fe8cfb94738e91d9fd95fd62865db5ee254cdc1aea4ec19df845592c5bb058d",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_2_long": "98b2ebcc4bcd4a482d8913f594833b72bcdfc5bc994f2c375b335fff80247cba",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_2_replay": "a25b40e741d4c73a566262f686ab146e79e5c4b58c042ec1e42a0bd82343c20c",
+    "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_2_short": "5324255c3e2241f8e0cd7e2ede11a4eb121215cdca9bf2ea4c004b1d116a1093",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_1_clean": "35be5b4d701bfd0908dc71346a17a53bf2d3fa1117c6d144e003be8dc2e1618d",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_1_long": "2a63c3eb727c0dda41007253f4829fc8252a352cac3adc70aeef606b56fb45ac",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_1_replay": "f4a509eec4e1f68b89d6a82a6e4c48e46db491fffcd834af8afd251ab7002625",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_1_short": "46f82d6fd37637cb1025d6f1cfae1af2071a238c08b4c13de62740d6cf6c9f07",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_2_clean": "79ce94a76efbe413b0f3c4ab847fb161e3398f3b8498eba69c0fe25118a2cdb7",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_2_long": "4cb63446f61822a0d62092f87b7950aea546ccbf4f4c0ef7e76eb5a6bbc09217",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_2_replay": "86335376e201c9ad550f7df833f7632edefddd378c95c695393323357f7fc43f",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_2_short": "b5bc17db0426e6fd7b81633a8790fb8bd8aaf3dbe46af5b2615609cf4dd2e11c",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_1_clean": "d4e2ffe1d6fa75065ea2e7a00e636b1914a3de50a5396831f04a51774b780119",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_1_long": "48787942104f8771249cccb30606513d4febe5b8018a5f6cd2683f63f3993b8f",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_1_replay": "9dde0e3bf88a2e1f10db9fe8f01e0230c550e339845213012b20dfde4235f1f8",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_1_short": "00d9fa4291270972d706778b61477b284b369c85fb1e220f0b6dc073bf44c00d",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_2_clean": "cc1052e677aca99ce9788c11d5d877757ffec56d0874f46392ed6cf24319ef38",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_2_long": "a5836a36340b541f58bbf921d03cadee7ddec92fd028bc5f2cb9261ba3322948",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_2_replay": "172466cb94be1c69d54bfbf2a54ad35e84c1cad6eb1ebfedde9909ef891d777e",
+    "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_2_short": "85d4c5d390210a14e09707ef4b9994f8be8ffd1df213e2ec8dd9cf3f55d40730",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_1_clean": "35be5b4d701bfd0908dc71346a17a53bf2d3fa1117c6d144e003be8dc2e1618d",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_1_long": "ff44019b3443935d766f2d3cf2ce2394db93cf3d10a206008589b14e7e8743ca",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_1_replay": "f4a509eec4e1f68b89d6a82a6e4c48e46db491fffcd834af8afd251ab7002625",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_1_short": "da98bb72a24731a25f6a1f8fbc3a2f9d6a5939b644cf28d11bfbc17cff8ce0c1",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_2_clean": "79ce94a76efbe413b0f3c4ab847fb161e3398f3b8498eba69c0fe25118a2cdb7",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_2_long": "8acc32dcbb84f69dd508b6bd38cbcd7af310871d1a461e3ef37c8ac21998b650",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_2_replay": "86335376e201c9ad550f7df833f7632edefddd378c95c695393323357f7fc43f",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_2_short": "ddc8a2514830b860ad1e10fe762c14c33ee0314d63945fd4b44304041600fe7a",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_1_clean": "d4e2ffe1d6fa75065ea2e7a00e636b1914a3de50a5396831f04a51774b780119",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_1_long": "5857ab4210dc22ae76f9e1eb1343fab78df1d73e187405feb825a7c94f2d42db",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_1_replay": "9dde0e3bf88a2e1f10db9fe8f01e0230c550e339845213012b20dfde4235f1f8",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_1_short": "afeaef8ae00e6a84b1ac9962d6595472b867d08ff85ce9666073da5afac47c28",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_2_clean": "cc1052e677aca99ce9788c11d5d877757ffec56d0874f46392ed6cf24319ef38",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_2_long": "189218520083fb21fbe08cc53ba7d1f757ca1b55e9acfff65c63460616c1eb93",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_2_replay": "172466cb94be1c69d54bfbf2a54ad35e84c1cad6eb1ebfedde9909ef891d777e",
+    "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_2_short": "9e714ebb72bec567da5bd1fb84ff94075b546fded1ccd8eadedb0f318c814099",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_1_clean": "9a295e0f134e11bbed0ea29080fa35348c87b2e8697cb1f54cdec310a668d8af",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_1_long": "e1bb62bda12369ee903dab4261b8046aa40665a1b7aa77f95c8c83603584f691",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_1_replay": "b9583f69c92878b07255f6e19bfc7aa2e9fc839e585b0d8571273c07ec70872f",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_1_short": "a296fffdf6d17853d96a159b7e98405cb91cf595f18a8e6947b06ffcdaffc544",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_2_clean": "0c7865348040859cff223c079de2ed86308626dbfb1d3c1168d66527e2ebe68d",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_2_long": "0435c6a63eb2b683f92f7f9628962b256518b472fa838dae887bd73d1f492633",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_2_replay": "26c535b33b9f6397615b8874159853dd876d08e0eab9d206db1efca3122982a0",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_2_short": "59f4fed43aaffb2821f8a4517d8c6d4fd59084b01956ba1f34e91a82684f5409",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_1_clean": "5533e8b883de67c606260672305b0f7383c6d797fbdcff305c1bf33c0132848f",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_1_long": "254c91077abd538ce453b94077b5ab13c0151a088323fbd771cfb5fc42c4258b",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_1_replay": "842ada943365f7092b779064da023c34d0466005ddf5e622219f003122d43748",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_1_short": "f6b2cb6a7ac0f598f717e2909330ec2a29fc646738e2b37688d880504737a181",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_2_clean": "210bcf44dfacbf78f08c8a1293853be05d7b63e54479f7ab8ba4db169536c1cc",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_2_long": "51f4c5380fb41eefab02276bddede23d4711e7b911b03e6d679446f8d0ee4fc0",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_2_replay": "dffe788aa1eef5b3701d26ebdd077f02ee7a41182281358e9b70d02507778ab6",
+    "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_2_short": "7197437a0ecf3777450bc9fd1b4cfa7e3ae0b1cfe3cba784261290e7b227b23e",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_1_clean": "9a295e0f134e11bbed0ea29080fa35348c87b2e8697cb1f54cdec310a668d8af",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_1_long": "0902cd536c4e074a2f41ba750794638184c1ef6be746086254b006b902477877",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_1_replay": "b9583f69c92878b07255f6e19bfc7aa2e9fc839e585b0d8571273c07ec70872f",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_1_short": "85aae76828a4d85dae01e5d6b45fecb2a78657c55bfd9642eb2b18bfd6447180",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_2_clean": "0c7865348040859cff223c079de2ed86308626dbfb1d3c1168d66527e2ebe68d",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_2_long": "b8ad89ec1f460fa6582b7417aa966abf6ae7b982b3707ec3c3751a287ebb28ed",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_2_replay": "26c535b33b9f6397615b8874159853dd876d08e0eab9d206db1efca3122982a0",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_2_short": "594d419d0822ca0bfe1f4e175fe95a600de0e2a36ecf5208c77a524a3db817d1",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_1_clean": "5533e8b883de67c606260672305b0f7383c6d797fbdcff305c1bf33c0132848f",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_1_long": "d9a482f88a9181c37059e34b3c50c611d9143e470121966191780bdbeb6ecaa4",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_1_replay": "842ada943365f7092b779064da023c34d0466005ddf5e622219f003122d43748",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_1_short": "e9330ea2e21679b79f1439137260a7db606cceb7a9531a33810599285e1d5b2a",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_2_clean": "210bcf44dfacbf78f08c8a1293853be05d7b63e54479f7ab8ba4db169536c1cc",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_2_long": "04979ad0d1a2821a1d3ffa5c345ae9edc6bfafc2a790925d4aa0ff13a47ef747",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_2_replay": "dffe788aa1eef5b3701d26ebdd077f02ee7a41182281358e9b70d02507778ab6",
+    "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_2_short": "b6aa3fcbda1773c2c41f41cab4a41883606e54a4d230ccb0fe2d94c69db2d412",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_1_clean": "5380c9453299631834d0a9b23f713917e4d2b13310a48b3dc7ce8187af505c5b",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_1_long": "52bb42893cbbd17939e8f6c8b2d7f3b2e61e9189213609cabb2ba22043fca8e0",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_1_replay": "5071d60b4fdfad691ce1b5f3ac35559cf60b7311ba9be9fc9ed41d5adeea0cf8",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_1_short": "3bd1eba5af4744516dcf65cbd60cdf8cf394ada535569e7ec25e8abb17738851",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_2_clean": "7b3a28a7a61714e3bf02b5523ab6ff85a90408d17515cbf02fb5057b1579c97d",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_2_long": "69739b9fc9dcabd6a9d4ea7f81cd2138824b155404b8a87f2a356a74cd91444e",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_2_replay": "95c02c8a9a957172dd29971e31b12c0f0ef520384a3ab9530c9172a983aad5f7",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_2_short": "770cffbc688bc4be86bb34f634bc050110308cf26db6d6ced38a28b6485fa8c5",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_1_clean": "4977f563b3395804879467fab50abedd1da212960e86275f11811eaa4a197932",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_1_long": "3cc922d53ad21a3aa62c512dfbf8ff08f6ce4ca802ec93ac6747a7e1fe3523b5",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_1_replay": "c806992408ada9d8debcd64f644a33db5b6a3b9571011706d4a7013b0af10709",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_1_short": "b204cef611f3ae1633b206bad875b3f2cdba9220ced8fc286415af6265286cff",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_2_clean": "0094ca7fe20fd7cf9a30966c8231189750f71758b00e86b94c5a94b5f9b03ce2",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_2_long": "5e701926469a00299aa6a7cd918ca2f8dc2723f71a27285425425b7b4da8d62e",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_2_replay": "e2ff61f2385389ee35179bb2b7bb3e2dc333985715c577e54e89732ab4095895",
+    "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_2_short": "6793d40bd697299f324c77f5a1357a422a16157c5a21a17367ddf3be73943bb0",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_1_clean": "5380c9453299631834d0a9b23f713917e4d2b13310a48b3dc7ce8187af505c5b",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_1_long": "c800f2c3e3dfbf2e7adf6d20d515a85fd06beef25ed3290575bd1b4301e4252f",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_1_replay": "5071d60b4fdfad691ce1b5f3ac35559cf60b7311ba9be9fc9ed41d5adeea0cf8",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_1_short": "756d2729e5186899a4a6fdc44b379d2850e3b2d03560e6e49cc2e7842f843d4b",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_2_clean": "7b3a28a7a61714e3bf02b5523ab6ff85a90408d17515cbf02fb5057b1579c97d",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_2_long": "1eaf865fbbe9bbe43244327952b3738f4ba5e50eaa11bfc59d804f37491faa3b",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_2_replay": "95c02c8a9a957172dd29971e31b12c0f0ef520384a3ab9530c9172a983aad5f7",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_2_short": "52ca46daa1a70d23ae095a591536dc2c3cb8365ea339fc34a14a2595bf4f374a",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_1_clean": "4977f563b3395804879467fab50abedd1da212960e86275f11811eaa4a197932",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_1_long": "0f74d89fc54cde0ebed9488ccddae315b959ef71d3da2ea1eee21cd64eeec00d",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_1_replay": "c806992408ada9d8debcd64f644a33db5b6a3b9571011706d4a7013b0af10709",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_1_short": "76c954f60ccc7bd1ccfc19ccb69772d73515effef9af2a8fbb1ad92daac86b98",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_2_clean": "0094ca7fe20fd7cf9a30966c8231189750f71758b00e86b94c5a94b5f9b03ce2",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_2_long": "9aa358dd6ebe2f15a627336755577a7673aef9fb95bbf5ceeb2f5bf49556cf7b",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_2_replay": "e2ff61f2385389ee35179bb2b7bb3e2dc333985715c577e54e89732ab4095895",
+    "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_2_short": "e5eab3a8d7a8f63cafa0278599ee4ad1f757487db4ad76e2e649039229b88e98"
+  },
+  "label_codes": {
+    "A": 1,
+    "D": 2,
+    "H": 0,
+    "X": 3
+  },
+  "labels_sha256": "b1694e91d4b0d44b6659a1f3923633f0c8d1386090c71bd4aab6f6a808b7133e",
+  "limitations": [
+    "Post-stop descriptive analysis of only the first of three folds.",
+    "The assessment contains two historically reused matches, not an independent test.",
+    "The one-fine-seed baseline is not the complete delivered v6 ensemble.",
+    "Both frozen coarse seeds, decoder, blending and mask batches remain identical.",
+    "The incomplete second teacher attention fit is excluded, not replaced or retrained.",
+    "No full six-match result or advancement decision is available."
+  ],
+  "original_protocol_sha256": "898265957fad1e9983324d55c62f65c09fce03f1401654993681e612ecace378",
+  "partial": true,
+  "planned_assessment_folds": 3,
+  "planned_fits": 36,
+  "promotion_evaluated": false,
+  "references": {
+    "completed_two_fine_seeds": [
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_1_clean",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_1_clean",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_1_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_1_short",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_1_short",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_1_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_1_long",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_1_long",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_1_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_1_replay",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_1_replay",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_1_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_2_clean",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_2_clean",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_2_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_2_short",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_2_short",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_2_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_2_long",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_2_long",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_2_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOH_2_replay",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOH_2_replay",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOH_2_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_1_clean",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_1_clean",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_1_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_1_short",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_1_short",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_1_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_1_long",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_1_long",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_1_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_1_replay",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_1_replay",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_1_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_2_clean",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_2_clean",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_2_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_2_short",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_2_short",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_2_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_2_long",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_2_long",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_2_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_1_DFL-MAT-J03WOY_2_replay",
+          "control": "completed_two_fine_seeds_control_batch_1_DFL-MAT-J03WOY_2_replay",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_1_DFL-MAT-J03WOY_2_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_1_clean",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_1_clean",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_1_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_1_short",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_1_short",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_1_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_1_long",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_1_long",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_1_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_1_replay",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_1_replay",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_1_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_2_clean",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_2_clean",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_2_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_2_short",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_2_short",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_2_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_2_long",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_2_long",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_2_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOH_2_replay",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOH_2_replay",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOH_2_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_1_clean",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_1_clean",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_1_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_1_short",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_1_short",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_1_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_1_long",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_1_long",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_1_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_1_replay",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_1_replay",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_1_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_2_clean",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_2_clean",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_2_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_2_short",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_2_short",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_2_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_2_long",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_2_long",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_2_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "completed_two_fine_seeds_baseline_batch_2_DFL-MAT-J03WOY_2_replay",
+          "control": "completed_two_fine_seeds_control_batch_2_DFL-MAT-J03WOY_2_replay",
+          "spell_balanced": "completed_two_fine_seeds_spell_balanced_batch_2_DFL-MAT-J03WOY_2_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      }
+    ],
+    "matched_single_fine_seed": [
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_1_clean",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_1_clean",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_1_clean",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_1_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_1_short",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_1_short",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_1_short",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_1_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_1_long",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_1_long",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_1_long",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_1_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_1_replay",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_1_replay",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_1_replay",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_1_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_2_clean",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_2_clean",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_2_clean",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_2_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_2_short",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_2_short",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_2_short",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_2_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_2_long",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_2_long",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_2_long",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_2_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOH_2_replay",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOH_2_replay",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOH_2_replay",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOH_2_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_1_clean",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_1_clean",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_1_clean",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_1_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_1_short",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_1_short",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_1_short",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_1_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_1_long",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_1_long",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_1_long",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_1_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_1_replay",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_1_replay",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_1_replay",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_1_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_2_clean",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_2_clean",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_2_clean",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_2_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_2_short",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_2_short",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_2_short",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_2_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_2_long",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_2_long",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_2_long",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_2_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_1",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_1_DFL-MAT-J03WOY_2_replay",
+          "control": "matched_single_fine_seed_control_batch_1_DFL-MAT-J03WOY_2_replay",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_1_DFL-MAT-J03WOY_2_replay",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_1_DFL-MAT-J03WOY_2_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_1_clean",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_1_clean",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_1_clean",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_1_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_1_short",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_1_short",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_1_short",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_1_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_1_long",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_1_long",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_1_long",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_1_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_1",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 69424,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_1_replay",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_1_replay",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_1_replay",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_1_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_2_clean",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_2_clean",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_2_clean",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_2_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_2_short",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_2_short",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_2_short",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_2_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_2_long",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_2_long",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_2_long",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_2_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOH_2",
+        "match": "DFL-MAT-J03WOH",
+        "n_frames": 67790,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOH_2_replay",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOH_2_replay",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOH_2_replay",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOH_2_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_1_clean",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_1_clean",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_1_clean",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_1_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_1_short",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_1_short",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_1_short",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_1_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_1_long",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_1_long",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_1_long",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_1_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_1",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 69111,
+        "period": 1,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_1_replay",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_1_replay",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_1_replay",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_1_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_2_clean",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_2_clean",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_2_clean",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_2_clean"
+        },
+        "scenario": "clean",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_2_short",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_2_short",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_2_short",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_2_short"
+        },
+        "scenario": "short",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_2_long",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_2_long",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_2_long",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_2_long"
+        },
+        "scenario": "long",
+        "scope": "inner"
+      },
+      {
+        "batch": "batch_2",
+        "ground_truth_key": "gt_DFL-MAT-J03WOY_2",
+        "match": "DFL-MAT-J03WOY",
+        "n_frames": 73425,
+        "period": 2,
+        "prediction_keys": {
+          "baseline": "matched_single_fine_seed_baseline_batch_2_DFL-MAT-J03WOY_2_replay",
+          "control": "matched_single_fine_seed_control_batch_2_DFL-MAT-J03WOY_2_replay",
+          "masked_teacher": "matched_single_fine_seed_masked_teacher_batch_2_DFL-MAT-J03WOY_2_replay",
+          "spell_balanced": "matched_single_fine_seed_spell_balanced_batch_2_DFL-MAT-J03WOY_2_replay"
+        },
+        "scenario": "replay",
+        "scope": "inner"
+      }
+    ]
+  },
+  "results_sha256": "a1294e4a69a77b5e7c72b6da09e956f00f9d0390b734400136103c4432d5078e",
+  "scenario_order": [
+    "clean",
+    "short",
+    "long",
+    "replay"
+  ],
+  "scenario_weights": {
+    "clean": 0.5,
+    "long": 0.15,
+    "replay": 0.15,
+    "short": 0.2
+  },
+  "schema": "public_dfl_partial_refinement_reference_v1",
+  "source_manifest_sha256": "5c2a41f98a9e13cee193fa38c11ea0dde9d33b5a7284c589a041877a4c2936a9",
+  "source_result_sha256": "1392ae6b37519fff698674d2b25a63eeb43b1a6c371a757ee8c5a8183d238b32",
+  "target_inputs_included": false,
+  "target_labels_used": false,
+  "training_restarted": false,
+  "training_status": "stopped_by_user"
+}

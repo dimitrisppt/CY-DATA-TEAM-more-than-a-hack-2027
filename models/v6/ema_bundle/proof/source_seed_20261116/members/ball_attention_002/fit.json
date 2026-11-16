@@ -1,0 +1,46 @@
+{
+  "payload": {
+    "checkpoint_sha256": "b02bbb7c9697940b5722629ee1dd5a0ad8036a17ed84ca25490a7ce07a146194",
+    "fit_matches": [
+      "DFL-MAT-J03WMX",
+      "DFL-MAT-J03WN1",
+      "DFL-MAT-J03WOH",
+      "DFL-MAT-J03WOY",
+      "DFL-MAT-J03WPY",
+      "DFL-MAT-J03WQQ",
+      "DFL-MAT-J03WR9"
+    ],
+    "identity_sha256": "90ed617395785188c7f5a2fdc830e79272ea4187c9aa6f87bb35f3f38d1ac288",
+    "member_id": "ball_attention_002",
+    "prepared_sha256": {
+      "DFL-MAT-J03WMX_half1.npz": "3d01c1f0563770cc849fc5a01a311e62ece780d265faba8be8d93c74a9bb8836",
+      "DFL-MAT-J03WMX_half2.npz": "710b36797a7a632c9a17faf42334a1a9540a4620367d407ffee090d3f425a7d1",
+      "DFL-MAT-J03WN1_half1.npz": "260dde8707cc06c8724b9ac473650ddf8b9902107436360cf37d88f5df50e567",
+      "DFL-MAT-J03WN1_half2.npz": "209aa1839a8550e39794f2889ecc7ada9f7ff1464742e915448df7292d355906",
+      "DFL-MAT-J03WOH_half1.npz": "eb6b77333c3341d488c8edcb988c64cf6571fe91ef0563c31749ae6d8fce83b2",
+      "DFL-MAT-J03WOH_half2.npz": "f129588988663bcc2b7aaf4000252a584e4e0ef694bd3f6af615ac714582a4a7",
+      "DFL-MAT-J03WOY_half1.npz": "89299ac730ee15c8dfab10e8b3224e34bcc800b636ff7ce7470a9b0b455b59bb",
+      "DFL-MAT-J03WOY_half2.npz": "fc18f5be5253a2edf87b88929d535d21b3b9bf68f92929fd0575830fd89bcf0a",
+      "DFL-MAT-J03WPY_half1.npz": "0ca77a7fd068e914c10b02d592df7836b0ffca30f95d1e8a24ed3ee1937fe417",
+      "DFL-MAT-J03WPY_half2.npz": "7d7240787ca369bd59a3cc55bda8fa32b51d2346f3d8418187858be6e454af56",
+      "DFL-MAT-J03WQQ_half1.npz": "125b12f7a235559f0dbba04a39827171a96e83ae9eacaad9adc2b915b6285068",
+      "DFL-MAT-J03WQQ_half2.npz": "a8e6470d04a0fe49c2ccaa7f4e50fed82c20e32662e24727b2ff54397066c984",
+      "DFL-MAT-J03WR9_half1.npz": "12fc7ef737e84d8308c48ee870e8d8692739b7f449c2c8d5e7468585df4ea9bb",
+      "DFL-MAT-J03WR9_half2.npz": "b7f1ec57d2cdfd8ca3ba0e9568e87e0c850eb47c9a5886aa24fd3118c9ac6874"
+    },
+    "recipe_sha256": "f7de6226762cc8dc269c0a1ad73c631409e030d5eaa92a69fd6254b625f8cd7b",
+    "schema": "campaign_member_fit_v1",
+    "seed": 20261116,
+    "selection_matches": [
+      "DFL-MAT-J03WN1",
+      "DFL-MAT-J03WOH",
+      "DFL-MAT-J03WOY",
+      "DFL-MAT-J03WPY",
+      "DFL-MAT-J03WQQ",
+      "DFL-MAT-J03WR9"
+    ],
+    "steps": 7200,
+    "training_config_sha256": "b541c261d1f0e7e03a4614f91147ccf3830b51209687cff94a63bf41cf04ab69"
+  },
+  "sha256": "eeb61b39ff8a086e918f3d5a2c8e614f4fe99167d4e25a4b4d17d31b51db41e6"
+}

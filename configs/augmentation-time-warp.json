@@ -1,0 +1,9 @@
+{
+  "mode": "temporal",
+  "operations": ["time_warp"],
+  "clean_probability": 0.5,
+  "max_transforms": 1,
+  "strength": 0.5,
+  "warmup_steps": 400,
+  "time_warp_max_rate": 0.1
+}

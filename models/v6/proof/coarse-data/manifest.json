@@ -1,0 +1,180 @@
+{
+  "matches": {
+    "DFL-MAT-J03WMX": {
+      "halves": [
+        {
+          "cache": "DFL-MAT-J03WMX_half1.npz",
+          "cache_sha256": "c0eb0bea53a7f62ee0814ad1316963c413ed5dbdb7af0e2f730dd8af1cab8d4f",
+          "period": 1
+        },
+        {
+          "cache": "DFL-MAT-J03WMX_half2.npz",
+          "cache_sha256": "bfb5f40c86f292f6dede21d4ca195580f7661d93bf1eb28efc1070df1d17ced7",
+          "period": 2
+        }
+      ],
+      "match_id": "DFL-MAT-J03WMX",
+      "sources": {
+        "match_info": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+          "sha256": "a884728647a564cf8b20e5223a1d04a5da6f6725e1e506c8651505327c197ba9"
+        },
+        "positions": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+          "sha256": "d3dd92e509421a6466acb0a083c009035f1751bc5fd9ef42ffa8f20d01cf7d49"
+        }
+      }
+    },
+    "DFL-MAT-J03WN1": {
+      "halves": [
+        {
+          "cache": "DFL-MAT-J03WN1_half1.npz",
+          "cache_sha256": "51c4ac5489a6d4852bd973a0b444b602d5bb48e05e78efa333cd0a5545d7932d",
+          "period": 1
+        },
+        {
+          "cache": "DFL-MAT-J03WN1_half2.npz",
+          "cache_sha256": "2dd24cbe871bd2a9a12167d6e3385984a3e008ae39e4891664f92293184ceab3",
+          "period": 2
+        }
+      ],
+      "match_id": "DFL-MAT-J03WN1",
+      "sources": {
+        "match_info": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+          "sha256": "5490286436c86e6f80a538d2b1b379d0efd016e0defcaf594bc59d9ef5079f4c"
+        },
+        "positions": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+          "sha256": "56ef948961a18e150dba0b7b16869d0008ff66f3050a0c355d31fa5b8ec2fcec"
+        }
+      }
+    },
+    "DFL-MAT-J03WOH": {
+      "halves": [
+        {
+          "cache": "DFL-MAT-J03WOH_half1.npz",
+          "cache_sha256": "df15c4f87ef823ae95e5cf13849deef4f92988c70b315fa10fe3b27dabe42140",
+          "period": 1
+        },
+        {
+          "cache": "DFL-MAT-J03WOH_half2.npz",
+          "cache_sha256": "5a616056c648a6d68fe7d8185a42a1951c95e49b982a1923d73f7117705dbd2e",
+          "period": 2
+        }
+      ],
+      "match_id": "DFL-MAT-J03WOH",
+      "sources": {
+        "match_info": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+          "sha256": "f23b3ee13b988b1ff9a0bce438c416dac47e71355bbc7ee1dab21aaf3e33c18c"
+        },
+        "positions": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+          "sha256": "ec4dcf30200aad694dea263d5289485fcd0ca42badddaeb7c81f5cd5a4229d4f"
+        }
+      }
+    },
+    "DFL-MAT-J03WOY": {
+      "halves": [
+        {
+          "cache": "DFL-MAT-J03WOY_half1.npz",
+          "cache_sha256": "d3f93d2f8e16c0aaa239226863562e18d570bc0878466f4e095695c939976141",
+          "period": 1
+        },
+        {
+          "cache": "DFL-MAT-J03WOY_half2.npz",
+          "cache_sha256": "8c4a43a167cdef8a78cb618a9d49df3a0b7b639cb2b36248a2c02d04ce3b4643",
+          "period": 2
+        }
+      ],
+      "match_id": "DFL-MAT-J03WOY",
+      "sources": {
+        "match_info": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+          "sha256": "4c497fac683eee8292901c18ca02c0be1d9609d0b9d4bd8aa092c61f9e0b19e9"
+        },
+        "positions": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+          "sha256": "a228ef0e676d009cefff1580fcb721b53f598454eb120ec347e0a628a3a4646b"
+        }
+      }
+    },
+    "DFL-MAT-J03WPY": {
+      "halves": [
+        {
+          "cache": "DFL-MAT-J03WPY_half1.npz",
+          "cache_sha256": "f6e4eac1361849a5b81055a45ceb4e3b03bfd1e73d375679d72e3d23eac5b6e0",
+          "period": 1
+        },
+        {
+          "cache": "DFL-MAT-J03WPY_half2.npz",
+          "cache_sha256": "550a82180de82ae4c7783badbb7a66f36df30ad7be34b8145101e573a92d33fb",
+          "period": 2
+        }
+      ],
+      "match_id": "DFL-MAT-J03WPY",
+      "sources": {
+        "match_info": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+          "sha256": "566dd5e4c86e124ab90fcdba51100881f0436e22afa71832945a451a2d95a420"
+        },
+        "positions": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+          "sha256": "845202c29ad93d696653436da426a7cdaefb848298e07b7343de6529581671e1"
+        }
+      }
+    },
+    "DFL-MAT-J03WQQ": {
+      "halves": [
+        {
+          "cache": "DFL-MAT-J03WQQ_half1.npz",
+          "cache_sha256": "c80d30682ba8c22731620fec7273c3c6678d2095a6f71c5db9cf77ded9944eed",
+          "period": 1
+        },
+        {
+          "cache": "DFL-MAT-J03WQQ_half2.npz",
+          "cache_sha256": "3265c2010c207a88dc87ed3f61856fbacdffb82adf00bd55f0c867f7db8cecf2",
+          "period": 2
+        }
+      ],
+      "match_id": "DFL-MAT-J03WQQ",
+      "sources": {
+        "match_info": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+          "sha256": "e976aa0c5dba862cfa898ea57ec226efce9d1bc04b23b8d775908db86aa6fa41"
+        },
+        "positions": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+          "sha256": "cbefcb0bd7f39f3b94ee69a7bc97aac0f936425062c1cc1b144733df36804d6f"
+        }
+      }
+    },
+    "DFL-MAT-J03WR9": {
+      "halves": [
+        {
+          "cache": "DFL-MAT-J03WR9_half1.npz",
+          "cache_sha256": "d60a58c1ca11d26efa711a5eafa806aaf04336db50ecefe2ddcff16239097e18",
+          "period": 1
+        },
+        {
+          "cache": "DFL-MAT-J03WR9_half2.npz",
+          "cache_sha256": "bf045204787473e647b60ce81eee67b090c2bcacb634765503eed199bed32eef",
+          "period": 2
+        }
+      ],
+      "match_id": "DFL-MAT-J03WR9",
+      "sources": {
+        "match_info": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+          "sha256": "429b584e89df3e3e8b81f4bd0d004b38bd0b4298bb390b8fb43efccb60963e01"
+        },
+        "positions": {
+          "path": "/Users/dimitrisppt/Developer/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+          "sha256": "70b63069189019066fb7e3d9db891122edfe787f3a43ba522ebe45ed89ea0269"
+        }
+      }
+    }
+  },
+  "version": 1
+}

@@ -1,194 +1,240 @@
-# More than a Hack 2027 — Phase 1: Ball Possession
+# CY-DATA-TEAM: football possession inference
 
-**Organised by [Metrica Sports](https://metrica-sports.com), [FC Barcelona](https://www.fcbarcelona.com)
-and the [Mobile World Capital Barcelona](https://www.mwcbarcelona.com)**, at the Talent Arena in Barcelona.
+An offline system for the [More Than a Hack 2027 challenge](https://github.com/metrica-sports/more-than-a-hack-2027).
+It predicts home possession (`H`), away possession (`A`), dead play (`D`) or an
+excluded frame (`X`) from automatic football tracking. The final v6 model uses
+four temporal networks at 25 Hz and two player-only networks with roughly four
+minutes of context to handle missing-ball observations.
 
-A football data challenge on real professional match data, open to analysts, data scientists and
-engineers. You are given one complete LaLiga match — two camera feeds, automatic tracking of every
-player and the ball, automatic tactical tagging, and the camera-to-pitch geometry — and one
-question to answer with it.
+The repository includes the trained models, pinned dependencies, a verified
+submission, and a public validation reference. Participant match assets are
+not included.
 
----
+## Quick start
 
-## The task
+Use Python **3.12.11** and [uv](https://docs.astral.sh/uv/).
 
-**For every frame of the match, say who has the ball.**
+```sh
+git clone https://github.com/dimitrisppt/CY-DATA-TEAM-more-than-a-hack-2027.git
+cd CY-DATA-TEAM-more-than-a-hack-2027
 
-```
-frame,label
-11185,A        away in possession, ball alive
-11186,A
-...
-18240,D        dead ball
-...
-18684,H        home in possession, ball alive
-```
+uv sync --frozen --python 3.12.11 --extra learn --extra tune --extra dev
 
-That is the whole task. One CSV, one row per video frame, 199,319 rows. It is scored automatically
-against a private frame-by-frame ground truth, so there is a number at the end and no argument
-about it — no jury, and no presentation to argue from.
+# Check the model bundle and pinned environment, without participant data.
+uv run --no-sync python -m scripts.reproduce --verify-only
 
-The tracking is automatic and uncorrected: it has gaps and identity
-switches, and the ball itself is invisible on 41% of the frames you are scored on.
-
----
-
-## The challenge in one screen
-
-| |                                                                                                                           |
-|---|---------------------------------------------------------------------------------------------------------------------------|
-| **Input** | one full match: tactical video, broadcast video, automatic tracking **with the ball** for both, Smart Tagging, homography |
-| **Output** | `frame,label` CSV, 199,319 rows, labels `H` / `A` / `D` / `X`                                                             |
-| **Ranked on** | `spellF1` — how many of the match's real possessions you recovered as whole possessions                                   |
-| **Also reported** | `macroF1` — the per-frame view, and the first tie-break                                                                   |
-| **Baseline to beat** | `spellF1` **0.2433**, in this repository                                                                                  |
-| **Ground truth you get** | the first **5 minutes** of play — to check your pipeline, not to train on                                              |
-| **Ground truth you are scored on** | the full match, **private**                                                                                               |
-
-It is deliberately **not** a tracking challenge. The tracking, tagging and homography are given to
-you so that nobody has to rebuild detection, re-identification and camera calibration before
-getting to the actual question. See [CHALLENGE.md](CHALLENGE.md).
-
----
-
-## Try it right now
-
-The scorer, a 5-minute ground truth and four working baselines are in this repository. No
-enrolment, no download, no data:
-
-```bash
-pip install -r requirements.txt
-python evaluation/run_evaluation.py
+# Regenerate the challenge submission from your authorized data bundle.
+uv run --no-sync python -m scripts.reproduce \
+  --data-dir /path/to/participant-data \
+  --output outputs/CY-DATA-TEAM.csv
 ```
 
-Scored on the public 5 minutes, not on the full match -- which is why the order below is not the
-order of the floor quoted above:
+The input directory must contain the tactical tracking pair:
 
-```
-scoreboard  gt/BAR-ATH_possession_gt_public.csv  199319 frames  7500 graded  21 gt segments
-ground truth has 17 possessions of mean 14.2 s  <- compare the poss and dur columns
+- `BAR-ATH_tactical_atd.txt`
+- `BAR-ATH_tactical_atd.xml`
 
-rank  submission                macroF1  spellF1   poss     dur  
-----  ------------------------  -------  -------  -----  ------  
-   1  baseline_smooth125         0.5812   0.4242     16    18.5  
-   2  baseline_smooth50          0.6207   0.3256     26    10.8  
-   3  baseline_smooth25          0.6200   0.2868     36     7.6  
-   4  baseline_raw               0.5972   0.0378    131     2.0  
-```
+The command accepts the standard challenge layout or finds those filenames
+uniquely beneath the directory. For another layout, pass both `--raw` and
+`--metadata` explicitly. It processes the files locally, verifies the model
+and input hashes, validates the CSV, and checks that it matches the delivered
+v6 file exactly. It sets the recorded four-thread CPU configuration itself.
+See [reproduction details](docs/REPRODUCIBILITY.md) for options and recovery.
 
-Those four are **the same algorithm four times** — nearest tracked player to the ball, then a
-majority vote over a window. Only the window changes. `macroF1` barely moves; `spellF1` moves by a
-factor of eleven. That disagreement is the whole point of the metric, and
-[EVALUATION.md](EVALUATION.md) explains it.
+The expected CSV has **199,319 rows**, indexed from 0 to 199318. All 20,156
+halftime frames are excluded, along with the published pre-match and post-match
+regions. SHA256:
 
-Once you have the data, regenerate them yourself and go further:
-
-```bash
-python starter/baseline.py                              # rebuild the four baselines
-python evaluation/validate_submission.py <your>.csv     # before every submission
+```text
+4c22b0171509ae1f93c57b72e9394a10623e19bcc1834290c2a9ec640edfea1b
 ```
 
-**Validate every file before you submit it.** `validate_submission.py` runs exactly the checks the
-official scorer runs, and a file that fails them is dropped from the board with a one-line reason.
-It takes two seconds and it is the single most common way a good entry scores nothing.
+The ready-to-use file is [submission/CY-DATA-TEAM.csv](submission/CY-DATA-TEAM.csv).
+The team technical document is [docs/CY-DATA-TEAM.md](docs/CY-DATA-TEAM.md).
 
----
+## Recalculate the reported results
 
-## Getting the data
+```sh
+uv run --no-sync python -m scripts.evaluate_reference
+```
 
-The match assets are released to enrolled participants who have accepted the terms of use.
+This recomputes the official possession metrics from saved out-of-fold
+predictions and public DFL labels in `benchmarks/v6/`. It requires no participant
+assets or training run. It verifies the reference hashes and checks the scores
+against the recorded experiment results. This is score reproduction from fixed
+predictions, not a fresh model fit or an independent test.
 
-1. Enrol: **[More than A Hack 2027](https://landing.mobileworldcapital.com/more-than-a-hack-2027)**
-2. Read and sign the terms and conditions in the registration form
-3. You receive a download link.
-4. Unpack it into `./data`, or point `MTAH_DATA_DIR` at wherever you put it.
+## Results
 
-Full description of every asset and how the frames line up: **[DATA.md](DATA.md)**.
+These are matched development comparisons, averaged across two frozen outage
+batches. Higher is better. The main objective weights clean spell F1 by 0.50,
+short gaps by 0.20, long gaps by 0.15 and visibility-pattern replay by 0.15.
+The missing-ball aggregate renormalizes the last three weights to sum to one.
 
----
+| Metric | v4 ensemble | v5 tail EMA | v6 long context |
+|---|---:|---:|---:|
+| Weighted objective | 0.580751 | 0.590127 | **0.594200** |
+| Missing-ball aggregate | 0.512152 | 0.525637 | **0.533782** |
+| Clean spell F1 | 0.649351 | 0.654618 | 0.654618 |
+| Short-gap spell F1 | 0.516673 | 0.535201 | 0.537096 |
+| Long-gap spell F1 | 0.512552 | 0.516044 | 0.527686 |
+| Replay spell F1 | 0.505725 | 0.522477 | 0.535459 |
 
-## Read these, in this order
+Both final changes passed their fixed validation gates. Adding coarse context
+improved the missing-ball aggregate on all six inner validation matches in
+both batches. Its clean-scenario arrays were unchanged. Separate WMX guards
+also passed.
 
-| | |
+**These are not challenge scores.** All seven public matches have been used
+during development. New masks and training seeds do not make them independent
+test matches. The public challenge labels were not used for training or tuning.
+
+A subsequent [temporal calibration experiment](docs/TIME_CALIBRATION.md) compared
+global shifts, transition-family shifts and a contextual boundary model with
+explicit upstream training exclusions. The contextual model increased the
+development objective from 0.594200 to 0.594475, below its predeclared advancement
+threshold. It remains experimental and is not part of the delivered v6 model.
+
+## How the system works
+
+```mermaid
+flowchart TB
+    accTitle: From automatic tracking to possession labels
+    accDescr: Each half is processed independently. Four fine models and two coarse models feed a missing-ball blend, followed by the reference and sequence decoder.
+    A["Automatic tracking<br/>one half at a time"] --> B["Four fine models at 25 Hz<br/>two architectures, two seeds each"]
+    A --> C["Two player-only models at 1 Hz<br/>255-sample context"]
+    B --> D["Average fine predictions"]
+    C --> E["Interpolate and average<br/>coarse predictions at 25 Hz"]
+    D --> F["Add coarse context<br/>during ball gaps"]
+    E --> F
+    F --> G["Geometric reference<br/>and sequence decoder"]
+    G --> H["H / A / D possession labels<br/>X outside scoring intervals"]
+```
+
+The technical report illustrates the [fine model](docs/CY-DATA-TEAM.md#fine-model-structure),
+[missing-ball blend](docs/CY-DATA-TEAM.md#missing-ball-fusion), and
+[validation splits](docs/CY-DATA-TEAM.md#validation-and-results). The
+[reproduction guide](docs/REPRODUCIBILITY.md#choose-a-reproduction-path) shows
+which inputs and commands are needed for each kind of reproduction.
+
+1. **Mask-aware features.** Player and ball geometry, motion and missingness
+   remain separate. Missing ball does not imply dead play. Each half has its
+   own feature and decoding timeline.
+2. **Fine temporal models.** Mean pooling and ball-conditioned attention encode
+   team sets without depending on player order. Width-32 temporal convolutions
+   provide a 511-frame receptive field, about 20.44 seconds. The models predict
+   live/dead state, live-play ownership and typed transition boundaries.
+3. **Seed ensemble and tail EMA.** Two training seeds per architecture reduce
+   prediction variability. Fine weights use EMA with decay 0.99 over updates
+   7,001 through 7,200, initialized at update 7,000. Raw replay parity verifies
+   the original training trajectory. This is a tail average, not full-run EMA.
+4. **Long context.** Two ball-free models use exact one-second player samples
+   and a 255-sample receptive field. Their interpolated live/owner predictions
+   contribute up to 25%, increasing with distance from a ball observation.
+   Their contribution is zero when the ball is visible. Fine boundary scores
+   retain native-rate timing.
+5. **Sequence decoding.** A geometric reference, calibrated neural emissions
+   and typed transition costs produce coherent possession spells. The decoder
+   uses future context within a half. It does not bridge halftime.
+
+The default ensemble uses six networks. Additional checkpoints inside the
+model bundle authenticate training and validation provenance and are not
+additional inference members. Model parameters, seeds, decoder settings and
+source hashes are recorded in `models/v6/manifest.json` and its contained proofs.
+
+## Experiments and lessons
+
+The [experiment history](docs/EXPERIMENTS.md) records the methods, measured
+outcomes and limits in detail. The main findings were:
+
+| Experiment | Finding |
 |---|---|
-| **[CHALLENGE.md](CHALLENGE.md)** | the problem, the four labels, what counts as possession |
-| **[DATA.md](DATA.md)** | every provided asset, its format, and the frame alignment |
-| **[EVALUATION.md](EVALUATION.md)** | how you are scored, and why — read before optimising anything |
-| **[SUBMISSION.md](SUBMISSION.md)** | the file contract, the three deliverables, how to submit |
-| **[RULES.md](RULES.md)** | what you may and may not do |
-| **[FAQ.md](FAQ.md)** | |
-| **[OVERVIEW.md](OVERVIEW.md)** | the competition as a whole — context, why the 2027 format changed, the calendar |
+| Whole-match cross-validation | Keeping both halves and all windows of a match together avoids the leakage of random frame splits. Repeated use of the same matches still limits generalization claims. |
+| Optuna search | Conditional grouped multivariate TPE and staged 1,200/3,600/7,200-update budgets selected complementary mean and attention models. The overnight campaign screened 36 configurations and recorded 976 decoder evaluations. |
+| Spatial and temporal augmentation | More augmentation was not uniformly better. Noise and time shift had promising initial results that failed later checks. The final fine models use their specifically selected coordinate-noise and player-dropout recipes. |
+| More training | Performance improved through the tested budgets. This established the best tested checkpoint, not convergence. |
+| Decoder refinement | The 64-trial decoder-only candidate failed its confirmation gate. A later combined recipe with seed averaging and the frozen refined decoder passed separately. |
+| Seed averaging and EMA | The validated predictor improved, but seed-dependent calibration differences remain. A better average does not mean every seed improves. |
+| Player-only long context | The clearest incremental gains were on long and replayed outages. Coarse context adds capacity as well as temporal range, so their effects are not isolated. |
+| Interaction pooling and visibility blending | The tested interaction models regressed. Visibility-dependent blending selected the static solution. Neither became part of v6. |
 
+The final EMA and coarse comparisons used fixed candidates, frozen folds,
+paired seeds and unchanged decoders. They were not further hyperparameter
+searches. The [short-possession study](docs/SHORT_POSSESSION_REFINEMENT.md) adds
+separate possession-balanced and masked-student training experiments with a
+matched continuation control. They are experimental and are not part of v6.
+Training was stopped after 11 of 36 planned fits. The
+[partial findings](docs/PARTIAL_REFINEMENT_RESULTS.md) cover only two public
+matches. Possession balancing improved their average, with more false events
+and uneven match-level gains. Teacher supervision did not improve over its
+matched continuation control. Their saved scores can be reproduced with
+`python -m scripts.evaluate_partial_reference`, without training or T7 access.
+Segment-level decoding and additional compatible labeled matches remain research
+directions.
 
----
+## Data and possession semantics
 
-## What is in this repository
+Supervised training uses the public **Sportec Solutions/DFL dataset** released
+by Bassek et al.: seven Bundesliga matches, fourteen halves and 1,002,644 frames.
+The supplied `BallStatus` and `BallPossession` fields provide targets. Inactive
+play maps to `D`, known live ownership maps to `H` or `A`, and unknown supervision
+is masked. Provider labels may differ from challenge conventions for loose
+balls, brief challenges and restart timing. No target-match labels or manual
+frame corrections are used.
 
+Training includes synthetic ball gaps. Robustness comparisons also replay
+automatically measured target visibility patterns onto public labeled matches.
+The comparison labels are still from DFL. This uses the target's unlabeled
+input distribution, not its possession truth.
+
+Inference uses only the tactical automatic tracking and its metadata. Video,
+broadcast tracking, Smart Tagging and homography are not v6 inputs. The earlier
+SkillCorner checks were conditional home/away transfer diagnostics and did not
+train v6. See [data policy](docs/DATA_POLICY.md) and
+[third-party notices](THIRD_PARTY_NOTICES.md) for sources, attribution and usage
+restrictions.
+
+## Repository map
+
+| Path | Purpose |
+|---|---|
+| `possession/` | Tracking parsers, features, model layers, augmentation and decoding |
+| `experiments/` | Training, Optuna, whole-match evaluation and recorded experiment protocols |
+| `scripts/reproduce.py` | Verified v6 inference entry point |
+| `scripts/evaluate_reference.py` | Recompute development metrics from saved public predictions |
+| `scripts/package_release.py` | Build a verified source/model release without participant data |
+| `models/v6/` | Portable trained model bundle and provenance |
+| `benchmarks/v6/` | Compact public validation reference and expected scores |
+| `submission/` | Delivered CSV and its checksum manifest |
+| `docs/` | Technical report, experiment history, reproduction and data policy |
+| `tests/` | Parser, model, training, provenance and delivery checks |
+| `configs/` | Earlier experiment configuration examples |
+
+Generated outputs, local experiment caches and participant files are ignored
+by Git. The original challenge specification, rules and scorer remain available
+in [CHALLENGE.md](CHALLENGE.md), [RULES.md](RULES.md),
+[SUBMISSION.md](SUBMISSION.md) and `evaluation/`.
+
+## Development
+
+```sh
+uv run --no-sync pytest -q
+uv run --no-sync ruff check scripts/reproduce.py scripts/evaluate_reference.py scripts/package_release.py
+uv run --no-sync python evaluation/validate_submission.py submission/CY-DATA-TEAM.csv
+uv run --no-sync python -m scripts.package_release --output dist/CY-DATA-TEAM-v6.zip
 ```
-games.py                    per-match constants, asset paths and the frame alignment
-evaluation/
-  possession_metrics.py     the metric library — every number on the board is defined here
-  run_evaluation.py         the scorer. This exact file produces the official result
-  validate_submission.py    check a file before you send it
-  gt/                       the public 5-minute ground truth
-  results/                  the four baselines; put your submissions here
-starter/
-  baseline.py               the reference baseline, numpy only
-  load_atd.py               read the tracking and line it up with video frames
-  load_smart_tagging.py     read the tactical tagging as video-frame intervals
-  load_homography.py        read the homography; project pitch <-> pixels
-  utils.py                  pitch plotting for the notebooks
-  01_smart_tagging.ipynb    guided tour of the tactical tagging
-  02_tracking_atd.ipynb     guided tour of the tracking data, with plots
-  03_first_submission.ipynb data in, scored submission out — start here
-data/                       unpack the downloaded match assets here. Empty in a fresh clone
-```
 
-The scorer you run locally is the scorer that decides the competition. If it scores on your
-machine, it scores the same way on ours.
+Full retraining and historical hyperparameter campaigns are separate from the
+quick reproduction commands. They require public training data, more compute
+and the experiment provenance chain. The Mac-specific `launch_*` scripts are
+historical job coordinators, not the portable inference entry point.
 
----
+The exact reference output was verified on macOS ARM64 CPU with the pinned
+Python environment. Other hardware can change floating-point results, so the
+runner checks the output hash rather than assuming cross-platform equivalence.
 
-## Requirements
+## License
 
-**Python 3.8 or newer.** The evaluation needs `numpy` and `pandas` and nothing else; it is tested
-under 3.8 and 3.11 and produces identical output under both. `starter/baseline.py` needs nothing
-more either — you can reach a scored submission without installing anything else.
-
-The notebooks additionally want `kloppy` and `matplotlib` (`requirements-starter.txt`), and
-**Python 3.9+ is recommended for those**: on Windows, installing Jupyter under 3.8 hits a
-`pywinpty` build failure that has nothing to do with this repository.
-
----
-
-## Timeline
-
-| |                |
-|---|----------------|
-| registration opens | **October 1, 2026** |
-| data released | **October 20, 2026** |
-| submission deadline | **November 17, 2026** |
-| results announced | **Before November 26, 2026**      |
-
----
-
-## Questions
-
-Open an issue for anything about the data, the metrics or the documentation — corrections are
-genuinely useful, and a fix that helps you helps everyone equally. For enrolment and the terms of
-use: **hackathon.talentarena@mobileworldcapital.com**.
-
-## Licence and citation
-
-The code and documentation in this repository are released under the MIT Licence — see
-[LICENSE](LICENSE). **The match data is not covered by it**: it is separately licensed for this
-competition only, under the terms you accept at enrolment.
-
-```bibtex
-@misc{mtah2027,
-  title  = {More than a Hack 2027: Phase 1 - Ball Possession},
-  author = {Metrica Sports and FC Barcelona Innovation Hub},
-  year   = {2027},
-  url    = {https://github.com/metrica-sports/more-than-a-hack-2027}
-}
-```
+See [LICENSE](LICENSE) for the source-code license and
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for data and software attribution.
+The competition match assets have separate terms and must not be redistributed.

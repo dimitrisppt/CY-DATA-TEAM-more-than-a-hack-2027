@@ -1,0 +1,7 @@
+{
+  "mode": "combined",
+  "clean_probability": 0.5,
+  "max_transforms": 2,
+  "strength": 0.5,
+  "warmup_steps": 400
+}

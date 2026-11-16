@@ -1,0 +1,14 @@
+{
+  "protocol": "seven-match outer leave-one-match-out; next match in fixed order is inner validation",
+  "seed": 0,
+  "matches": ["DFL-MAT-J03WMX", "DFL-MAT-J03WN1", "DFL-MAT-J03WOH", "DFL-MAT-J03WOY", "DFL-MAT-J03WPY", "DFL-MAT-J03WQQ", "DFL-MAT-J03WR9"],
+  "outer_folds": [
+    {"test_match": "DFL-MAT-J03WMX", "validation_match": "DFL-MAT-J03WN1", "train_matches": ["DFL-MAT-J03WOH", "DFL-MAT-J03WOY", "DFL-MAT-J03WPY", "DFL-MAT-J03WQQ", "DFL-MAT-J03WR9"]},
+    {"test_match": "DFL-MAT-J03WN1", "validation_match": "DFL-MAT-J03WOH", "train_matches": ["DFL-MAT-J03WMX", "DFL-MAT-J03WOY", "DFL-MAT-J03WPY", "DFL-MAT-J03WQQ", "DFL-MAT-J03WR9"]},
+    {"test_match": "DFL-MAT-J03WOH", "validation_match": "DFL-MAT-J03WOY", "train_matches": ["DFL-MAT-J03WMX", "DFL-MAT-J03WN1", "DFL-MAT-J03WPY", "DFL-MAT-J03WQQ", "DFL-MAT-J03WR9"]},
+    {"test_match": "DFL-MAT-J03WOY", "validation_match": "DFL-MAT-J03WPY", "train_matches": ["DFL-MAT-J03WMX", "DFL-MAT-J03WN1", "DFL-MAT-J03WOH", "DFL-MAT-J03WQQ", "DFL-MAT-J03WR9"]},
+    {"test_match": "DFL-MAT-J03WPY", "validation_match": "DFL-MAT-J03WQQ", "train_matches": ["DFL-MAT-J03WMX", "DFL-MAT-J03WN1", "DFL-MAT-J03WOH", "DFL-MAT-J03WOY", "DFL-MAT-J03WR9"]},
+    {"test_match": "DFL-MAT-J03WQQ", "validation_match": "DFL-MAT-J03WR9", "train_matches": ["DFL-MAT-J03WMX", "DFL-MAT-J03WN1", "DFL-MAT-J03WOH", "DFL-MAT-J03WOY", "DFL-MAT-J03WPY"]},
+    {"test_match": "DFL-MAT-J03WR9", "validation_match": "DFL-MAT-J03WMX", "train_matches": ["DFL-MAT-J03WN1", "DFL-MAT-J03WOH", "DFL-MAT-J03WOY", "DFL-MAT-J03WPY", "DFL-MAT-J03WQQ"]}
+  ]
+}
