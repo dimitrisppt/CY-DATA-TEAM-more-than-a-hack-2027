@@ -1,5 +1,10 @@
 # Comprehensive GPU IoU study
 
+**Current release:** the confirmed combined refinement is included in v7, together
+with the subsequent GPU tuning winner. See [GPU tuning](GPU_TUNING.md) and
+[reproduction](REPRODUCIBILITY.md). References below to unchanged v6 describe
+the historical experiment stages.
+
 This is a fresh reconstruction of the possession-refinement experiment. The
 historical T7 training states are unavailable, so its 11 completed CPU fits are
 not mixed into the new comparison. Every parent, teacher, and coarse model is

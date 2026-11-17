@@ -1,0 +1,210 @@
+{
+  "payload": {
+    "expected": {
+      "confirmation": {
+        "candidate": {
+          "by_match": {
+            "DFL-MAT-J03WN1": {
+              "clean": 0.6514407684098187,
+              "long": 0.5439972348106613,
+              "replay": 0.5251184834123224,
+              "short": 0.5241578816884405
+            },
+            "DFL-MAT-J03WOH": {
+              "clean": 0.7067039106145252,
+              "long": 0.5883617311671729,
+              "replay": 0.5461654135338346,
+              "short": 0.5781265146196182
+            },
+            "DFL-MAT-J03WOY": {
+              "clean": 0.6693975903614457,
+              "long": 0.5341958041958041,
+              "replay": 0.5402597402597403,
+              "short": 0.573734088649984
+            },
+            "DFL-MAT-J03WPY": {
+              "clean": 0.6794936708860759,
+              "long": 0.5677509072756375,
+              "replay": 0.5870056497175141,
+              "short": 0.5553294532803562
+            },
+            "DFL-MAT-J03WQQ": {
+              "clean": 0.6919896640826874,
+              "long": 0.6238169280556631,
+              "replay": 0.6211699164345403,
+              "short": 0.568873132438592
+            },
+            "DFL-MAT-J03WR9": {
+              "clean": 0.7290140845070423,
+              "long": 0.5942526928217626,
+              "replay": 0.6299694189602446,
+              "short": 0.5841828248321357
+            }
+          },
+          "means": {
+            "clean": 0.6880066148102659,
+            "long": 0.5753958830544502,
+            "replay": 0.5749481037196994,
+            "short": 0.5640673159181878
+          },
+          "objective": 0.629368368604893
+        },
+        "incumbent": {
+          "by_match": {
+            "DFL-MAT-J03WN1": {
+              "clean": 0.6368888888888888,
+              "long": 0.4809153148135255,
+              "replay": 0.47466007416563655,
+              "short": 0.4852642013494225
+            },
+            "DFL-MAT-J03WOH": {
+              "clean": 0.6866760168302946,
+              "long": 0.5652594437525944,
+              "replay": 0.5431643625192013,
+              "short": 0.5485348678049131
+            },
+            "DFL-MAT-J03WOY": {
+              "clean": 0.636764705882353,
+              "long": 0.5073737315102613,
+              "replay": 0.5035230352303522,
+              "short": 0.5399788534231444
+            },
+            "DFL-MAT-J03WPY": {
+              "clean": 0.6727272727272727,
+              "long": 0.5167431753934433,
+              "replay": 0.5627705627705627,
+              "short": 0.5408540647600757
+            },
+            "DFL-MAT-J03WQQ": {
+              "clean": 0.6956072351421189,
+              "long": 0.5972006420545746,
+              "replay": 0.57991513437058,
+              "short": 0.5414740350815419
+            },
+            "DFL-MAT-J03WR9": {
+              "clean": 0.7092724679029957,
+              "long": 0.5488301326459655,
+              "replay": 0.5783281733746131,
+              "short": 0.5524116462361404
+            }
+          },
+          "means": {
+            "clean": 0.6729894312289874,
+            "long": 0.5360537400283941,
+            "replay": 0.5403935570718242,
+            "short": 0.5347529447758731
+          },
+          "objective": 0.6049123991347011
+        }
+      },
+      "guard": {
+        "candidate": {
+          "by_match": {
+            "DFL-MAT-J03WMX": {
+              "clean": 0.6200455580865603,
+              "long": 0.5452869823094508,
+              "replay": 0.4991239048811013,
+              "short": 0.5119703491152559
+            }
+          },
+          "means": {
+            "clean": 0.6200455580865603,
+            "long": 0.5452869823094508,
+            "replay": 0.4991239048811013,
+            "short": 0.5119703491152559
+          },
+          "objective": 0.5690784819449142
+        },
+        "incumbent": {
+          "by_match": {
+            "DFL-MAT-J03WMX": {
+              "clean": 0.6157407407407407,
+              "long": 0.5183442391049451,
+              "replay": 0.4833976833976834,
+              "short": 0.49895543622929
+            }
+          },
+          "means": {
+            "clean": 0.6157407407407407,
+            "long": 0.5183442391049451,
+            "replay": 0.4833976833976834,
+            "short": 0.49895543622929
+          },
+          "objective": 0.5579227459916226
+        }
+      }
+    },
+    "files": {
+      "confirmation/batch_1/ensemble/labels.npz": "07e0e9bfefcc7882b759365347a13a115c7ec5048ec93586474e222e1e790d80",
+      "confirmation/batch_1/ensemble/result.json": "d41a461606ac12f0496994bc087e28034ccd0244e664187586b1c52ff78af16e",
+      "confirmation/batch_1/incumbent/labels.npz": "71d8fe13d52350c456414ce8b05d0fa315c45c9c9acc87c027437d5a6946cdea",
+      "confirmation/batch_1/incumbent/result.json": "49180e61df80eefe414337ae0b379e56023b09ba851d4189f117fc0d04fbb15f",
+      "confirmation/batch_2/ensemble/labels.npz": "6c36c25df5622fe9cd73eaf2e46f5145c414a58d01c3f662c585b7b3608a2539",
+      "confirmation/batch_2/ensemble/result.json": "fdf3e1d2e78d3f96b0c221f6b88ddd01712f8df5e9dc785569b175e45deb3dc4",
+      "confirmation/batch_2/incumbent/labels.npz": "412c4bd7c68faf4c2e2e918e833946e7224f65ab52a41b2ef42dcd54ceaef2d0",
+      "confirmation/batch_2/incumbent/result.json": "2208cf8993214ceaf2f33b7eded003eb08013c4a70064be4199e8910fbe7bb5c",
+      "guard/batch_1/ensemble/labels.npz": "a0405ed2da15c9c3a6a2505e292a9a38929e5e42c415e9c4b640cfe1122543e3",
+      "guard/batch_1/ensemble/result.json": "2fdc38287d392dce06496cd9868e5374f16ea0d4595e9f1db99d90a3c4d11ffc",
+      "guard/batch_1/incumbent/labels.npz": "22c92e129b7456d6ec3f55114521740620fa0ce247e44b009f871772756adac1",
+      "guard/batch_1/incumbent/result.json": "8cd6c9a5b512c0122e9076181220165a75337903614986f7360d1e2ebc587155",
+      "guard/batch_2/ensemble/labels.npz": "57d1386d6f7609834b4f7861885d8eb4be547200b15022db0be8ff297686e2d6",
+      "guard/batch_2/ensemble/result.json": "594105bd6f39ef6773ed5779cbf64c28feac487248e628bb8b963174c9e329e9",
+      "guard/batch_2/incumbent/labels.npz": "f41b9b35a6836d9093356af5e37569a2c2b4689221dc388cb4384093eacfae8f",
+      "guard/batch_2/incumbent/result.json": "e97292b8f49630b8b832b06040dfe7ba149cfb9d0ed5085b7ae8b005a6403a73"
+    },
+    "independent_test": false,
+    "note": "OOF development recipe evidence; final full-data weights have no target score.",
+    "records": [
+      {
+        "batch": "batch_1",
+        "directory": "confirmation/batch_1/incumbent",
+        "scope": "confirmation",
+        "variant": "incumbent"
+      },
+      {
+        "batch": "batch_1",
+        "directory": "confirmation/batch_1/ensemble",
+        "scope": "confirmation",
+        "variant": "ensemble"
+      },
+      {
+        "batch": "batch_2",
+        "directory": "confirmation/batch_2/incumbent",
+        "scope": "confirmation",
+        "variant": "incumbent"
+      },
+      {
+        "batch": "batch_2",
+        "directory": "confirmation/batch_2/ensemble",
+        "scope": "confirmation",
+        "variant": "ensemble"
+      },
+      {
+        "batch": "batch_1",
+        "directory": "guard/batch_1/incumbent",
+        "scope": "guard",
+        "variant": "incumbent"
+      },
+      {
+        "batch": "batch_1",
+        "directory": "guard/batch_1/ensemble",
+        "scope": "guard",
+        "variant": "ensemble"
+      },
+      {
+        "batch": "batch_2",
+        "directory": "guard/batch_2/incumbent",
+        "scope": "guard",
+        "variant": "incumbent"
+      },
+      {
+        "batch": "batch_2",
+        "directory": "guard/batch_2/ensemble",
+        "scope": "guard",
+        "variant": "ensemble"
+      }
+    ],
+    "schema": "v7_public_validation_reference_v1"
+  },
+  "sha256": "fc28f0e726f8214003c74008e3615d1c07b414187b2ee117270a2d0a44d5d28f"
+}

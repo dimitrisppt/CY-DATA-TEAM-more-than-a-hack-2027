@@ -1,0 +1,141 @@
+{
+  "payload": {
+    "array_sha256": {
+      "gt_DFL-MAT-J03WMX_1": "cb4c5372eda784e3f1c83e91e19b666472e825ba5a82c75fbb709a784e8fb56e",
+      "gt_DFL-MAT-J03WMX_2": "4bf86238eaaf6d3b79a07a05a15d26bb0046c080d35ef4fe7cf241e1612de598",
+      "pred_DFL-MAT-J03WMX_1_clean": "892763372a5f6f924aba4a0b6bc40a108459919bb5adb76c83acc6725d59ca53",
+      "pred_DFL-MAT-J03WMX_1_long": "f01489d756952527da71d222d7fd0c1266a24a0309066f26894c515d4ad80414",
+      "pred_DFL-MAT-J03WMX_1_replay": "3b2bd5b17b3088285375618573ed6bddd09995730f4e5a45ac68a56da9ef8462",
+      "pred_DFL-MAT-J03WMX_1_short": "ad02b022294649867eaf076e7d2d856958307b2b9dc171ac6902b7ecc08e76fa",
+      "pred_DFL-MAT-J03WMX_2_clean": "36239f4b8071ce1fec48dcd028bacb0ec1291813e22ad186437a3a8bfc528bff",
+      "pred_DFL-MAT-J03WMX_2_long": "939ebda612dad4f589de4bad67e242539a4f29b36ab837f508a94386bdf3d905",
+      "pred_DFL-MAT-J03WMX_2_replay": "e5432c92a8df28795184508d64333dc90372f0146feb78b03aea596293d3c32a",
+      "pred_DFL-MAT-J03WMX_2_short": "b7a188ba545d834960c21ccf3d63b77d02d0642c4474419e43fe240c0736d944"
+    },
+    "batch": "batch_2",
+    "inputs": [
+      {
+        "input_sha256": "e3a6bc6b18ed30cd5c7bafd147c81c2979897bb77b0589b703462a99cc8c90b1",
+        "match": "DFL-MAT-J03WMX",
+        "period": 1,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "29043a3ba694aa7b2932e755c47d796a2e3ff7858c46c444d7a1bbdc12ac6b62",
+        "match": "DFL-MAT-J03WMX",
+        "period": 1,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "378359bf439d278949e0db95749b7f0655df25e4edcc0687565218bf513434a6",
+        "match": "DFL-MAT-J03WMX",
+        "period": 1,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "bbf5d970fdbbf65d0804f52942dd19d33fd952289518ca3ed9e9629f344bc70f",
+        "match": "DFL-MAT-J03WMX",
+        "period": 1,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "83981f0a325f8fe25b0e4fa1b634e7cabadd4a09120ea27cf26e13c07859ef63",
+        "match": "DFL-MAT-J03WMX",
+        "period": 2,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "f3bfb50a39383271c8b82427ce9f70a58c11a9f686e381dccf8555248a5d67d3",
+        "match": "DFL-MAT-J03WMX",
+        "period": 2,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "cac738c1bd3b7037204532951ade427f5c4f6cf18fc3a00019d33823b6f4efb6",
+        "match": "DFL-MAT-J03WMX",
+        "period": 2,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "884d514a37df33179e8858022d3f110f209bb116abeef74e04ee353d5afa60b1",
+        "match": "DFL-MAT-J03WMX",
+        "period": 2,
+        "scenario": "short"
+      }
+    ],
+    "labels_sha256": "57d1386d6f7609834b4f7861885d8eb4be547200b15022db0be8ff297686e2d6",
+    "matches": [
+      "DFL-MAT-J03WMX"
+    ],
+    "pipeline": {
+      "candidate_weight": 0.20312829527615286,
+      "coarse_seconds": 3.2188621495092677,
+      "coarse_weight": 0.3183571885346476,
+      "decoder": {
+        "blend_mode": "static",
+        "boundary_scale": 1.580428631733627,
+        "boundary_temperature": 1.0,
+        "live_temperature": 3.254195210340297,
+        "missing_live_weight": 0.520106045174508,
+        "missing_neural_weight": 0.520106045174508,
+        "missing_owner_weight": 0.520106045174508,
+        "neural_weight": 0.44730977610332145,
+        "owner_temperature": 0.5172580363597693,
+        "reference": {
+          "activity_smoothing_seconds": 0.4518465343546813,
+          "owner_smoothing_seconds": 0.2145050672196841,
+          "owner_strength": 1.8478499721437216
+        },
+        "reference_mode": "tuned",
+        "switch_cost": {
+          "from_dead": 1.2222181044207399,
+          "owner_switch": 1.8013290639844683,
+          "to_dead": 3.362795121502884
+        },
+        "switch_cost_type": "typed",
+        "transition_seconds": 2.0,
+        "version": 1,
+        "visible_live_weight": 0.520106045174508,
+        "visible_neural_weight": 0.520106045174508,
+        "visible_owner_weight": 0.520106045174508
+      }
+    },
+    "scope": "guard",
+    "scores": {
+      "by_match": {
+        "DFL-MAT-J03WMX": {
+          "clean": 0.6200455580865603,
+          "long": 0.5380315917375456,
+          "replay": 0.4991239048811013,
+          "short": 0.5078431372549019
+        }
+      },
+      "diagnostics": {
+        "matched": 282,
+        "short_matched": 53,
+        "short_true": 191,
+        "spurious": 85,
+        "true": 511
+      },
+      "iou_curve": {
+        "0.1": 0.7204914593676688,
+        "0.2": 0.7099213487110048,
+        "0.3": 0.6850561643895424,
+        "0.4": 0.641282089348821,
+        "0.5": 0.5881493802708612,
+        "0.6": 0.5011874802784442,
+        "0.7": 0.42014854064761936,
+        "0.8": 0.31727017830417487,
+        "0.9": 0.2115454034456487
+      },
+      "means": {
+        "clean": 0.6200455580865603,
+        "long": 0.5380315917375456,
+        "replay": 0.4991239048811013,
+        "short": 0.5078431372549019
+      },
+      "objective": 0.5671647309870576
+    }
+  },
+  "sha256": "b732e79ca89657ccde8fb325438869d09a253e7c9bfa263a95544bc48b0f3cbe"
+}

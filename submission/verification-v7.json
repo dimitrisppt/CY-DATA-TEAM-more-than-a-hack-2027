@@ -1,0 +1,247 @@
+{
+  "changed_labels_vs_v6": 15280,
+  "cleanroom_regeneration": {
+    "csv_sha256": "d187fcf9f3840cd1391f2089dc678f07de4a7760ae09b016ce8da15c61236170",
+    "elapsed_seconds": 36.24814266106114,
+    "environment_note": "Isolated extracted source/models using the same pinned Python environment; authorized tactical inputs provided separately.",
+    "expected_hash_check_passed": true,
+    "experiment_caches_present": false,
+    "imports_resolved_from_extracted_source": true,
+    "participant_assets_in_package": false,
+    "scores": {
+      "competition_score": null,
+      "independent_test": false,
+      "records": 8,
+      "scores": {
+        "confirmation": {
+          "candidate": 0.629368368604893,
+          "delta": 0.024455969470191907,
+          "incumbent": 0.6049123991347011
+        },
+        "guard": {
+          "candidate": 0.5690784819449142,
+          "delta": 0.011155735953291557,
+          "incumbent": 0.5579227459916226
+        }
+      },
+      "verified": true
+    },
+    "status": "passed",
+    "v6_models_present": false
+  },
+  "competition_score": null,
+  "cpu_gpu_byte_identical": true,
+  "csv_sha256": "d187fcf9f3840cd1391f2089dc678f07de4a7760ae09b016ce8da15c61236170",
+  "excluded_frames": 40462,
+  "ground_truth_used": false,
+  "inference_runs": {
+    "cpu": {
+      "csv_sha256": "d187fcf9f3840cd1391f2089dc678f07de4a7760ae09b016ce8da15c61236170",
+      "device": "cpu",
+      "elapsed_seconds": 62.97517201304436,
+      "environment": {
+        "thread_environment": {
+          "MKL_NUM_THREADS": "4",
+          "NUMEXPR_NUM_THREADS": "4",
+          "OMP_DYNAMIC": null,
+          "OMP_NUM_THREADS": "4",
+          "OPENBLAS_NUM_THREADS": "4",
+          "VECLIB_MAXIMUM_THREADS": "4"
+        },
+        "torch_num_interop_threads": 2,
+        "torch_num_threads": 4,
+        "versions": {
+          "numba": "0.68.0",
+          "numpy": "2.5.4",
+          "optuna": "5.0.0",
+          "pandas": "3.1.0",
+          "python": "3.12.11",
+          "scikit-learn": "1.9.1",
+          "torch": "2.14.1"
+        }
+      }
+    },
+    "gpu": {
+      "csv_sha256": "d187fcf9f3840cd1391f2089dc678f07de4a7760ae09b016ce8da15c61236170",
+      "device": "cuda:0",
+      "elapsed_seconds": 37.48934018192813,
+      "environment": {
+        "thread_environment": {
+          "MKL_NUM_THREADS": "4",
+          "NUMEXPR_NUM_THREADS": "4",
+          "OMP_DYNAMIC": null,
+          "OMP_NUM_THREADS": "4",
+          "OPENBLAS_NUM_THREADS": "4",
+          "VECLIB_MAXIMUM_THREADS": "4"
+        },
+        "torch_num_interop_threads": 2,
+        "torch_num_threads": 1,
+        "versions": {
+          "numba": "0.68.0",
+          "numpy": "2.5.4",
+          "optuna": "5.0.0",
+          "pandas": "3.1.0",
+          "python": "3.12.11",
+          "scikit-learn": "1.9.1",
+          "torch": "2.14.1"
+        }
+      }
+    }
+  },
+  "model_count": 8,
+  "model_manifest_sha256": "3a86d2510ddba01e37205d5f82d1e1aa292a555efa2438158f70c720aa5fb947",
+  "model_state_audits": [
+    {
+      "export": "tail_ema",
+      "name": "ball_attention_002",
+      "seed": 20261117,
+      "steps": 8400,
+      "training_window_sha256": "59c863eaeb5fdf39f5e25627298e7b7d9057bc6131d18074cade95844fd50c32",
+      "weights_equal_to_training_state": true
+    },
+    {
+      "export": "tail_ema",
+      "name": "ball_attention_002",
+      "seed": 20261118,
+      "steps": 8400,
+      "training_window_sha256": "a2649df5514f3447bc496419aa7e7ceaacba1d2538e1cb5d88b0ed010ad7b625",
+      "weights_equal_to_training_state": true
+    },
+    {
+      "export": "raw",
+      "name": "candidate",
+      "seed": 20261119,
+      "steps": 9600,
+      "training_window_sha256": "4ac2642d67ee3dcd58ca44e7516115d6261695c46329007f312f95934e38e36c",
+      "weights_equal_to_training_state": true
+    },
+    {
+      "export": "raw",
+      "name": "candidate",
+      "seed": 20261120,
+      "steps": 9600,
+      "training_window_sha256": "5368fc3d34f4f1125d29bad8c10b3289ccb3b3cee1e2b26b5eafd85f28c7f52e",
+      "weights_equal_to_training_state": true
+    },
+    {
+      "export": "raw",
+      "name": "coarse",
+      "seed": 20261117,
+      "steps": 7200,
+      "training_window_sha256": "5b7797ba9abc64e2917f540c8ea9085265fc35249268f6fcaff92d960b5b13e3",
+      "weights_equal_to_training_state": true
+    },
+    {
+      "export": "raw",
+      "name": "coarse",
+      "seed": 20261118,
+      "steps": 7200,
+      "training_window_sha256": "b842edab5554077b27332e1c2315e19a2899b7884b397a8296fbd1146d05e3ab",
+      "weights_equal_to_training_state": true
+    },
+    {
+      "export": "tail_ema",
+      "name": "mean_007",
+      "seed": 20261117,
+      "steps": 8400,
+      "training_window_sha256": "59c863eaeb5fdf39f5e25627298e7b7d9057bc6131d18074cade95844fd50c32",
+      "weights_equal_to_training_state": true
+    },
+    {
+      "export": "tail_ema",
+      "name": "mean_007",
+      "seed": 20261118,
+      "steps": 8400,
+      "training_window_sha256": "a2649df5514f3447bc496419aa7e7ceaacba1d2538e1cb5d88b0ed010ad7b625",
+      "weights_equal_to_training_state": true
+    }
+  ],
+  "official_format_validated": true,
+  "pdf_audit": {
+    "authors": "Dimitris Papatheodoulou, Evripides Alevras, Andreas Petridis",
+    "csv_sha256_in_pdf": "d187fcf9f3840cd1391f2089dc678f07de4a7760ae09b016ce8da15c61236170",
+    "out_of_page_text": [],
+    "pages": 6,
+    "palette": {
+      "004D98": true,
+      "A50044": true,
+      "EDBB00": true
+    },
+    "pdf_sha256": "48653590a1bac03c074d8d5863aa028b22831796eee0fd8164e9c17d718d8d1a",
+    "verified": true
+  },
+  "pdf_sha256": "48653590a1bac03c074d8d5863aa028b22831796eee0fd8164e9c17d718d8d1a",
+  "platform": "Linux-6.12.113+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "real_oof_inference_parity": {
+    "checkpoints": [
+      {
+        "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-followup-v1/confirmation/fits/spell_balanced/fold_0/seed_8201/ball_attention_002/model.pt",
+        "sha256": "2ab8ca40cffe1a6af1e63dfc128f4bf5ef5ea330e9d32da1f2d181d610c4c4ad"
+      },
+      {
+        "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-followup-v1/confirmation/fits/coarse/fold_0/seed_8201/coarse_player_only/model.pt",
+        "sha256": "7e0fd340cb38f4d7897e7502f6c8eedb50e4e2e738ca51d383dd7505f46f5b82"
+      },
+      {
+        "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-followup-v1/confirmation/fits/spell_balanced/fold_0/seed_8201/mean_007/model.pt",
+        "sha256": "ea8f3e0824c4539b851ecc99e55029ce2a1fe2d78db61d497c33f0f50fdd211d"
+      },
+      {
+        "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-followup-v1/confirmation/fits/spell_balanced/fold_0/seed_8202/ball_attention_002/model.pt",
+        "sha256": "61b95d576731f4af66a815691de618f732e3ae0bca6599fb453ca517f47bdc6f"
+      },
+      {
+        "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-followup-v1/confirmation/fits/coarse/fold_0/seed_8202/coarse_player_only/model.pt",
+        "sha256": "14810d55a58b85c32928ca73e647235dace2d0bde454649b281acb096a16afe1"
+      },
+      {
+        "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-followup-v1/confirmation/fits/spell_balanced/fold_0/seed_8202/mean_007/model.pt",
+        "sha256": "60ab65fb416c0ac0c7c887b94a42475b4d280850e8e2a7c59405abdd1b19c94a"
+      },
+      {
+        "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-tuning-8h-v1/fits/inner/trial_0017/seed_9401/fold_0/rung_9600/model.pt",
+        "sha256": "bc20fe7a24a553e1a803d99a0202480bc49fcfbb5fd563a01a3b9c6988d04166"
+      },
+      {
+        "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-tuning-8h-v1/fits/inner/trial_0017/seed_9402/fold_0/rung_9600/model.pt",
+        "sha256": "c23506c426e3e97b8580acdfddb532a70acc3a2e384c5da9239b51df75b24cd4"
+      }
+    ],
+    "checks": [
+      {
+        "differing_labels": 0,
+        "expected_labels_sha256": "07e0e9bfefcc7882b759365347a13a115c7ec5048ec93586474e222e1e790d80",
+        "frames": 69424,
+        "match": "DFL-MAT-J03WOH",
+        "period": 1,
+        "scenario": "clean"
+      },
+      {
+        "differing_labels": 0,
+        "expected_labels_sha256": "07e0e9bfefcc7882b759365347a13a115c7ec5048ec93586474e222e1e790d80",
+        "frames": 69424,
+        "match": "DFL-MAT-J03WOH",
+        "period": 1,
+        "scenario": "long"
+      }
+    ],
+    "note": "Real match-excluded models through release inference exactly reproduce saved tuning labels.",
+    "verified": true
+  },
+  "rows": 199319,
+  "schema": "v7_release_verification_v1",
+  "tests": [
+    {
+      "command": "pytest -q tests/test_v7_submission.py tests/test_gpu_tuning.py tests/test_campaign_submission.py tests/test_coarse_context.py",
+      "note": "Initial focused run.",
+      "passed": 55
+    },
+    {
+      "command": "pytest -q tests/test_v7_submission.py",
+      "note": "Final release checks, including the added training-transcript guard.",
+      "passed": 7
+    }
+  ],
+  "total_training_updates": 67200,
+  "verified": true
+}

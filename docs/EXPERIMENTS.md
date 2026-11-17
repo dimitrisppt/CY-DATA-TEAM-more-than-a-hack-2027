@@ -1,6 +1,6 @@
 # Possession experiments and decisions
 
-This document summarizes the measured development path to v6. Scores are
+This document summarizes the measured development path through v7. Scores are
 whole-match spell F1 aggregates unless stated otherwise. Values from different
 folds, masks, seeds, and objectives are not interchangeable. None is a
 challenge-match score.
@@ -24,8 +24,8 @@ comparisons declined in the six-match repeat. Sampling-only and loss-only
 ablations gained +0.002493 and +0.003172 using the original parents, but each
 won only three of six matches and failed the breadth gate. The combined
 recipe remains the strongest tested condition, with a persistent increase in
-spurious short/wrong-team possessions. The delivered v6 model is unchanged;
-new fully labeled matches are the next validation priority. Details and
+spurious short/wrong-team possessions. V6 remained frozen during that study; new fully labeled matches remain the
+next validation priority. The combined recipe is included in the later v7 release. Details and
 artifact paths are in the follow-up section of the GPU study document.
 
 The subsequent [eight-hour holistic GPU campaign](GPU_TUNING.md) finished on
@@ -35,8 +35,9 @@ and selected decoder improved the six-match weighted confirmation objective
 from 0.604912 to 0.629368 and the WMX guard from 0.557923 to 0.569078.
 Both confirmation seeds and all three additional fixed-recipe seed checks
 improved. These remain development results on historically reused matches.
-The winning pipeline has not yet been packaged for challenge inference;
-the delivered v6 model and submission CSV are unchanged.
+The study itself did not replace v6. Its frozen winner has subsequently been
+refitted and packaged as **v7**, now the current submission CSV. See
+[reproduction](REPRODUCIBILITY.md) and `models/v7/manifest.json`; v6 is archived.
 
 ## Chronology
 

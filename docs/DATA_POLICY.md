@@ -26,7 +26,7 @@ Supervised learning uses seven other matches from the Sportec Solutions/DFL
 release. Labels are the supplied provider fields, mapped to the project's
 three supervised states. Unknown states are masked. An earlier SkillCorner
 diagnostic used conditional home/away agreement, with no dead-play labels.
-It was not a source of v6 training labels or selection scores.
+It was not a source of v6 or v7 training labels or selection scores.
 
 See [the technical report](CY-DATA-TEAM.md) for quantities, label semantics and
 limitations, and [third-party notices](../THIRD_PARTY_NOTICES.md) for

@@ -1,0 +1,466 @@
+{
+  "payload": {
+    "array_sha256": {
+      "gt_DFL-MAT-J03WN1_1": "6a6e41f4037c9a803806f5cbcff5215d84877f58ca12c48a0841b9f7fee51575",
+      "gt_DFL-MAT-J03WN1_2": "f5f3a7fb1e0020405e89c1df0e9abff1e5a20b13b3e9e77f71b58fd06beef411",
+      "gt_DFL-MAT-J03WOH_1": "84ac1180b9b5884c1e3488a4c3d22f49b70280a8913073f61946be5baf7efe84",
+      "gt_DFL-MAT-J03WOH_2": "ec73a31af364c026d736cc687879fdb6892326d8969ac25491be65b928424dc1",
+      "gt_DFL-MAT-J03WOY_1": "432c422274b7093f4123f87621b2f131ce20e174bb815dfcf54c7690dd08fe09",
+      "gt_DFL-MAT-J03WOY_2": "b3da606dc69823354170ff64df21ba5bca766e13a04348ee56618c499394c81c",
+      "gt_DFL-MAT-J03WPY_1": "a0b677d4039937e759658241ee9d76db7f5865b1b5661e4d7d2d6ebc4996afb7",
+      "gt_DFL-MAT-J03WPY_2": "92c2bd2944bb0c5cafcb01bd06f13ec38a2ac3e4d22b3faccfc974c0f51f9b60",
+      "gt_DFL-MAT-J03WQQ_1": "6ffbb34d2b2c0b8bc87ebdcf2d494aea7e1a92ad1de569785afef2bdbf5226e1",
+      "gt_DFL-MAT-J03WQQ_2": "56b8f3e955552f377bc71edcf4d57b134f0cfe2a488dc46eacae11684a546b1b",
+      "gt_DFL-MAT-J03WR9_1": "d0f55e8af17517d2270381d1097e885ae9e9cf11ece75456ad6aede34a7ddeb8",
+      "gt_DFL-MAT-J03WR9_2": "96deb3bd50020cf530fd35dd7feff2353b6d656cb5f47e2e7577517bad40e6af",
+      "pred_DFL-MAT-J03WN1_1_clean": "8b975975b207dd78433440a44d803b37d67378d5b6b833c964202e82bd0b7f69",
+      "pred_DFL-MAT-J03WN1_1_long": "939cc56320829b7b62a59243102ff6e83a7f34bef54f10df6b2fc81aac171463",
+      "pred_DFL-MAT-J03WN1_1_replay": "5307000b6b13c4261e3e5aa8175570d2e32181978ff7dc3e0e134321668421ca",
+      "pred_DFL-MAT-J03WN1_1_short": "4f257019d4639b5ec1d6fb7242172369ad121b7d2a0dda2dbc93df21812839d9",
+      "pred_DFL-MAT-J03WN1_2_clean": "ef23015a364c075d6db25b2544e887a5dbacc15ea6f1b8a26200a5779e5a0805",
+      "pred_DFL-MAT-J03WN1_2_long": "07520ddb123d3ffa80aa40b9f95c4a67a8d4962ce8f406595287d560cfaa61c3",
+      "pred_DFL-MAT-J03WN1_2_replay": "9e772a351b026aeb801915f8e6652cfc58dc77b8299aa0a49968cea867de9a1b",
+      "pred_DFL-MAT-J03WN1_2_short": "b4497b0630ec1fb30367ac4e18b095df90ff05da6f46ef2d14bae51311422e84",
+      "pred_DFL-MAT-J03WOH_1_clean": "7aa7d38b5bfaf767b74f97c687845880a18d7b2675b244fcdcbe96d1b4839daa",
+      "pred_DFL-MAT-J03WOH_1_long": "74e88dcd2f686eab7ab24fddabfa7a311eef27466755632c57c5dd808706ba34",
+      "pred_DFL-MAT-J03WOH_1_replay": "f03b3734c430b115a450869b02fe306b52c6538b7b339e6426302f44b4b540c7",
+      "pred_DFL-MAT-J03WOH_1_short": "e73155b8c52f7e0a1a60945393b5c1009abc33e638e8a73d54cff0ac3250387c",
+      "pred_DFL-MAT-J03WOH_2_clean": "c37a70ecf81673107f4b070ae9c6577ebf33a8e71c234a32dc26605375e2dc6a",
+      "pred_DFL-MAT-J03WOH_2_long": "230a6bc1ee51ef6bca7fd8ba4d8d553567a8027fdfe552313e58f164d515265e",
+      "pred_DFL-MAT-J03WOH_2_replay": "44fdb8c4587f80843fa3571d3155081be1b40954cc4aaa4a325502c220d3cc9b",
+      "pred_DFL-MAT-J03WOH_2_short": "354e867d3a675fbb62a419cd40e44c572e06cf90e893e4cb6fade89a7e1f008e",
+      "pred_DFL-MAT-J03WOY_1_clean": "4eab58fedcd4fcea075121a5eb10cf580a8f36a38f3c84df0a186a70c682698d",
+      "pred_DFL-MAT-J03WOY_1_long": "92817f38031b18e7318872bf068ddbf2845c7c915a8038691c85a032ff59a425",
+      "pred_DFL-MAT-J03WOY_1_replay": "8d56716daa949db8ae5d7500f8fd91a3c68bf38ff557c40ff1c2fde3b9adf76f",
+      "pred_DFL-MAT-J03WOY_1_short": "1eaf005e343d9ec52e1446ea88b3eb6776dcbf2405ec62e42da2ae1c6159a0d6",
+      "pred_DFL-MAT-J03WOY_2_clean": "c4d12a90944dc80d00603815fc0caabe64e11dfca5b62fd3d06f263fb30818c3",
+      "pred_DFL-MAT-J03WOY_2_long": "033926def711cf26fe5505bc4278911cd76aeaeed637e857b5eab6ea934a2117",
+      "pred_DFL-MAT-J03WOY_2_replay": "7c7394a48d6577ffbb01c8c56ea29e7218bf4844a02bd7a7e75d05b734ddf3ae",
+      "pred_DFL-MAT-J03WOY_2_short": "db3f06a09d7f6b189ccd7e773b1dab65e8d0103217c70bb7745175280ffeef83",
+      "pred_DFL-MAT-J03WPY_1_clean": "f047705f573b4812d488396ae8673630ad4db3c61a764f305818969ebcd06c94",
+      "pred_DFL-MAT-J03WPY_1_long": "2ac2b62cfec191a9eb8b67050fcc17d3466f2717b2e5493aa135fd2bd0bea44d",
+      "pred_DFL-MAT-J03WPY_1_replay": "581d96cf2f70bfde411ad1206b667bd787ee3256cfeceec51d7ba84320f8035f",
+      "pred_DFL-MAT-J03WPY_1_short": "984e48098a8032f402781ee074ceceac4c596d3e4299eab2c2e2758e6eb22d9e",
+      "pred_DFL-MAT-J03WPY_2_clean": "770ecba2744f7c19417bca963570f2758adf67c2f1e11b30cc06fe39e7314094",
+      "pred_DFL-MAT-J03WPY_2_long": "eebef5cbe05be21ecf89ea63251a71a2e0a5e4d584a3ecdbabca3e53ec9090e9",
+      "pred_DFL-MAT-J03WPY_2_replay": "61b91f558e7ab9cac59bbdc5bc57aef20a5778685b412c2b9d87703ad3a7ede1",
+      "pred_DFL-MAT-J03WPY_2_short": "ad2d8801e067f1cb91d55cca518c16e4f661263d3b8806d42459ddfdf118e125",
+      "pred_DFL-MAT-J03WQQ_1_clean": "5cb80ce9101c9ba4dfead6857fa7a81cf661064bd87eefe1ac8d5b2a61f06514",
+      "pred_DFL-MAT-J03WQQ_1_long": "b6b946e6ef1d02fe9b50808e3331cd4796ec4141bcd9f10c77b3cc4b3ae68c74",
+      "pred_DFL-MAT-J03WQQ_1_replay": "e4ad643b205bd3457eccb954739a3bcf00d9298c1365b34a0e857d7a75b95da7",
+      "pred_DFL-MAT-J03WQQ_1_short": "2ce8eb8b617a74fa367e3ac5b6ecfb893f961c5229d47ee7eaae5ec5cba4c14b",
+      "pred_DFL-MAT-J03WQQ_2_clean": "10546c370381a074155dba2ab3b7b3c1d4d7c6247e00ffc825ebadc6ad782b73",
+      "pred_DFL-MAT-J03WQQ_2_long": "362ab30524dcfd582be7d62496823ecc60375317c23f4d1f95516fe18372c067",
+      "pred_DFL-MAT-J03WQQ_2_replay": "215921a88d055afd322821bb905f95bd48c3902a841624706b8f607cbbbfaf6a",
+      "pred_DFL-MAT-J03WQQ_2_short": "a9266b181621b2e9df1a3639392c8f00970a91b510ea9f5bd72ccfae775bcb8a",
+      "pred_DFL-MAT-J03WR9_1_clean": "9f55e1c5154134fed692fa1819fc413507d52a80287be09e7e64f95087441b61",
+      "pred_DFL-MAT-J03WR9_1_long": "5e7629806afc88156226404881ecaab0deed5b0825b086c4b5459ba448c16c81",
+      "pred_DFL-MAT-J03WR9_1_replay": "326a2c2dc6c71acc5efd5ac8f665fed90191e49636e0a1d3cf53470449071182",
+      "pred_DFL-MAT-J03WR9_1_short": "f7c4beedf3b6f4d3258ba66a84874ec1e5d4d79cc908469458fb8d191e17d50c",
+      "pred_DFL-MAT-J03WR9_2_clean": "436fd22b3f1ae6374a34fbcad9b444cb6e1136e5c457e7082966ff653e2decb4",
+      "pred_DFL-MAT-J03WR9_2_long": "26c087caeea013b553446bc7d48033e01a5d9ad4c7eb8115b274f18e91c5a6ca",
+      "pred_DFL-MAT-J03WR9_2_replay": "74f8016ff7b0f6ee1bf08f7669c386b9d125d555aad1103fb9b73211947d6c60",
+      "pred_DFL-MAT-J03WR9_2_short": "1c6423cd27925c257e965fb25e3c055dc4eee7c65e2ba65148a9556ae71a3be0"
+    },
+    "batch": "batch_2",
+    "inputs": [
+      {
+        "input_sha256": "e85d4bf53adeca8222e276b9a0db590226d6a4d276e858a87fa94417da3928e8",
+        "match": "DFL-MAT-J03WN1",
+        "period": 1,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "ee1cc071d8a27286cd22fa659a79d8c2e8a725cf2285367a15ce028651569d44",
+        "match": "DFL-MAT-J03WN1",
+        "period": 1,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "4f248e1bc4138f5bacb513e13b6414dde69a395ab10baf6f448260f23ab79d14",
+        "match": "DFL-MAT-J03WN1",
+        "period": 1,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "fe11b6baf9e9d6bf18da32040a495575d8812e93730461e72c05efcedb7e7470",
+        "match": "DFL-MAT-J03WN1",
+        "period": 1,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "4ea0632b5dfaa543d972ba6e77a8647d3348f953f60e7b6a80baed34b89e9f3d",
+        "match": "DFL-MAT-J03WN1",
+        "period": 2,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "baf070bb2f00274fda1cf8a2b9ee846b3a0335eb99769669f37df6725947841b",
+        "match": "DFL-MAT-J03WN1",
+        "period": 2,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "eb31064fcf6d0bfa47c236eb110286663f1d20c8b09aade64b0813eb41758a70",
+        "match": "DFL-MAT-J03WN1",
+        "period": 2,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "9bfdada2dc757b2d6688358d6604844f8c6d2cd53bebd300ac9b031e1d08d9be",
+        "match": "DFL-MAT-J03WN1",
+        "period": 2,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "c3f799d627af1d43a9f2b80ce1d725dadedd584d08cb460dd01fc9c76356bbdc",
+        "match": "DFL-MAT-J03WOH",
+        "period": 1,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "39863c1b46be4c7aab9f4839ae90e3748ec65d325b9f8cf633cd5c8ace7738fb",
+        "match": "DFL-MAT-J03WOH",
+        "period": 1,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "a2e1c1fd2de15bdc8a3c7020f4f054cd89c2b75f1ba64bb439d53d7eb9c3629d",
+        "match": "DFL-MAT-J03WOH",
+        "period": 1,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "d3cbcc447c32037fe2ca1de737a138562c2526f624ef0f9aa439667c5727c766",
+        "match": "DFL-MAT-J03WOH",
+        "period": 1,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "7083be967aaeaa0ddb96121810cbf66b736df09adcc9970c68ecc79caaf3d27b",
+        "match": "DFL-MAT-J03WOH",
+        "period": 2,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "f05103fe5d101273275c4ffc793bcddfd8aee04bb29f14223fceb9efc0ce9769",
+        "match": "DFL-MAT-J03WOH",
+        "period": 2,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "4ec269783345b9d999afe7d9057828d2f3b3e56630896ff50f79edf94ed02d52",
+        "match": "DFL-MAT-J03WOH",
+        "period": 2,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "78f5c739876e921fd8ad6267f08011e34470825a20a8df8d81cc777a26cabcea",
+        "match": "DFL-MAT-J03WOH",
+        "period": 2,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "b062286b3a2969d17f6645a1eae97c4ff722ef7db670cd8b9d585a0ebdb298d2",
+        "match": "DFL-MAT-J03WOY",
+        "period": 1,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "c1e419a98ef79309d6a054288efae2cf1b223f609c73e19c6e8dd8f91a7aabf6",
+        "match": "DFL-MAT-J03WOY",
+        "period": 1,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "9fd748d1cdeeed7e10b51807d6020b2589f084023afd3214d8c3041e162b2ed0",
+        "match": "DFL-MAT-J03WOY",
+        "period": 1,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "b6cd3d7633e62d1fb1a4f2f2525d9da1c33eb53c2eb854214ce21074f6320792",
+        "match": "DFL-MAT-J03WOY",
+        "period": 1,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "e0152e73563f6e8546e402a36e8b2ffcaa78efe661fd2d34995df8d8e097683d",
+        "match": "DFL-MAT-J03WOY",
+        "period": 2,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "88bdc428178c87817a8dd01b9f094041d525ba7909c9f1a2f59e78f7a8aaae8c",
+        "match": "DFL-MAT-J03WOY",
+        "period": 2,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "b13dfefb54c0a8c7e9c8eed9da298e17dd1a796e8f5138566fb4334e1aee89d2",
+        "match": "DFL-MAT-J03WOY",
+        "period": 2,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "8faa9475b6b3097d21425ddc7365e7b1be6999b41eed86f05a4fb4182f17d43a",
+        "match": "DFL-MAT-J03WOY",
+        "period": 2,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "2edb8162bde729ddeb3be94e356fc9f7d72048b815207ec419e409a4bc325ee9",
+        "match": "DFL-MAT-J03WPY",
+        "period": 1,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "c3c2fcc9e4d95d92aad73c58d01a923c236e3015e1afbeab97d481f7ddc5b8f4",
+        "match": "DFL-MAT-J03WPY",
+        "period": 1,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "70abcdf34942f88854c0a8bb13e6ae8cfa23915af43568c8b5922c0e3161873a",
+        "match": "DFL-MAT-J03WPY",
+        "period": 1,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "a46b11d954dada3773ad85131d7933183d0ea8aa19b32b95f14e644601447ad0",
+        "match": "DFL-MAT-J03WPY",
+        "period": 1,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "fda127825b7480813b98b0abe109e6bd0a513cf525d59669fd8956b5422a18d6",
+        "match": "DFL-MAT-J03WPY",
+        "period": 2,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "69f6c2ccda821f3851b65cfa64d19cc024d21a9bdf732a33b08775a9456e502a",
+        "match": "DFL-MAT-J03WPY",
+        "period": 2,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "001c9b5d88e7acbcc968de63dbe8433050f8cefbc3190324789deffda9a4fc2b",
+        "match": "DFL-MAT-J03WPY",
+        "period": 2,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "6dd87dc29bd96db0ed201dbc2740e1b9b0e53284881695b157415454e8702744",
+        "match": "DFL-MAT-J03WPY",
+        "period": 2,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "243025749b6a7a08855439b654bed915eee885becc46359bb50b5307563fdcc1",
+        "match": "DFL-MAT-J03WQQ",
+        "period": 1,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "8471580a017405b72368b754c55eb59597d53b9743ee4635a2f0af2952a270f9",
+        "match": "DFL-MAT-J03WQQ",
+        "period": 1,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "426fda8b0ce39a4406af36ccbfa25cb2cf801c8a6da26f600d189b3b01a5af21",
+        "match": "DFL-MAT-J03WQQ",
+        "period": 1,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "041de31048633d1582b9a55e90b8a51b5ac1b393e5a2d68a07350072ffdd7a56",
+        "match": "DFL-MAT-J03WQQ",
+        "period": 1,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "144ee0bb44749371dafc1ca8c15cd62eaa15b77b25993f32e1c82fc768dbfbbc",
+        "match": "DFL-MAT-J03WQQ",
+        "period": 2,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "b4049f9aaa95bde7f3e589db98ebaccba3ab333888ba613ab87bba4b7b137fc2",
+        "match": "DFL-MAT-J03WQQ",
+        "period": 2,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "ac3995a24d458d6df318444793e5d0ce39ac69332bbde8ea98c950b99d311491",
+        "match": "DFL-MAT-J03WQQ",
+        "period": 2,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "224bdbd6a53304e72325dd3178773584763e7c7864c913fde1a0b5d82c302a3b",
+        "match": "DFL-MAT-J03WQQ",
+        "period": 2,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "c89fc59728a99620c40dcfdef7ccb17c3eb93ee34ec08b47a3e956ecce7b6d64",
+        "match": "DFL-MAT-J03WR9",
+        "period": 1,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "8211cd52edeecef0926ca3188e06211f713418333aa8219381d9918b64deaeb8",
+        "match": "DFL-MAT-J03WR9",
+        "period": 1,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "62d1bba0ea27072c6ecf8a082ccc960fe24a68d74504da1f472a7fd0ca416f6d",
+        "match": "DFL-MAT-J03WR9",
+        "period": 1,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "d371dbbc867d832ade5dd6257fc3410a9c4da2119c35098d5737713064f9879b",
+        "match": "DFL-MAT-J03WR9",
+        "period": 1,
+        "scenario": "short"
+      },
+      {
+        "input_sha256": "427e8afc5816db9c5c5ef578791e46150405263921b88ef1e70c1bca46b52658",
+        "match": "DFL-MAT-J03WR9",
+        "period": 2,
+        "scenario": "clean"
+      },
+      {
+        "input_sha256": "bcec1889fedf70dfc7031a89d92a89e9d25ec700547ce5375617fde48fce05fe",
+        "match": "DFL-MAT-J03WR9",
+        "period": 2,
+        "scenario": "long"
+      },
+      {
+        "input_sha256": "99878a5e42b4d31c5449676a557054fb91749950750cb77ae7061cb2f91ab403",
+        "match": "DFL-MAT-J03WR9",
+        "period": 2,
+        "scenario": "replay"
+      },
+      {
+        "input_sha256": "afe67efa980dad88d7c9b8b55550ca911d4bdddb0aff827310679929346ad007",
+        "match": "DFL-MAT-J03WR9",
+        "period": 2,
+        "scenario": "short"
+      }
+    ],
+    "labels_sha256": "6c36c25df5622fe9cd73eaf2e46f5145c414a58d01c3f662c585b7b3608a2539",
+    "matches": [
+      "DFL-MAT-J03WN1",
+      "DFL-MAT-J03WOH",
+      "DFL-MAT-J03WOY",
+      "DFL-MAT-J03WPY",
+      "DFL-MAT-J03WQQ",
+      "DFL-MAT-J03WR9"
+    ],
+    "pipeline": {
+      "candidate_weight": 0.20312829527615286,
+      "coarse_seconds": 3.2188621495092677,
+      "coarse_weight": 0.3183571885346476,
+      "decoder": {
+        "blend_mode": "static",
+        "boundary_scale": 1.580428631733627,
+        "boundary_temperature": 1.0,
+        "live_temperature": 3.254195210340297,
+        "missing_live_weight": 0.520106045174508,
+        "missing_neural_weight": 0.520106045174508,
+        "missing_owner_weight": 0.520106045174508,
+        "neural_weight": 0.44730977610332145,
+        "owner_temperature": 0.5172580363597693,
+        "reference": {
+          "activity_smoothing_seconds": 0.4518465343546813,
+          "owner_smoothing_seconds": 0.2145050672196841,
+          "owner_strength": 1.8478499721437216
+        },
+        "reference_mode": "tuned",
+        "switch_cost": {
+          "from_dead": 1.2222181044207399,
+          "owner_switch": 1.8013290639844683,
+          "to_dead": 3.362795121502884
+        },
+        "switch_cost_type": "typed",
+        "transition_seconds": 2.0,
+        "version": 1,
+        "visible_live_weight": 0.520106045174508,
+        "visible_neural_weight": 0.520106045174508,
+        "visible_owner_weight": 0.520106045174508
+      }
+    },
+    "scope": "inner",
+    "scores": {
+      "by_match": {
+        "DFL-MAT-J03WN1": {
+          "clean": 0.6514407684098187,
+          "long": 0.5517730496453901,
+          "replay": 0.5251184834123224,
+          "short": 0.5089639115250291
+        },
+        "DFL-MAT-J03WOH": {
+          "clean": 0.7067039106145252,
+          "long": 0.5994100294985251,
+          "replay": 0.5461654135338346,
+          "short": 0.5844776119402986
+        },
+        "DFL-MAT-J03WOY": {
+          "clean": 0.6693975903614457,
+          "long": 0.5212121212121212,
+          "replay": 0.5402597402597403,
+          "short": 0.5780025284450063
+        },
+        "DFL-MAT-J03WPY": {
+          "clean": 0.6794936708860759,
+          "long": 0.5764044943820225,
+          "replay": 0.5870056497175141,
+          "short": 0.5496561210453921
+        },
+        "DFL-MAT-J03WQQ": {
+          "clean": 0.6919896640826874,
+          "long": 0.6287339971550499,
+          "replay": 0.6211699164345403,
+          "short": 0.5672727272727273
+        },
+        "DFL-MAT-J03WR9": {
+          "clean": 0.7290140845070423,
+          "long": 0.5720496894409938,
+          "replay": 0.6299694189602446,
+          "short": 0.5809230769230769
+        }
+      },
+      "diagnostics": {
+        "matched": 1663,
+        "short_matched": 249,
+        "short_true": 728,
+        "spurious": 544,
+        "true": 2550
+      },
+      "iou_curve": {
+        "0.1": 0.7704797350155762,
+        "0.2": 0.7603749756302207,
+        "0.3": 0.7410024763026503,
+        "0.4": 0.6993772400162247,
+        "0.5": 0.639745404887614,
+        "0.6": 0.5708628244864982,
+        "0.7": 0.49298692131446975,
+        "0.8": 0.39412455112806194,
+        "0.9": 0.26992147425699303
+      },
+      "means": {
+        "clean": 0.6880066148102659,
+        "long": 0.5749305635556837,
+        "replay": 0.5749481037196994,
+        "short": 0.561549329525255
+      },
+      "objective": 0.6287949734014915
+    }
+  },
+  "sha256": "6cc77255f736b3fad0290918301c1ae2e03241bcbedc3ce12a54fa5e8ffd1c07"
+}

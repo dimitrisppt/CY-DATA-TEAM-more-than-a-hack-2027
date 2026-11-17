@@ -1,0 +1,891 @@
+{
+  "payload": {
+    "automatic_promotion": false,
+    "checkpoints_verified": [
+      {
+        "path": "fits/guard/trial_0017/seed_9501/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/guard/trial_0017/seed_9502/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_0/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_0/rung_7200/fit.json",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_1/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_1/rung_7200/fit.json",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_2/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_2/rung_7200/fit.json",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_0/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_0/rung_7200/fit.json",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_1/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_1/rung_7200/fit.json",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_2/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_2/rung_7200/fit.json",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0002/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0002/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0002/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0003/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0003/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0003/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0004/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0004/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0004/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0005/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0005/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0005/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_0/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_1/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_2/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0007/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0007/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0007/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0008/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0008/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0008/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0009/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0009/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0009/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0010/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0010/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0010/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0011/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0011/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0011/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0012/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0012/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0012/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0013/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0013/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0013/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0014/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0014/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0014/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0015/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0015/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0015/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0016/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0016/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0016/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_0/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_1/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_1/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_2/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_2/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9401/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9401/fold_1/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9401/fold_2/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9402/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9402/fold_1/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9402/fold_2/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9601/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9601/fold_1/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9601/fold_2/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9602/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9602/fold_1/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9602/fold_2/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9603/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9603/fold_1/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9603/fold_2/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0018/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0018/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0018/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_0/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_1/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_1/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_2/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_2/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0020/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0020/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0020/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_0/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_0/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_1/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_1/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_2/rung_3600/fit.json",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_2/rung_9600/fit.json",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0022/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0022/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0022/seed_9301/fold_2/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0023/seed_9301/fold_0/rung_1800/fit.json",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0023/seed_9301/fold_1/rung_1800/fit.json",
+        "steps": 1800
+      }
+    ],
+    "optimizer_states_and_split_transcripts_verified": [
+      {
+        "path": "fits/guard/trial_0017/seed_9501/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/guard/trial_0017/seed_9502/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_0/state_007200.pt",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_1/state_007200.pt",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0000/seed_9301/fold_2/state_007200.pt",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_0/state_007200.pt",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_1/state_007200.pt",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0001/seed_9301/fold_2/state_007200.pt",
+        "steps": 7200
+      },
+      {
+        "path": "fits/inner/trial_0002/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0002/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0002/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0003/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0003/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0003/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0004/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0004/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0004/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0005/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0005/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0005/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_0/state_006800.pt",
+        "steps": 6800
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_0/state_007000.pt",
+        "steps": 7000
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_1/state_003600.pt",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0006/seed_9301/fold_2/state_003600.pt",
+        "steps": 3600
+      },
+      {
+        "path": "fits/inner/trial_0007/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0007/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0007/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0008/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0008/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0008/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0009/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0009/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0009/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0010/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0010/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0010/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0011/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0011/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0011/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0012/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0012/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0012/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0013/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0013/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0013/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0014/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0014/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0014/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0015/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0015/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0015/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0016/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0016/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0016/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_1/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9301/fold_2/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9401/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9401/fold_1/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9401/fold_2/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9402/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9402/fold_1/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9402/fold_2/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9601/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9601/fold_1/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9601/fold_2/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9602/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9602/fold_1/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9602/fold_2/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9603/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9603/fold_1/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9603/fold_2/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9604/fold_0/state_004600.pt",
+        "steps": 4600
+      },
+      {
+        "path": "fits/inner/trial_0017/seed_9604/fold_0/state_004800.pt",
+        "steps": 4800
+      },
+      {
+        "path": "fits/inner/trial_0018/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0018/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0018/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_1/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0019/seed_9301/fold_2/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0020/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0020/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0020/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_0/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_1/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0021/seed_9301/fold_2/state_009600.pt",
+        "steps": 9600
+      },
+      {
+        "path": "fits/inner/trial_0022/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0022/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0022/seed_9301/fold_2/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0023/seed_9301/fold_0/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0023/seed_9301/fold_1/state_001800.pt",
+        "steps": 1800
+      },
+      {
+        "path": "fits/inner/trial_0023/seed_9301/fold_2/state_000200.pt",
+        "steps": 200
+      }
+    ],
+    "saved_label_results_reproduced": [
+      "confirmation/batch_1/decoder_only/result.json",
+      "confirmation/batch_1/ensemble/result.json",
+      "confirmation/batch_1/incumbent/result.json",
+      "confirmation/batch_1/seed_9401/result.json",
+      "confirmation/batch_1/seed_9402/result.json",
+      "confirmation/batch_2/decoder_only/result.json",
+      "confirmation/batch_2/ensemble/result.json",
+      "confirmation/batch_2/incumbent/result.json",
+      "confirmation/batch_2/seed_9401/result.json",
+      "confirmation/batch_2/seed_9402/result.json",
+      "guard/batch_1/decoder_only/result.json",
+      "guard/batch_1/ensemble/result.json",
+      "guard/batch_1/incumbent/result.json",
+      "guard/batch_1/seed_9501/result.json",
+      "guard/batch_1/seed_9502/result.json",
+      "guard/batch_2/decoder_only/result.json",
+      "guard/batch_2/ensemble/result.json",
+      "guard/batch_2/incumbent/result.json",
+      "guard/batch_2/seed_9501/result.json",
+      "guard/batch_2/seed_9502/result.json",
+      "stability/batch_1/seed_9601/result.json",
+      "stability/batch_1/seed_9602/result.json",
+      "stability/batch_1/seed_9603/result.json",
+      "stability/batch_2/seed_9601/result.json",
+      "stability/batch_2/seed_9602/result.json",
+      "stability/batch_2/seed_9603/result.json"
+    ],
+    "source_and_upstream_hashes_preserved": true
+  },
+  "sha256": "e494af39360e01b75da85d60b5dbb4175a284f37501907c84c9f7dbad0b492e7"
+}

@@ -1,0 +1,13 @@
+{
+  "csv": "CY-DATA-TEAM.csv",
+  "excluded_frames": 40462,
+  "frame_end": 199318,
+  "frame_start": 0,
+  "ground_truth_used": false,
+  "halftime_excluded_frames": 20156,
+  "model_directory": "models/v6",
+  "model_manifest_sha256": "076b3b86e0e7a0f7abea0a6d8a609dc039e18e17fef77c4ba9cd6ece534be1df",
+  "rows": 199319,
+  "sha256": "4c22b0171509ae1f93c57b72e9394a10623e19bcc1834290c2a9ec640edfea1b",
+  "version": "v6"
+}

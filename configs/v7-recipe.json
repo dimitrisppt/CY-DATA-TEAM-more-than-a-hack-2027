@@ -1,0 +1,373 @@
+{
+  "payload": {
+    "candidate_recipe": {
+      "export": "raw",
+      "short_sampling_probability": 0.5,
+      "spec": {
+        "augmentation_config": {
+          "blur_radius": 2,
+          "clean_probability": 0.69847565147725,
+          "dropout_max_seconds": 0.5,
+          "frame_dropout_fraction": 0.05,
+          "hold_max_frames": 3,
+          "max_transforms": 1,
+          "mode": "spatial",
+          "noise_ball_std": 0.15,
+          "noise_correlation": 0.95,
+          "noise_player_std": 0.08,
+          "operations": [
+            "player_dropout"
+          ],
+          "patch_fraction": 0.15,
+          "player_dropout_fraction": 0.05,
+          "rotation_max_degrees": 2.0,
+          "strength": 0.7508241121976357,
+          "temporal_shift_max_seconds": 0.12,
+          "time_warp_knots": 4,
+          "time_warp_max_rate": 0.1,
+          "translation_max_meters": 1.0,
+          "warmup_steps": 400
+        },
+        "model_kwargs": {
+          "dilations": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "global_dim": 9,
+          "player_dim": 8,
+          "pooling": "ball_attention",
+          "width": 64
+        },
+        "outage_config": {
+          "clean_probability": 0.27732832975003346,
+          "fraction_max": 0.66,
+          "fraction_min": 0.3,
+          "full_probability": 0.05,
+          "long_gap_max_seconds": 30.0,
+          "long_gap_min_seconds": 10.0,
+          "long_gap_probability": 0.06368016808015983,
+          "max_gap_seconds": 10.0,
+          "min_gap_seconds": 1.0,
+          "mode": "legacy"
+        },
+        "schedule": {
+          "kind": "constant",
+          "min_lr_ratio": 1.0,
+          "total_steps": 9600,
+          "warmup_steps": 0
+        },
+        "training_args": {
+          "augment": true,
+          "boundary_pos_weight": 9.49280461791512,
+          "boundary_weight": 0.1,
+          "center_size": 768,
+          "learning_rate": 0.000862334107121614,
+          "weight_decay": 1.8391096254753197e-06
+        }
+      },
+      "spell_weight": 0.25
+    },
+    "candidate_seeds": [
+      20261119,
+      20261120
+    ],
+    "coarse_spec": {
+      "augmentation_config": {
+        "mode": "none"
+      },
+      "model_kwargs": {
+        "dilations": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64
+        ],
+        "global_dim": 9,
+        "player_dim": 8,
+        "pooling": "mean",
+        "width": 32
+      },
+      "outage_config": {
+        "clean_probability": 0.2,
+        "fraction_max": 0.66,
+        "fraction_min": 0.3,
+        "full_probability": 0.05,
+        "long_gap_max_seconds": 30.0,
+        "long_gap_min_seconds": 10.0,
+        "long_gap_probability": 0.2,
+        "max_gap_seconds": 10.0,
+        "min_gap_seconds": 1.0,
+        "mode": "legacy"
+      },
+      "schedule": {
+        "kind": "constant",
+        "min_lr_ratio": 1.0,
+        "total_steps": 7200,
+        "warmup_steps": 0
+      },
+      "training_args": {
+        "augment": true,
+        "boundary_pos_weight": 1.0,
+        "boundary_weight": 0.0,
+        "center_size": 32,
+        "learning_rate": 0.0003,
+        "weight_decay": 0.0001
+      }
+    },
+    "evidence": {
+      "confirmation.json": "2c99fb5a88b0396059175bf80ec0ad80c45998e26fcac3dcdb4cb12c77bea7a5",
+      "guard.json": "432942a019055d873e13abc370194b8268d1b7f836419cc885e67039aa2431ee",
+      "selection.json": "5c69696eb8a6171be8496b80edebab23e459009226f73ce22830ecf1f29ede82",
+      "verification.json": "903301f267b47ef11f1ab5f77e6446ce40b06dbc5c7ec4eba6c33bc417c31ec2"
+    },
+    "followup_protocol_sha256": "babec860470071d7f0ce6abc676307920f32be3a7d042557780f1148f101a52f",
+    "incumbent_seeds": [
+      20261117,
+      20261118
+    ],
+    "matches": [
+      "DFL-MAT-J03WMX",
+      "DFL-MAT-J03WN1",
+      "DFL-MAT-J03WOH",
+      "DFL-MAT-J03WOY",
+      "DFL-MAT-J03WPY",
+      "DFL-MAT-J03WQQ",
+      "DFL-MAT-J03WR9"
+    ],
+    "parent_ema": {
+      "decay": 0.99,
+      "start": 7000,
+      "updates": 200
+    },
+    "pipeline": {
+      "candidate_weight": 0.20312829527615286,
+      "coarse_seconds": 3.2188621495092677,
+      "coarse_weight": 0.3183571885346476,
+      "decoder": {
+        "blend_mode": "static",
+        "boundary_scale": 1.580428631733627,
+        "boundary_temperature": 1.0,
+        "live_temperature": 3.254195210340297,
+        "missing_live_weight": 0.520106045174508,
+        "missing_neural_weight": 0.520106045174508,
+        "missing_owner_weight": 0.520106045174508,
+        "neural_weight": 0.44730977610332145,
+        "owner_temperature": 0.5172580363597693,
+        "reference": {
+          "activity_smoothing_seconds": 0.4518465343546813,
+          "owner_smoothing_seconds": 0.2145050672196841,
+          "owner_strength": 1.8478499721437216
+        },
+        "reference_mode": "tuned",
+        "switch_cost": {
+          "from_dead": 1.2222181044207399,
+          "owner_switch": 1.8013290639844683,
+          "to_dead": 3.362795121502884
+        },
+        "switch_cost_type": "typed",
+        "transition_seconds": 2.0,
+        "version": 1,
+        "visible_live_weight": 0.520106045174508,
+        "visible_neural_weight": 0.520106045174508,
+        "visible_owner_weight": 0.520106045174508
+      }
+    },
+    "schema": "gpu_tuned_release_recipe_v1",
+    "seed_policy": "Fixed before final fitting and target prediction; no selection using target outputs.",
+    "selected_trial": "trial_0017",
+    "selection": {
+      "blend_weight": 0.6198620103020451,
+      "decoder": {
+        "blend_mode": "static",
+        "boundary_scale": 1.373212083582826,
+        "boundary_temperature": 1.0,
+        "live_temperature": 3.507823783298422,
+        "missing_live_weight": 0.520106045174508,
+        "missing_neural_weight": 0.520106045174508,
+        "missing_owner_weight": 0.520106045174508,
+        "neural_weight": 0.520106045174508,
+        "owner_temperature": 0.9166758148761088,
+        "reference": {},
+        "reference_mode": "default",
+        "switch_cost": {
+          "from_dead": 3.110657743041,
+          "owner_switch": 0.016673208086668168,
+          "to_dead": 3.9417670855791185
+        },
+        "switch_cost_type": "typed",
+        "transition_seconds": 2.0,
+        "version": 1,
+        "visible_live_weight": 0.520106045174508,
+        "visible_neural_weight": 0.520106045174508,
+        "visible_owner_weight": 0.520106045174508
+      },
+      "kind": "convex_pair",
+      "members": [
+        {
+          "id": "mean_007",
+          "spec": {
+            "augmentation_config": {
+              "blur_radius": 2,
+              "clean_probability": 0.2,
+              "dropout_max_seconds": 2.0,
+              "frame_dropout_fraction": 0.05,
+              "hold_max_frames": 3,
+              "max_transforms": 1,
+              "mode": "spatial",
+              "noise_ball_std": 0.15,
+              "noise_correlation": 0.5,
+              "noise_player_std": 0.08,
+              "operations": [
+                "coordinate_noise"
+              ],
+              "patch_fraction": 0.15,
+              "player_dropout_fraction": 0.15,
+              "rotation_max_degrees": 2.0,
+              "strength": 1.0,
+              "temporal_shift_max_seconds": 0.12,
+              "time_warp_knots": 4,
+              "time_warp_max_rate": 0.1,
+              "translation_max_meters": 1.0,
+              "warmup_steps": 400
+            },
+            "model_kwargs": {
+              "dilations": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+                64,
+                128
+              ],
+              "global_dim": 9,
+              "player_dim": 8,
+              "pooling": "mean",
+              "width": 32
+            },
+            "outage_config": {
+              "clean_probability": 0.2,
+              "fraction_max": 0.66,
+              "fraction_min": 0.3,
+              "full_probability": 0.05,
+              "long_gap_max_seconds": 30.0,
+              "long_gap_min_seconds": 10.0,
+              "long_gap_probability": 0.2,
+              "max_gap_seconds": 10.0,
+              "min_gap_seconds": 1.0,
+              "mode": "legacy"
+            },
+            "schedule": {
+              "kind": "cosine",
+              "min_lr_ratio": 0.25,
+              "total_steps": 7200,
+              "warmup_steps": 600
+            },
+            "training_args": {
+              "augment": true,
+              "boundary_pos_weight": 9.012769618609058,
+              "boundary_weight": 0.5,
+              "center_size": 512,
+              "learning_rate": 0.001712567077468907,
+              "weight_decay": 6.790736778198919e-05
+            }
+          },
+          "steps": 7200
+        },
+        {
+          "id": "ball_attention_002",
+          "spec": {
+            "augmentation_config": {
+              "blur_radius": 2,
+              "clean_probability": 0.5,
+              "dropout_max_seconds": 0.5,
+              "frame_dropout_fraction": 0.05,
+              "hold_max_frames": 3,
+              "max_transforms": 1,
+              "mode": "spatial",
+              "noise_ball_std": 0.15,
+              "noise_correlation": 0.95,
+              "noise_player_std": 0.08,
+              "operations": [
+                "player_dropout"
+              ],
+              "patch_fraction": 0.15,
+              "player_dropout_fraction": 0.05,
+              "rotation_max_degrees": 2.0,
+              "strength": 0.5,
+              "temporal_shift_max_seconds": 0.12,
+              "time_warp_knots": 4,
+              "time_warp_max_rate": 0.1,
+              "translation_max_meters": 1.0,
+              "warmup_steps": 400
+            },
+            "model_kwargs": {
+              "dilations": [
+                1,
+                2,
+                4,
+                8,
+                16,
+                32,
+                64,
+                128
+              ],
+              "global_dim": 9,
+              "player_dim": 8,
+              "pooling": "ball_attention",
+              "width": 32
+            },
+            "outage_config": {
+              "clean_probability": 0.2,
+              "fraction_max": 0.66,
+              "fraction_min": 0.3,
+              "full_probability": 0.05,
+              "long_gap_max_seconds": 30.0,
+              "long_gap_min_seconds": 10.0,
+              "long_gap_probability": 0.2,
+              "max_gap_seconds": 10.0,
+              "min_gap_seconds": 1.0,
+              "mode": "legacy"
+            },
+            "schedule": {
+              "kind": "constant",
+              "min_lr_ratio": 1.0,
+              "total_steps": 7200,
+              "warmup_steps": 0
+            },
+            "training_args": {
+              "augment": true,
+              "boundary_pos_weight": 1.9798468176864876,
+              "boundary_weight": 0.25,
+              "center_size": 512,
+              "learning_rate": 0.00146962307142756,
+              "weight_decay": 0.0003780910117479338
+            }
+          },
+          "steps": 7200
+        }
+      ]
+    },
+    "settings": {
+      "confidence": 0.8,
+      "distill_weight": 0.25,
+      "lr_scale": 0.2,
+      "short_sampling_probability": 0.25,
+      "spell_weight": 0.25,
+      "start_steps": 7200,
+      "temperature": 2.0,
+      "total_extra_steps": 1200
+    },
+    "version": "v7"
+  },
+  "sha256": "76c8b35fff80a6dfd7f46a3291dba3315d884409fbb3259efb0c1052fd142685"
+}

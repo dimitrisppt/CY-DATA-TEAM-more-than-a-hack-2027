@@ -1,0 +1,114 @@
+{
+  "device": "cuda:0",
+  "elapsed_seconds": 37.48934018192813,
+  "environment": {
+    "thread_environment": {
+      "MKL_NUM_THREADS": "4",
+      "NUMEXPR_NUM_THREADS": "4",
+      "OMP_DYNAMIC": null,
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "VECLIB_MAXIMUM_THREADS": "4"
+    },
+    "torch_num_interop_threads": 2,
+    "torch_num_threads": 1,
+    "versions": {
+      "numba": "0.68.0",
+      "numpy": "2.5.4",
+      "optuna": "5.0.0",
+      "pandas": "3.1.0",
+      "python": "3.12.11",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.1"
+    }
+  },
+  "expected_sha256": null,
+  "format_validated": true,
+  "gpu": "Tesla T4",
+  "ground_truth_used": false,
+  "halves": [
+    {
+      "ball_observed_fraction": 0.5934916380384311,
+      "period": 1,
+      "span": [
+        11185,
+        90652
+      ],
+      "switches": 202
+    },
+    {
+      "ball_observed_fraction": 0.5926565058571609,
+      "period": 2,
+      "span": [
+        110808,
+        190198
+      ],
+      "switches": 235
+    }
+  ],
+  "inputs": {
+    "manifest": {
+      "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/target/2027/input-manifest.json",
+      "sha256": "32ec658f18c29b3607debf8584a0f4beecabb88e5f278aefef8ee3cbc793b0bb"
+    },
+    "metadata": {
+      "bytes": 59057,
+      "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/target/2027/tactical/BAR-ATH_tactical_atd.xml",
+      "sha256": "327e35e32e46a647389b88f883d4f9a2ab931e3e6148aef2fcf8f22b1e93c43a"
+    },
+    "raw": {
+      "bytes": 195714285,
+      "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/target/2027/tactical/BAR-ATH_tactical_atd.txt",
+      "sha256": "f130e350d2bfdf734b7e32f072931fccc6d015c1e837d082064875fe0a700431"
+    }
+  },
+  "matches_expected": null,
+  "model_manifest_sha256": "3a86d2510ddba01e37205d5f82d1e1aa292a555efa2438158f70c720aa5fb947",
+  "output": {
+    "label_counts": {
+      "A": 43581,
+      "D": 52138,
+      "H": 63138,
+      "X": 40462
+    },
+    "rows": 199319,
+    "sha256": "d187fcf9f3840cd1391f2089dc678f07de4a7760ae09b016ce8da15c61236170"
+  },
+  "pipeline": {
+    "candidate_weight": 0.20312829527615286,
+    "coarse_seconds": 3.2188621495092677,
+    "coarse_weight": 0.3183571885346476,
+    "decoder": {
+      "blend_mode": "static",
+      "boundary_scale": 1.580428631733627,
+      "boundary_temperature": 1.0,
+      "live_temperature": 3.254195210340297,
+      "missing_live_weight": 0.520106045174508,
+      "missing_neural_weight": 0.520106045174508,
+      "missing_owner_weight": 0.520106045174508,
+      "neural_weight": 0.44730977610332145,
+      "owner_temperature": 0.5172580363597693,
+      "reference": {
+        "activity_smoothing_seconds": 0.4518465343546813,
+        "owner_smoothing_seconds": 0.2145050672196841,
+        "owner_strength": 1.8478499721437216
+      },
+      "reference_mode": "tuned",
+      "switch_cost": {
+        "from_dead": 1.2222181044207399,
+        "owner_switch": 1.8013290639844683,
+        "to_dead": 3.362795121502884
+      },
+      "switch_cost_type": "typed",
+      "transition_seconds": 2.0,
+      "version": 1,
+      "visible_live_weight": 0.520106045174508,
+      "visible_neural_weight": 0.520106045174508,
+      "visible_owner_weight": 0.520106045174508
+    }
+  },
+  "recipe_sha256": "e051c5fdadf7f4c09dd5a4d61864b49950ea6de36c2638bbf8067fa88fd2734d",
+  "schema": "v7_inference_v1",
+  "score_note": "Format validation does not measure target accuracy.",
+  "version": "v7"
+}

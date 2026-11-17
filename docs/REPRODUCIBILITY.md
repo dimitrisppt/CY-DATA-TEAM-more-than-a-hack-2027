@@ -1,4 +1,86 @@
-# Reproducing v6
+# Reproducing the current v7 submission
+
+The current deliverables are `submission/CY-DATA-TEAM.csv` and
+`submission/CY-DATA-TEAM.pdf`. V6 is archived in `submission/archive/v6/`.
+The v7 bundle does not depend on the missing historical v6 proof files.
+
+## Current inference and score commands
+
+```sh
+uv sync --frozen --python 3.12.11 --extra learn --extra tune --extra dev
+uv run --no-sync python -m scripts.reproduce_v7 --verify-only
+uv run --no-sync python -m scripts.reproduce_v7 \
+  --data-dir /path/to/participant-data \
+  --output outputs/CY-DATA-TEAM.csv
+uv run --no-sync python evaluation/validate_submission.py outputs/CY-DATA-TEAM.csv
+uv run --no-sync python -m scripts.evaluate_v7
+```
+
+The reference CSV was reproduced byte-for-byte on Tesla T4 CUDA and Linux CPU
+with Python 3.12.11, PyTorch 2.14.1 (CUDA 13.0), NumPy 2.5.4 and pandas 3.1.0.
+CUDA is the default; `--device cpu` selects CPU inference. The exact automatic
+inputs are `BAR-ATH_tactical_atd.txt` and `BAR-ATH_tactical_atd.xml`. Both can
+instead be supplied via `--raw` and `--metadata`. Use a new output filename
+for each run: existing CSV/sidecar pairs are preserved. Input discovery and
+staging read only this pair. Inference never reads challenge possession labels.
+
+`models/v7/manifest.json` authenticates all eight weights, the frozen recipe,
+training receipts and source files. Inference writes an adjacent
+`.manifest.json` containing input hashes, runtime, model identity and output
+checksum. The expected checksum comes from `submission/manifest.json`; an
+unequal checksum fails rather than silently accepting a different CSV.
+`submission/verification-v7.json` records the actual regeneration checks.
+
+Score reproduction uses eight compact public-label/prediction archives under
+`benchmarks/v7/`: two mask batches, incumbent and candidate, six-match
+confirmation and WMX guard. It reruns the official possession scorer and
+requires exact agreement with the saved assessments. These are historically
+reused development matches, not an independent test or a challenge score.
+
+## Full public-data refit
+
+```sh
+uv run --no-sync python -m experiments.fetch_dfl --all
+uv run --no-sync possession prepare \
+  --raw-dir data/external/dfl --output data/processed/dfl
+uv run --no-sync python -m scripts.refit_v7 \
+  --output-dir artifacts/v7-refit \
+  --coarse-data-dir artifacts/v7-coarse --workers 2
+uv run --no-sync python -m scripts.export_v7
+```
+
+The frozen `configs/v7-recipe.json` supplies all training hyperparameters and
+seeds. The refit trains all fourteen public halves; it reads no participant
+inputs. The coarse cache is derived automatically. Two workers and a 2 GB
+fine-data cache per worker keep all seven matches available without repeatedly
+decompressing them; the reference host has 15 GB RAM and a Tesla T4.
+Checkpointing retains optimizer state, RNG state and actual sampled-window
+transcripts. Four fine models receive 8,400 updates, two coarse models 7,200,
+and two candidate attention models 9,600, for **67,200 updates** in total.
+
+The final branch seeds are fixed before fitting. The original fine/coarse
+branches use base seeds 20261117 and 20261118 with the existing fold-seed mapping;
+the added attention models use seeds 20261119 and 20261120 directly. There is
+no final-seed selection based on challenge predictions or labels.
+
+The committed bundle is sufficient for inference. Rebuilding its development
+evidence with `export_v7` additionally requires the archived tuning records
+and saved OOF predictions under `artifacts/gpu-tuning-8h-v1/`. That command is
+a release-building workflow, not a prerequisite for regenerating the CSV.
+Full refitting does not rerun the eight-hour search. Exact training on other
+hardware is not promised; the delivered weights and source hashes define
+submission reproduction.
+
+## Historical v6 workflow below
+
+The following section preserves the original v6 commands and evidence. In this
+checkout **72 historical proof files are missing**, so its bundle verification
+fails; these historical commands are not the current quick-start path.
+Its CSV checksum refers to `submission/archive/v6/CY-DATA-TEAM.csv`.
+
+---
+
+# Historical v6 reproduction
 
 There are three different operations: regenerating the delivered CSV,
 recalculating development scores from saved predictions, and fitting models

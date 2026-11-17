@@ -1,0 +1,1503 @@
+{
+  "payload": {
+    "arms": {
+      "ablation": {
+        "arm": "ablation",
+        "batches": {
+          "batch_1": {
+            "clean": {
+              "kind": "clean"
+            },
+            "long": {
+              "kind": "synthetic",
+              "max_seconds": 30.0,
+              "min_seconds": 10.0,
+              "missing_fraction": 0.41,
+              "seed": 74104
+            },
+            "replay": {
+              "kind": "target_replay",
+              "seed": 5102
+            },
+            "short": {
+              "kind": "synthetic",
+              "max_seconds": 10.0,
+              "min_seconds": 1.0,
+              "missing_fraction": 0.41,
+              "seed": 73104
+            }
+          },
+          "batch_2": {
+            "clean": {
+              "kind": "clean"
+            },
+            "long": {
+              "kind": "synthetic",
+              "max_seconds": 30.0,
+              "min_seconds": 10.0,
+              "missing_fraction": 0.41,
+              "seed": 74105
+            },
+            "replay": {
+              "kind": "target_replay",
+              "seed": 5102
+            },
+            "short": {
+              "kind": "synthetic",
+              "max_seconds": 10.0,
+              "min_seconds": 1.0,
+              "missing_fraction": 0.41,
+              "seed": 73105
+            }
+          }
+        },
+        "coarse_data_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-v1/coarse-data",
+        "coarse_spec": {
+          "augmentation_config": {
+            "mode": "none"
+          },
+          "model_kwargs": {
+            "dilations": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              64
+            ],
+            "global_dim": 9,
+            "player_dim": 8,
+            "pooling": "mean",
+            "width": 32
+          },
+          "outage_config": {
+            "clean_probability": 0.2,
+            "fraction_max": 0.66,
+            "fraction_min": 0.3,
+            "full_probability": 0.05,
+            "long_gap_max_seconds": 30.0,
+            "long_gap_min_seconds": 10.0,
+            "long_gap_probability": 0.2,
+            "max_gap_seconds": 10.0,
+            "min_gap_seconds": 1.0,
+            "mode": "legacy"
+          },
+          "schedule": {
+            "kind": "constant",
+            "min_lr_ratio": 1.0,
+            "total_steps": 7200,
+            "warmup_steps": 0
+          },
+          "training_args": {
+            "augment": true,
+            "boundary_pos_weight": 1.0,
+            "boundary_weight": 0.0,
+            "center_size": 32,
+            "learning_rate": 0.0003,
+            "weight_decay": 0.0001
+          }
+        },
+        "data_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/processed/dfl",
+        "folds": [
+          {
+            "train": [
+              "DFL-MAT-J03WN1",
+              "DFL-MAT-J03WPY",
+              "DFL-MAT-J03WQQ",
+              "DFL-MAT-J03WR9"
+            ],
+            "validation": [
+              "DFL-MAT-J03WOH",
+              "DFL-MAT-J03WOY"
+            ]
+          },
+          {
+            "train": [
+              "DFL-MAT-J03WOH",
+              "DFL-MAT-J03WOY",
+              "DFL-MAT-J03WQQ",
+              "DFL-MAT-J03WR9"
+            ],
+            "validation": [
+              "DFL-MAT-J03WN1",
+              "DFL-MAT-J03WPY"
+            ]
+          },
+          {
+            "train": [
+              "DFL-MAT-J03WN1",
+              "DFL-MAT-J03WOH",
+              "DFL-MAT-J03WOY",
+              "DFL-MAT-J03WPY"
+            ],
+            "validation": [
+              "DFL-MAT-J03WQQ",
+              "DFL-MAT-J03WR9"
+            ]
+          }
+        ],
+        "input_root": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-v1/historical-masks/assessment",
+        "iou_thresholds": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "official_iou_thresholds": [
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7
+        ],
+        "parent_ema": {
+          "decay": 0.99,
+          "start": 7000,
+          "updates": 200
+        },
+        "resources": {
+          "cache_bytes": 1300000000,
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic": true,
+          "device": "cuda:0",
+          "gpu": "Tesla T4",
+          "precision": "float32",
+          "tf32": false,
+          "threads": 1,
+          "workers": 3
+        },
+        "scenario_weights": {
+          "clean": 0.5,
+          "long": 0.15,
+          "replay": 0.15,
+          "short": 0.2
+        },
+        "seeds": [
+          8101,
+          8102
+        ],
+        "selection": {
+          "blend_weight": 0.6198620103020451,
+          "decoder": {
+            "blend_mode": "static",
+            "boundary_scale": 1.373212083582826,
+            "boundary_temperature": 1.0,
+            "live_temperature": 3.507823783298422,
+            "missing_live_weight": 0.520106045174508,
+            "missing_neural_weight": 0.520106045174508,
+            "missing_owner_weight": 0.520106045174508,
+            "neural_weight": 0.520106045174508,
+            "owner_temperature": 0.9166758148761088,
+            "reference": {},
+            "reference_mode": "default",
+            "switch_cost": {
+              "from_dead": 3.110657743041,
+              "owner_switch": 0.016673208086668168,
+              "to_dead": 3.9417670855791185
+            },
+            "switch_cost_type": "typed",
+            "transition_seconds": 2.0,
+            "version": 1,
+            "visible_live_weight": 0.520106045174508,
+            "visible_neural_weight": 0.520106045174508,
+            "visible_owner_weight": 0.520106045174508
+          },
+          "kind": "convex_pair",
+          "members": [
+            {
+              "id": "mean_007",
+              "spec": {
+                "augmentation_config": {
+                  "blur_radius": 2,
+                  "clean_probability": 0.2,
+                  "dropout_max_seconds": 2.0,
+                  "frame_dropout_fraction": 0.05,
+                  "hold_max_frames": 3,
+                  "max_transforms": 1,
+                  "mode": "spatial",
+                  "noise_ball_std": 0.15,
+                  "noise_correlation": 0.5,
+                  "noise_player_std": 0.08,
+                  "operations": [
+                    "coordinate_noise"
+                  ],
+                  "patch_fraction": 0.15,
+                  "player_dropout_fraction": 0.15,
+                  "rotation_max_degrees": 2.0,
+                  "strength": 1.0,
+                  "temporal_shift_max_seconds": 0.12,
+                  "time_warp_knots": 4,
+                  "time_warp_max_rate": 0.1,
+                  "translation_max_meters": 1.0,
+                  "warmup_steps": 400
+                },
+                "model_kwargs": {
+                  "dilations": [
+                    1,
+                    2,
+                    4,
+                    8,
+                    16,
+                    32,
+                    64,
+                    128
+                  ],
+                  "global_dim": 9,
+                  "player_dim": 8,
+                  "pooling": "mean",
+                  "width": 32
+                },
+                "outage_config": {
+                  "clean_probability": 0.2,
+                  "fraction_max": 0.66,
+                  "fraction_min": 0.3,
+                  "full_probability": 0.05,
+                  "long_gap_max_seconds": 30.0,
+                  "long_gap_min_seconds": 10.0,
+                  "long_gap_probability": 0.2,
+                  "max_gap_seconds": 10.0,
+                  "min_gap_seconds": 1.0,
+                  "mode": "legacy"
+                },
+                "schedule": {
+                  "kind": "cosine",
+                  "min_lr_ratio": 0.25,
+                  "total_steps": 7200,
+                  "warmup_steps": 600
+                },
+                "training_args": {
+                  "augment": true,
+                  "boundary_pos_weight": 9.012769618609058,
+                  "boundary_weight": 0.5,
+                  "center_size": 512,
+                  "learning_rate": 0.001712567077468907,
+                  "weight_decay": 6.790736778198919e-05
+                }
+              },
+              "steps": 7200
+            },
+            {
+              "id": "ball_attention_002",
+              "spec": {
+                "augmentation_config": {
+                  "blur_radius": 2,
+                  "clean_probability": 0.5,
+                  "dropout_max_seconds": 0.5,
+                  "frame_dropout_fraction": 0.05,
+                  "hold_max_frames": 3,
+                  "max_transforms": 1,
+                  "mode": "spatial",
+                  "noise_ball_std": 0.15,
+                  "noise_correlation": 0.95,
+                  "noise_player_std": 0.08,
+                  "operations": [
+                    "player_dropout"
+                  ],
+                  "patch_fraction": 0.15,
+                  "player_dropout_fraction": 0.05,
+                  "rotation_max_degrees": 2.0,
+                  "strength": 0.5,
+                  "temporal_shift_max_seconds": 0.12,
+                  "time_warp_knots": 4,
+                  "time_warp_max_rate": 0.1,
+                  "translation_max_meters": 1.0,
+                  "warmup_steps": 400
+                },
+                "model_kwargs": {
+                  "dilations": [
+                    1,
+                    2,
+                    4,
+                    8,
+                    16,
+                    32,
+                    64,
+                    128
+                  ],
+                  "global_dim": 9,
+                  "player_dim": 8,
+                  "pooling": "ball_attention",
+                  "width": 32
+                },
+                "outage_config": {
+                  "clean_probability": 0.2,
+                  "fraction_max": 0.66,
+                  "fraction_min": 0.3,
+                  "full_probability": 0.05,
+                  "long_gap_max_seconds": 30.0,
+                  "long_gap_min_seconds": 10.0,
+                  "long_gap_probability": 0.2,
+                  "max_gap_seconds": 10.0,
+                  "min_gap_seconds": 1.0,
+                  "mode": "legacy"
+                },
+                "schedule": {
+                  "kind": "constant",
+                  "min_lr_ratio": 1.0,
+                  "total_steps": 7200,
+                  "warmup_steps": 0
+                },
+                "training_args": {
+                  "augment": true,
+                  "boundary_pos_weight": 1.9798468176864876,
+                  "boundary_weight": 0.25,
+                  "center_size": 512,
+                  "learning_rate": 0.00146962307142756,
+                  "weight_decay": 0.0003780910117479338
+                }
+              },
+              "steps": 7200
+            }
+          ]
+        },
+        "settings": {
+          "confidence": 0.8,
+          "distill_weight": 0.25,
+          "lr_scale": 0.2,
+          "short_sampling_probability": 0.25,
+          "spell_weight": 0.25,
+          "start_steps": 7200,
+          "temperature": 2.0,
+          "total_extra_steps": 1200
+        },
+        "target_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/target/2027",
+        "training_source_sha256": {
+          "evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+          "evaluation/run_evaluation.py": "1c61564fe52499ba4af3006fb5eb4147b825e92bf516651add80de49d267b19f",
+          "evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+          "experiments/__init__.py": "5f448a1c558b65775041b601f1ca3ae8b5d78f4e329ea209b3478c460fd79fd1",
+          "experiments/audit.py": "dc6f3164c8a3843bd1ff1544e264cbb11d337bc7432a64864063a76cb64fd3e5",
+          "experiments/augmentation_evaluation.py": "487d5607e6f8039d0034811d2162ea2702bc08b4f7be2df961e33f56e1f59ac7",
+          "experiments/augmentation_tuning.py": "4565300d7dcad1fe7f66e4a6a683bda6cd7f0a58b0b41563527082b5005d4c36",
+          "experiments/campaign_decode.py": "575ae4c1966a33928c59cf7d0376a56a32d3955fb8d9a2f889ed22d91b017901",
+          "experiments/campaign_evaluation.py": "17d79c0f1049e5215f150cc7a5587058bc5753b7c8dfeffbdf7b99943e414cdd",
+          "experiments/campaign_protocol.py": "ef43d0e39a03dedf3deff93e11df603e09b6683b4e03ea5c9344156b23b0949d",
+          "experiments/campaign_refit.py": "6f3fdcb76831df04ab9ead6eeaa0f53a2051c48e1536c453ba4a75020cbc948f",
+          "experiments/campaign_search.py": "1e3c23f306bf62bdafdb02ec90421fd14f0b06e44735602f765dca451c04a40b",
+          "experiments/campaign_space.py": "8864a6f37c0d032593805512ea68e0243c6fcf6643fac3d547786ff77c17bd43",
+          "experiments/campaign_submission.py": "170e6dab3765184624f8be2fba6d2fda3008cc61121104b7b17ab28622695c27",
+          "experiments/campaign_training.py": "d75362782bab22625e537419e70d7cc1dff42fc58fc9fd4ef16188f508a283f7",
+          "experiments/coarse_context.py": "6aff8718847f6947b2efb2d087306fbc414b3b17b903a6e47e7b93531f4b75d5",
+          "experiments/coarse_stability.py": "a834f4771e0be05b748b037268511183633b1b1cb7dbb962f8399d99ad7c3ec2",
+          "experiments/coarse_submission.py": "90f726f785dfc8db33515d6086bc127406f5443148c059048e7156eb105a4ab0",
+          "experiments/convergence.py": "ba56b01081a0b090e1f478533d01399f4b45d852a147c37e388de681cca51494",
+          "experiments/cross_validation.py": "adcb83cc0d1dd2dd43e99db3109cc5121741051384cb957ec9a1c0e3c2c718ef",
+          "experiments/ema_calibration_audit.py": "8c21cbfb76378beec1a655219fdd5d28cbd33015f24115b92dcdecfd0d029c52",
+          "experiments/ema_stability.py": "52140e9e98ee322a9a371891e22c77643ec317cad49cb491286e45b574349958",
+          "experiments/ema_submission.py": "a768c0bd1cf79a824a58f2ad8d821b8c84e9fc16a7f84ce6ea5c8e9c95390ecc",
+          "experiments/ema_training.py": "2b7b0884436e51f140b64bebfeb6422a0133cd263c0b4b48e4c25a0d583f4c25",
+          "experiments/ensemble_bagging.py": "400b130d2324d5c652b9beaa7267e10a5c48310e486c538ccdc5eb79211135b2",
+          "experiments/ensemble_bagging_submission.py": "033bd11e69b03216ae54fa410156bafb9fd971bc992b4b9c7f021705e25bccb7",
+          "experiments/ensemble_polish.py": "37b2be867a2056881e24b26f100b5f7b9841a4f900722d54ea96d962a328562e",
+          "experiments/ensemble_polish_confirm.py": "5b416120c9771b6355e95510a99f9297621ecde0c151295252e17cea7aa4ca9b",
+          "experiments/ensemble_polish_search.py": "40e007e0c761e3b13cdbc66272bbfeea6cac436560232b1fd112365e266587be",
+          "experiments/ensemble_polish_submission.py": "614e1fc565a8cc4158fdb1505bee6c299a633274ea843a939655c8dcda951751",
+          "experiments/evaluate.py": "c867fbc144c8967ad030b725e77d6a0353eb3eaa6109c3099080c51d515c6dec",
+          "experiments/fetch_dfl.py": "84b1da87671dfa32686ba45450514f4c08925ea42480703bd5c0850030486b19",
+          "experiments/final_refit.py": "ab7dff1b8ac012ba7de11c4d1971666d0ebaab225c07ca983be52d860f64f0ca",
+          "experiments/finalize.py": "031f47bc7af36be237cfcecc624ae469126da3f25821a45925e7f33df6529036",
+          "experiments/focused_tuning.py": "d44788030cb13b4929e8225055ceb36642ddb4e3f3b22a163e7131c9dc632131",
+          "experiments/frozen_transfer.py": "01f58e1d8adcc1c267cbeaa4519b77452de34fbd777f47683f832f253e892c17",
+          "experiments/gpu_iou.py": "681078a2760e883d2487d5e93d7c21b46343f9c0cae1d82e4dd5af7f8dd1b121",
+          "experiments/gpu_runtime.py": "82083585126777115b9c44775b7bf897b2fc24921f800dc0fe6dc34f6a0d9d95",
+          "experiments/iou_followup_training.py": "4e9c49c21591bfaff06bb4db97dd603dd14c3eee700a866afc07b5e4bc5e9d25",
+          "experiments/live_dead_audit.py": "a03ecc4734ad668565f0ed954b5ef2de47fa83f766d4d3a1193452ec693cc28a",
+          "experiments/oof_selection.py": "0d1e2b835fd3e19a36e670e9fc034fba8babca29f4950b3b0a7f05ce160bc41b",
+          "experiments/overnight_tuning.py": "1e2c30cee24c244ac40d10507b1058b3d09756f888cda48c526bd8ee999af8e8",
+          "experiments/possession_objectives.py": "73b91ea5660907277a955f28214b6e967a727ba7ccb15f06a1298b8df56f62ae",
+          "experiments/possession_refinement.py": "a4c632f51fb67094e5f5d15c5803317a4e9e5606544646de26d3f10138adf131",
+          "experiments/prediction_store.py": "3a804322ecc541ff365be2c884a9e03f7b8c28303606482f541c7e76a1744ddd",
+          "experiments/prepare.py": "c6f57189884a20fb2e540974e0646d7bffd7b985540a3fcfa70c5596a67029ab",
+          "experiments/quality.py": "abec274549d2a38f310187321197243d17a24b3edeb33e887f17bb7844f5edc1",
+          "experiments/refinement_training.py": "d53ff00e657b56bcb7b9a4818b9d15aaf75b43246826a7cb3b174ceb6da94723",
+          "experiments/robustness.py": "59ef3d617adb28d468ff8159a20c5dbfe8be748e0c9f461a9ade0e368f4fc59b",
+          "experiments/select.py": "074c565c1259f32812bf7beb6686c2eddd75f1f298b35f12e65c75cffbca7e81",
+          "experiments/skillcorner_proxy.py": "d641a668ffc79932836fd889313c40b658fae9b2e347411bd89312019007dd65",
+          "experiments/spell_evidence_audit.py": "c13ba00cbdf3bdeee7a44cfe850c659c7845441c8b8c0f39f25d48cb3900a75b",
+          "experiments/target_gap_stress.py": "96429ec5a2091ea68a16db47928a43e4a282c268c267a148a9fa677cacf7dbbd",
+          "experiments/timing_cache.py": "ebd96cebbe0ae917d2a67d4f8d376108148f96d94481be50e6eeb2bf9f926a18",
+          "experiments/timing_nested.py": "542721e01cd980f982fcd73b148cf19822b8ea7687a37a6da32d6390e401e5ac",
+          "experiments/timing_study.py": "1cf273548d27217f03c517b09709136443c3e7d6c2ac432057aaef0fad093766",
+          "experiments/timing_validation.py": "625b7d820f681dbd1a2406acc9db294f336c3cbb1caa4d6689561a31ce891cda",
+          "experiments/tune.py": "8d2bee91039aead207fdd094d0233abbafe93137dfabee4a721c4d25a9642f8c",
+          "games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+          "possession/__init__.py": "13d8cf2fe33d6cf960cafe0d22ae48169c0a62245a936b62fa369efb1bde66d2",
+          "possession/_viterbi.py": "a993d6cda75c8166e0d3b31dd4f0e8872e6a67095ba5eea727bc6a3ae19bb06a",
+          "possession/augmentation.py": "2c5fe0bf972c2275721a465f551ee507577bcafc58afd3dca4fa4240e2863758",
+          "possession/calibrate.py": "1e3b6a3af9e408abde0af8b05799aae12598ed0552e89bd1fc946aee8cfe65c0",
+          "possession/cli.py": "23605f90dc348cdcce4449ed18be9e4e0660ff9787ba8095f238c6ec0a0a33f3",
+          "possession/decode.py": "2b0d30e97922f6cb8d97918d6dfa9701643aea6879cfe8c3add1b431c5e7f031",
+          "possession/deployment.py": "114b6cf26c4fc246199ef009bc2cf45f70a244eca7a3c309a1dbe20e3a3310c0",
+          "possession/diagnostics.py": "6473e29262f1447f11a8f5f15119dafc0e1840479c47197ddaf367c75cfe7bee",
+          "possession/ensemble.py": "0cbd6fb53fe18a9e0a1bb8361dcd9edbf8e9db616f2192abd67868d6ee9ccb0e",
+          "possession/features.py": "07c20139982b59ca03d5c11a9e93d982497e1dade03772cb3263a7cdb142712a",
+          "possession/interaction.py": "b9d193cee4577f652bb9ef08469ecfe7d95678df3123ef77c96adad070efb408",
+          "possession/io_atd.py": "4100c73f257125e9cacfa990fc78206dc018e7aae83b5cfb93de33c3b6d52abe",
+          "possession/io_dfl.py": "b370551089d4c54fa0e4ed148d24306d26c2858c701f2ea32286bddace66cdca",
+          "possession/losses.py": "b4923591e49c64614b928aa2bd7be69c8e9e82abff85d39925b76ba657aa2a57",
+          "possession/model.py": "27311d886a11e09767f5ad85caf927d0f8797902fa6e0ff5fa53d2265de4548e",
+          "possession/outages.py": "1ee685d0fd309b8f14e6e284f18af56d1859562204da9a4749e6398664a76b5b",
+          "possession/predict.py": "66d1e4d884f50480894194bc99bddee0ec2356c21772c205279a2699e719b5ac",
+          "possession/prepared.py": "134eaea4d3698c9a4194de8dea944f599da3aedef45679d35d946c0b86aa0e57",
+          "possession/provenance.py": "30c3fafa39c7e5a0883f737558a96254bd3a7f4a799f82cff8cc7639aaa6c1f7",
+          "possession/quality_blend.py": "1482797cc4f4fc4f23e319b98b8b060a90fd045e94539b249d7e4944efab4611",
+          "possession/recipe.py": "52ca8d0d69927621804222061d4bc6a302527c138ee0b724accb1780efeac745",
+          "possession/reference.py": "3781da8001440feedf923803f4d86e1c10526e0b5d5d01650d7cb681a8430234",
+          "possession/schema.py": "70cb746986b02ea4f01c0ed8a3c14feb7b29216bd8b0bfda55ce0bd98ecd1173",
+          "possession/storage.py": "11172f5bf5166c4b9f2e1ef3d675529632b93aa30b7b15cfcf063403a0a1cdbd",
+          "possession/temporal_augmentation.py": "397fb698cf46e43825a7d424e111939d6cf693cac2683520c7de88f2afc31cb8",
+          "possession/timing.py": "cb9fc56cb34d674c8eaf1850c9bf1cbff0d6b064d7a37ffcb85bf40e163a2750",
+          "possession/train.py": "71f5ee5692317d59be15f673b4051b03cba563f55fd0d830298921b42298a3ee",
+          "possession/training_session.py": "1503822eb5d7f1d3028c0cb2651374913d667d995272c82fbdb54165ef8f624f",
+          "pyproject.toml": "038a2959542102344604a0b88d98c4a7450322f6dda57cda88df9e59a842323e",
+          "uv.lock": "e8dd7552c1bab6d86b3b294318bcc98485eaac5907c1029cd364ce231debb6df"
+        },
+        "variants": [
+          "control",
+          "spell_balanced",
+          "sampling_only",
+          "loss_only"
+        ]
+      },
+      "confirmation": {
+        "arm": "confirmation",
+        "batches": {
+          "batch_1": {
+            "clean": {
+              "kind": "clean"
+            },
+            "long": {
+              "kind": "synthetic",
+              "max_seconds": 30.0,
+              "min_seconds": 10.0,
+              "missing_fraction": 0.41,
+              "seed": 74104
+            },
+            "replay": {
+              "kind": "target_replay",
+              "seed": 5102
+            },
+            "short": {
+              "kind": "synthetic",
+              "max_seconds": 10.0,
+              "min_seconds": 1.0,
+              "missing_fraction": 0.41,
+              "seed": 73104
+            }
+          },
+          "batch_2": {
+            "clean": {
+              "kind": "clean"
+            },
+            "long": {
+              "kind": "synthetic",
+              "max_seconds": 30.0,
+              "min_seconds": 10.0,
+              "missing_fraction": 0.41,
+              "seed": 74105
+            },
+            "replay": {
+              "kind": "target_replay",
+              "seed": 5102
+            },
+            "short": {
+              "kind": "synthetic",
+              "max_seconds": 10.0,
+              "min_seconds": 1.0,
+              "missing_fraction": 0.41,
+              "seed": 73105
+            }
+          }
+        },
+        "coarse_data_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-v1/coarse-data",
+        "coarse_spec": {
+          "augmentation_config": {
+            "mode": "none"
+          },
+          "model_kwargs": {
+            "dilations": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              64
+            ],
+            "global_dim": 9,
+            "player_dim": 8,
+            "pooling": "mean",
+            "width": 32
+          },
+          "outage_config": {
+            "clean_probability": 0.2,
+            "fraction_max": 0.66,
+            "fraction_min": 0.3,
+            "full_probability": 0.05,
+            "long_gap_max_seconds": 30.0,
+            "long_gap_min_seconds": 10.0,
+            "long_gap_probability": 0.2,
+            "max_gap_seconds": 10.0,
+            "min_gap_seconds": 1.0,
+            "mode": "legacy"
+          },
+          "schedule": {
+            "kind": "constant",
+            "min_lr_ratio": 1.0,
+            "total_steps": 7200,
+            "warmup_steps": 0
+          },
+          "training_args": {
+            "augment": true,
+            "boundary_pos_weight": 1.0,
+            "boundary_weight": 0.0,
+            "center_size": 32,
+            "learning_rate": 0.0003,
+            "weight_decay": 0.0001
+          }
+        },
+        "data_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/processed/dfl",
+        "folds": [
+          {
+            "train": [
+              "DFL-MAT-J03WN1",
+              "DFL-MAT-J03WPY",
+              "DFL-MAT-J03WQQ",
+              "DFL-MAT-J03WR9"
+            ],
+            "validation": [
+              "DFL-MAT-J03WOH",
+              "DFL-MAT-J03WOY"
+            ]
+          },
+          {
+            "train": [
+              "DFL-MAT-J03WOH",
+              "DFL-MAT-J03WOY",
+              "DFL-MAT-J03WQQ",
+              "DFL-MAT-J03WR9"
+            ],
+            "validation": [
+              "DFL-MAT-J03WN1",
+              "DFL-MAT-J03WPY"
+            ]
+          },
+          {
+            "train": [
+              "DFL-MAT-J03WN1",
+              "DFL-MAT-J03WOH",
+              "DFL-MAT-J03WOY",
+              "DFL-MAT-J03WPY"
+            ],
+            "validation": [
+              "DFL-MAT-J03WQQ",
+              "DFL-MAT-J03WR9"
+            ]
+          }
+        ],
+        "input_root": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-v1/historical-masks/assessment",
+        "iou_thresholds": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "official_iou_thresholds": [
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7
+        ],
+        "parent_ema": {
+          "decay": 0.99,
+          "start": 7000,
+          "updates": 200
+        },
+        "resources": {
+          "cache_bytes": 1300000000,
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic": true,
+          "device": "cuda:0",
+          "gpu": "Tesla T4",
+          "precision": "float32",
+          "tf32": false,
+          "threads": 1,
+          "workers": 3
+        },
+        "scenario_weights": {
+          "clean": 0.5,
+          "long": 0.15,
+          "replay": 0.15,
+          "short": 0.2
+        },
+        "seeds": [
+          8201,
+          8202
+        ],
+        "selection": {
+          "blend_weight": 0.6198620103020451,
+          "decoder": {
+            "blend_mode": "static",
+            "boundary_scale": 1.373212083582826,
+            "boundary_temperature": 1.0,
+            "live_temperature": 3.507823783298422,
+            "missing_live_weight": 0.520106045174508,
+            "missing_neural_weight": 0.520106045174508,
+            "missing_owner_weight": 0.520106045174508,
+            "neural_weight": 0.520106045174508,
+            "owner_temperature": 0.9166758148761088,
+            "reference": {},
+            "reference_mode": "default",
+            "switch_cost": {
+              "from_dead": 3.110657743041,
+              "owner_switch": 0.016673208086668168,
+              "to_dead": 3.9417670855791185
+            },
+            "switch_cost_type": "typed",
+            "transition_seconds": 2.0,
+            "version": 1,
+            "visible_live_weight": 0.520106045174508,
+            "visible_neural_weight": 0.520106045174508,
+            "visible_owner_weight": 0.520106045174508
+          },
+          "kind": "convex_pair",
+          "members": [
+            {
+              "id": "mean_007",
+              "spec": {
+                "augmentation_config": {
+                  "blur_radius": 2,
+                  "clean_probability": 0.2,
+                  "dropout_max_seconds": 2.0,
+                  "frame_dropout_fraction": 0.05,
+                  "hold_max_frames": 3,
+                  "max_transforms": 1,
+                  "mode": "spatial",
+                  "noise_ball_std": 0.15,
+                  "noise_correlation": 0.5,
+                  "noise_player_std": 0.08,
+                  "operations": [
+                    "coordinate_noise"
+                  ],
+                  "patch_fraction": 0.15,
+                  "player_dropout_fraction": 0.15,
+                  "rotation_max_degrees": 2.0,
+                  "strength": 1.0,
+                  "temporal_shift_max_seconds": 0.12,
+                  "time_warp_knots": 4,
+                  "time_warp_max_rate": 0.1,
+                  "translation_max_meters": 1.0,
+                  "warmup_steps": 400
+                },
+                "model_kwargs": {
+                  "dilations": [
+                    1,
+                    2,
+                    4,
+                    8,
+                    16,
+                    32,
+                    64,
+                    128
+                  ],
+                  "global_dim": 9,
+                  "player_dim": 8,
+                  "pooling": "mean",
+                  "width": 32
+                },
+                "outage_config": {
+                  "clean_probability": 0.2,
+                  "fraction_max": 0.66,
+                  "fraction_min": 0.3,
+                  "full_probability": 0.05,
+                  "long_gap_max_seconds": 30.0,
+                  "long_gap_min_seconds": 10.0,
+                  "long_gap_probability": 0.2,
+                  "max_gap_seconds": 10.0,
+                  "min_gap_seconds": 1.0,
+                  "mode": "legacy"
+                },
+                "schedule": {
+                  "kind": "cosine",
+                  "min_lr_ratio": 0.25,
+                  "total_steps": 7200,
+                  "warmup_steps": 600
+                },
+                "training_args": {
+                  "augment": true,
+                  "boundary_pos_weight": 9.012769618609058,
+                  "boundary_weight": 0.5,
+                  "center_size": 512,
+                  "learning_rate": 0.001712567077468907,
+                  "weight_decay": 6.790736778198919e-05
+                }
+              },
+              "steps": 7200
+            },
+            {
+              "id": "ball_attention_002",
+              "spec": {
+                "augmentation_config": {
+                  "blur_radius": 2,
+                  "clean_probability": 0.5,
+                  "dropout_max_seconds": 0.5,
+                  "frame_dropout_fraction": 0.05,
+                  "hold_max_frames": 3,
+                  "max_transforms": 1,
+                  "mode": "spatial",
+                  "noise_ball_std": 0.15,
+                  "noise_correlation": 0.95,
+                  "noise_player_std": 0.08,
+                  "operations": [
+                    "player_dropout"
+                  ],
+                  "patch_fraction": 0.15,
+                  "player_dropout_fraction": 0.05,
+                  "rotation_max_degrees": 2.0,
+                  "strength": 0.5,
+                  "temporal_shift_max_seconds": 0.12,
+                  "time_warp_knots": 4,
+                  "time_warp_max_rate": 0.1,
+                  "translation_max_meters": 1.0,
+                  "warmup_steps": 400
+                },
+                "model_kwargs": {
+                  "dilations": [
+                    1,
+                    2,
+                    4,
+                    8,
+                    16,
+                    32,
+                    64,
+                    128
+                  ],
+                  "global_dim": 9,
+                  "player_dim": 8,
+                  "pooling": "ball_attention",
+                  "width": 32
+                },
+                "outage_config": {
+                  "clean_probability": 0.2,
+                  "fraction_max": 0.66,
+                  "fraction_min": 0.3,
+                  "full_probability": 0.05,
+                  "long_gap_max_seconds": 30.0,
+                  "long_gap_min_seconds": 10.0,
+                  "long_gap_probability": 0.2,
+                  "max_gap_seconds": 10.0,
+                  "min_gap_seconds": 1.0,
+                  "mode": "legacy"
+                },
+                "schedule": {
+                  "kind": "constant",
+                  "min_lr_ratio": 1.0,
+                  "total_steps": 7200,
+                  "warmup_steps": 0
+                },
+                "training_args": {
+                  "augment": true,
+                  "boundary_pos_weight": 1.9798468176864876,
+                  "boundary_weight": 0.25,
+                  "center_size": 512,
+                  "learning_rate": 0.00146962307142756,
+                  "weight_decay": 0.0003780910117479338
+                }
+              },
+              "steps": 7200
+            }
+          ]
+        },
+        "settings": {
+          "confidence": 0.8,
+          "distill_weight": 0.25,
+          "lr_scale": 0.2,
+          "short_sampling_probability": 0.25,
+          "spell_weight": 0.25,
+          "start_steps": 7200,
+          "temperature": 2.0,
+          "total_extra_steps": 1200
+        },
+        "target_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/target/2027",
+        "training_source_sha256": {
+          "evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+          "evaluation/run_evaluation.py": "1c61564fe52499ba4af3006fb5eb4147b825e92bf516651add80de49d267b19f",
+          "evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+          "experiments/__init__.py": "5f448a1c558b65775041b601f1ca3ae8b5d78f4e329ea209b3478c460fd79fd1",
+          "experiments/audit.py": "dc6f3164c8a3843bd1ff1544e264cbb11d337bc7432a64864063a76cb64fd3e5",
+          "experiments/augmentation_evaluation.py": "487d5607e6f8039d0034811d2162ea2702bc08b4f7be2df961e33f56e1f59ac7",
+          "experiments/augmentation_tuning.py": "4565300d7dcad1fe7f66e4a6a683bda6cd7f0a58b0b41563527082b5005d4c36",
+          "experiments/campaign_decode.py": "575ae4c1966a33928c59cf7d0376a56a32d3955fb8d9a2f889ed22d91b017901",
+          "experiments/campaign_evaluation.py": "17d79c0f1049e5215f150cc7a5587058bc5753b7c8dfeffbdf7b99943e414cdd",
+          "experiments/campaign_protocol.py": "ef43d0e39a03dedf3deff93e11df603e09b6683b4e03ea5c9344156b23b0949d",
+          "experiments/campaign_refit.py": "6f3fdcb76831df04ab9ead6eeaa0f53a2051c48e1536c453ba4a75020cbc948f",
+          "experiments/campaign_search.py": "1e3c23f306bf62bdafdb02ec90421fd14f0b06e44735602f765dca451c04a40b",
+          "experiments/campaign_space.py": "8864a6f37c0d032593805512ea68e0243c6fcf6643fac3d547786ff77c17bd43",
+          "experiments/campaign_submission.py": "170e6dab3765184624f8be2fba6d2fda3008cc61121104b7b17ab28622695c27",
+          "experiments/campaign_training.py": "d75362782bab22625e537419e70d7cc1dff42fc58fc9fd4ef16188f508a283f7",
+          "experiments/coarse_context.py": "6aff8718847f6947b2efb2d087306fbc414b3b17b903a6e47e7b93531f4b75d5",
+          "experiments/coarse_stability.py": "a834f4771e0be05b748b037268511183633b1b1cb7dbb962f8399d99ad7c3ec2",
+          "experiments/coarse_submission.py": "90f726f785dfc8db33515d6086bc127406f5443148c059048e7156eb105a4ab0",
+          "experiments/convergence.py": "ba56b01081a0b090e1f478533d01399f4b45d852a147c37e388de681cca51494",
+          "experiments/cross_validation.py": "adcb83cc0d1dd2dd43e99db3109cc5121741051384cb957ec9a1c0e3c2c718ef",
+          "experiments/ema_calibration_audit.py": "8c21cbfb76378beec1a655219fdd5d28cbd33015f24115b92dcdecfd0d029c52",
+          "experiments/ema_stability.py": "52140e9e98ee322a9a371891e22c77643ec317cad49cb491286e45b574349958",
+          "experiments/ema_submission.py": "a768c0bd1cf79a824a58f2ad8d821b8c84e9fc16a7f84ce6ea5c8e9c95390ecc",
+          "experiments/ema_training.py": "2b7b0884436e51f140b64bebfeb6422a0133cd263c0b4b48e4c25a0d583f4c25",
+          "experiments/ensemble_bagging.py": "400b130d2324d5c652b9beaa7267e10a5c48310e486c538ccdc5eb79211135b2",
+          "experiments/ensemble_bagging_submission.py": "033bd11e69b03216ae54fa410156bafb9fd971bc992b4b9c7f021705e25bccb7",
+          "experiments/ensemble_polish.py": "37b2be867a2056881e24b26f100b5f7b9841a4f900722d54ea96d962a328562e",
+          "experiments/ensemble_polish_confirm.py": "5b416120c9771b6355e95510a99f9297621ecde0c151295252e17cea7aa4ca9b",
+          "experiments/ensemble_polish_search.py": "40e007e0c761e3b13cdbc66272bbfeea6cac436560232b1fd112365e266587be",
+          "experiments/ensemble_polish_submission.py": "614e1fc565a8cc4158fdb1505bee6c299a633274ea843a939655c8dcda951751",
+          "experiments/evaluate.py": "c867fbc144c8967ad030b725e77d6a0353eb3eaa6109c3099080c51d515c6dec",
+          "experiments/fetch_dfl.py": "84b1da87671dfa32686ba45450514f4c08925ea42480703bd5c0850030486b19",
+          "experiments/final_refit.py": "ab7dff1b8ac012ba7de11c4d1971666d0ebaab225c07ca983be52d860f64f0ca",
+          "experiments/finalize.py": "031f47bc7af36be237cfcecc624ae469126da3f25821a45925e7f33df6529036",
+          "experiments/focused_tuning.py": "d44788030cb13b4929e8225055ceb36642ddb4e3f3b22a163e7131c9dc632131",
+          "experiments/frozen_transfer.py": "01f58e1d8adcc1c267cbeaa4519b77452de34fbd777f47683f832f253e892c17",
+          "experiments/gpu_iou.py": "681078a2760e883d2487d5e93d7c21b46343f9c0cae1d82e4dd5af7f8dd1b121",
+          "experiments/gpu_runtime.py": "82083585126777115b9c44775b7bf897b2fc24921f800dc0fe6dc34f6a0d9d95",
+          "experiments/iou_followup_training.py": "4e9c49c21591bfaff06bb4db97dd603dd14c3eee700a866afc07b5e4bc5e9d25",
+          "experiments/live_dead_audit.py": "a03ecc4734ad668565f0ed954b5ef2de47fa83f766d4d3a1193452ec693cc28a",
+          "experiments/oof_selection.py": "0d1e2b835fd3e19a36e670e9fc034fba8babca29f4950b3b0a7f05ce160bc41b",
+          "experiments/overnight_tuning.py": "1e2c30cee24c244ac40d10507b1058b3d09756f888cda48c526bd8ee999af8e8",
+          "experiments/possession_objectives.py": "73b91ea5660907277a955f28214b6e967a727ba7ccb15f06a1298b8df56f62ae",
+          "experiments/possession_refinement.py": "a4c632f51fb67094e5f5d15c5803317a4e9e5606544646de26d3f10138adf131",
+          "experiments/prediction_store.py": "3a804322ecc541ff365be2c884a9e03f7b8c28303606482f541c7e76a1744ddd",
+          "experiments/prepare.py": "c6f57189884a20fb2e540974e0646d7bffd7b985540a3fcfa70c5596a67029ab",
+          "experiments/quality.py": "abec274549d2a38f310187321197243d17a24b3edeb33e887f17bb7844f5edc1",
+          "experiments/refinement_training.py": "d53ff00e657b56bcb7b9a4818b9d15aaf75b43246826a7cb3b174ceb6da94723",
+          "experiments/robustness.py": "59ef3d617adb28d468ff8159a20c5dbfe8be748e0c9f461a9ade0e368f4fc59b",
+          "experiments/select.py": "074c565c1259f32812bf7beb6686c2eddd75f1f298b35f12e65c75cffbca7e81",
+          "experiments/skillcorner_proxy.py": "d641a668ffc79932836fd889313c40b658fae9b2e347411bd89312019007dd65",
+          "experiments/spell_evidence_audit.py": "c13ba00cbdf3bdeee7a44cfe850c659c7845441c8b8c0f39f25d48cb3900a75b",
+          "experiments/target_gap_stress.py": "96429ec5a2091ea68a16db47928a43e4a282c268c267a148a9fa677cacf7dbbd",
+          "experiments/timing_cache.py": "ebd96cebbe0ae917d2a67d4f8d376108148f96d94481be50e6eeb2bf9f926a18",
+          "experiments/timing_nested.py": "542721e01cd980f982fcd73b148cf19822b8ea7687a37a6da32d6390e401e5ac",
+          "experiments/timing_study.py": "1cf273548d27217f03c517b09709136443c3e7d6c2ac432057aaef0fad093766",
+          "experiments/timing_validation.py": "625b7d820f681dbd1a2406acc9db294f336c3cbb1caa4d6689561a31ce891cda",
+          "experiments/tune.py": "8d2bee91039aead207fdd094d0233abbafe93137dfabee4a721c4d25a9642f8c",
+          "games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+          "possession/__init__.py": "13d8cf2fe33d6cf960cafe0d22ae48169c0a62245a936b62fa369efb1bde66d2",
+          "possession/_viterbi.py": "a993d6cda75c8166e0d3b31dd4f0e8872e6a67095ba5eea727bc6a3ae19bb06a",
+          "possession/augmentation.py": "2c5fe0bf972c2275721a465f551ee507577bcafc58afd3dca4fa4240e2863758",
+          "possession/calibrate.py": "1e3b6a3af9e408abde0af8b05799aae12598ed0552e89bd1fc946aee8cfe65c0",
+          "possession/cli.py": "23605f90dc348cdcce4449ed18be9e4e0660ff9787ba8095f238c6ec0a0a33f3",
+          "possession/decode.py": "2b0d30e97922f6cb8d97918d6dfa9701643aea6879cfe8c3add1b431c5e7f031",
+          "possession/deployment.py": "114b6cf26c4fc246199ef009bc2cf45f70a244eca7a3c309a1dbe20e3a3310c0",
+          "possession/diagnostics.py": "6473e29262f1447f11a8f5f15119dafc0e1840479c47197ddaf367c75cfe7bee",
+          "possession/ensemble.py": "0cbd6fb53fe18a9e0a1bb8361dcd9edbf8e9db616f2192abd67868d6ee9ccb0e",
+          "possession/features.py": "07c20139982b59ca03d5c11a9e93d982497e1dade03772cb3263a7cdb142712a",
+          "possession/interaction.py": "b9d193cee4577f652bb9ef08469ecfe7d95678df3123ef77c96adad070efb408",
+          "possession/io_atd.py": "4100c73f257125e9cacfa990fc78206dc018e7aae83b5cfb93de33c3b6d52abe",
+          "possession/io_dfl.py": "b370551089d4c54fa0e4ed148d24306d26c2858c701f2ea32286bddace66cdca",
+          "possession/losses.py": "b4923591e49c64614b928aa2bd7be69c8e9e82abff85d39925b76ba657aa2a57",
+          "possession/model.py": "27311d886a11e09767f5ad85caf927d0f8797902fa6e0ff5fa53d2265de4548e",
+          "possession/outages.py": "1ee685d0fd309b8f14e6e284f18af56d1859562204da9a4749e6398664a76b5b",
+          "possession/predict.py": "66d1e4d884f50480894194bc99bddee0ec2356c21772c205279a2699e719b5ac",
+          "possession/prepared.py": "134eaea4d3698c9a4194de8dea944f599da3aedef45679d35d946c0b86aa0e57",
+          "possession/provenance.py": "30c3fafa39c7e5a0883f737558a96254bd3a7f4a799f82cff8cc7639aaa6c1f7",
+          "possession/quality_blend.py": "1482797cc4f4fc4f23e319b98b8b060a90fd045e94539b249d7e4944efab4611",
+          "possession/recipe.py": "52ca8d0d69927621804222061d4bc6a302527c138ee0b724accb1780efeac745",
+          "possession/reference.py": "3781da8001440feedf923803f4d86e1c10526e0b5d5d01650d7cb681a8430234",
+          "possession/schema.py": "70cb746986b02ea4f01c0ed8a3c14feb7b29216bd8b0bfda55ce0bd98ecd1173",
+          "possession/storage.py": "11172f5bf5166c4b9f2e1ef3d675529632b93aa30b7b15cfcf063403a0a1cdbd",
+          "possession/temporal_augmentation.py": "397fb698cf46e43825a7d424e111939d6cf693cac2683520c7de88f2afc31cb8",
+          "possession/timing.py": "cb9fc56cb34d674c8eaf1850c9bf1cbff0d6b064d7a37ffcb85bf40e163a2750",
+          "possession/train.py": "71f5ee5692317d59be15f673b4051b03cba563f55fd0d830298921b42298a3ee",
+          "possession/training_session.py": "1503822eb5d7f1d3028c0cb2651374913d667d995272c82fbdb54165ef8f624f",
+          "pyproject.toml": "038a2959542102344604a0b88d98c4a7450322f6dda57cda88df9e59a842323e",
+          "uv.lock": "e8dd7552c1bab6d86b3b294318bcc98485eaac5907c1029cd364ce231debb6df"
+        },
+        "variants": [
+          "control",
+          "spell_balanced"
+        ]
+      },
+      "guard": {
+        "arm": "guard",
+        "batches": {
+          "batch_1": {
+            "clean": {
+              "kind": "clean"
+            },
+            "long": {
+              "kind": "synthetic",
+              "max_seconds": 30.0,
+              "min_seconds": 10.0,
+              "missing_fraction": 0.41,
+              "seed": 74104
+            },
+            "replay": {
+              "kind": "target_replay",
+              "seed": 5102
+            },
+            "short": {
+              "kind": "synthetic",
+              "max_seconds": 10.0,
+              "min_seconds": 1.0,
+              "missing_fraction": 0.41,
+              "seed": 73104
+            }
+          },
+          "batch_2": {
+            "clean": {
+              "kind": "clean"
+            },
+            "long": {
+              "kind": "synthetic",
+              "max_seconds": 30.0,
+              "min_seconds": 10.0,
+              "missing_fraction": 0.41,
+              "seed": 74105
+            },
+            "replay": {
+              "kind": "target_replay",
+              "seed": 5102
+            },
+            "short": {
+              "kind": "synthetic",
+              "max_seconds": 10.0,
+              "min_seconds": 1.0,
+              "missing_fraction": 0.41,
+              "seed": 73105
+            }
+          }
+        },
+        "coarse_data_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-v1/coarse-data",
+        "coarse_spec": {
+          "augmentation_config": {
+            "mode": "none"
+          },
+          "model_kwargs": {
+            "dilations": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              64
+            ],
+            "global_dim": 9,
+            "player_dim": 8,
+            "pooling": "mean",
+            "width": 32
+          },
+          "outage_config": {
+            "clean_probability": 0.2,
+            "fraction_max": 0.66,
+            "fraction_min": 0.3,
+            "full_probability": 0.05,
+            "long_gap_max_seconds": 30.0,
+            "long_gap_min_seconds": 10.0,
+            "long_gap_probability": 0.2,
+            "max_gap_seconds": 10.0,
+            "min_gap_seconds": 1.0,
+            "mode": "legacy"
+          },
+          "schedule": {
+            "kind": "constant",
+            "min_lr_ratio": 1.0,
+            "total_steps": 7200,
+            "warmup_steps": 0
+          },
+          "training_args": {
+            "augment": true,
+            "boundary_pos_weight": 1.0,
+            "boundary_weight": 0.0,
+            "center_size": 32,
+            "learning_rate": 0.0003,
+            "weight_decay": 0.0001
+          }
+        },
+        "data_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/processed/dfl",
+        "folds": [
+          {
+            "train": [
+              "DFL-MAT-J03WN1",
+              "DFL-MAT-J03WOH",
+              "DFL-MAT-J03WOY",
+              "DFL-MAT-J03WPY",
+              "DFL-MAT-J03WQQ",
+              "DFL-MAT-J03WR9"
+            ],
+            "validation": [
+              "DFL-MAT-J03WMX"
+            ]
+          }
+        ],
+        "input_root": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-followup-v1/guard/assessment",
+        "iou_thresholds": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "official_iou_thresholds": [
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7
+        ],
+        "parent_ema": {
+          "decay": 0.99,
+          "start": 7000,
+          "updates": 200
+        },
+        "resources": {
+          "cache_bytes": 1300000000,
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic": true,
+          "device": "cuda:0",
+          "gpu": "Tesla T4",
+          "precision": "float32",
+          "tf32": false,
+          "threads": 1,
+          "workers": 3
+        },
+        "scenario_weights": {
+          "clean": 0.5,
+          "long": 0.15,
+          "replay": 0.15,
+          "short": 0.2
+        },
+        "seeds": [
+          9201,
+          9202
+        ],
+        "selection": {
+          "blend_weight": 0.6198620103020451,
+          "decoder": {
+            "blend_mode": "static",
+            "boundary_scale": 1.373212083582826,
+            "boundary_temperature": 1.0,
+            "live_temperature": 3.507823783298422,
+            "missing_live_weight": 0.520106045174508,
+            "missing_neural_weight": 0.520106045174508,
+            "missing_owner_weight": 0.520106045174508,
+            "neural_weight": 0.520106045174508,
+            "owner_temperature": 0.9166758148761088,
+            "reference": {},
+            "reference_mode": "default",
+            "switch_cost": {
+              "from_dead": 3.110657743041,
+              "owner_switch": 0.016673208086668168,
+              "to_dead": 3.9417670855791185
+            },
+            "switch_cost_type": "typed",
+            "transition_seconds": 2.0,
+            "version": 1,
+            "visible_live_weight": 0.520106045174508,
+            "visible_neural_weight": 0.520106045174508,
+            "visible_owner_weight": 0.520106045174508
+          },
+          "kind": "convex_pair",
+          "members": [
+            {
+              "id": "mean_007",
+              "spec": {
+                "augmentation_config": {
+                  "blur_radius": 2,
+                  "clean_probability": 0.2,
+                  "dropout_max_seconds": 2.0,
+                  "frame_dropout_fraction": 0.05,
+                  "hold_max_frames": 3,
+                  "max_transforms": 1,
+                  "mode": "spatial",
+                  "noise_ball_std": 0.15,
+                  "noise_correlation": 0.5,
+                  "noise_player_std": 0.08,
+                  "operations": [
+                    "coordinate_noise"
+                  ],
+                  "patch_fraction": 0.15,
+                  "player_dropout_fraction": 0.15,
+                  "rotation_max_degrees": 2.0,
+                  "strength": 1.0,
+                  "temporal_shift_max_seconds": 0.12,
+                  "time_warp_knots": 4,
+                  "time_warp_max_rate": 0.1,
+                  "translation_max_meters": 1.0,
+                  "warmup_steps": 400
+                },
+                "model_kwargs": {
+                  "dilations": [
+                    1,
+                    2,
+                    4,
+                    8,
+                    16,
+                    32,
+                    64,
+                    128
+                  ],
+                  "global_dim": 9,
+                  "player_dim": 8,
+                  "pooling": "mean",
+                  "width": 32
+                },
+                "outage_config": {
+                  "clean_probability": 0.2,
+                  "fraction_max": 0.66,
+                  "fraction_min": 0.3,
+                  "full_probability": 0.05,
+                  "long_gap_max_seconds": 30.0,
+                  "long_gap_min_seconds": 10.0,
+                  "long_gap_probability": 0.2,
+                  "max_gap_seconds": 10.0,
+                  "min_gap_seconds": 1.0,
+                  "mode": "legacy"
+                },
+                "schedule": {
+                  "kind": "cosine",
+                  "min_lr_ratio": 0.25,
+                  "total_steps": 7200,
+                  "warmup_steps": 600
+                },
+                "training_args": {
+                  "augment": true,
+                  "boundary_pos_weight": 9.012769618609058,
+                  "boundary_weight": 0.5,
+                  "center_size": 512,
+                  "learning_rate": 0.001712567077468907,
+                  "weight_decay": 6.790736778198919e-05
+                }
+              },
+              "steps": 7200
+            },
+            {
+              "id": "ball_attention_002",
+              "spec": {
+                "augmentation_config": {
+                  "blur_radius": 2,
+                  "clean_probability": 0.5,
+                  "dropout_max_seconds": 0.5,
+                  "frame_dropout_fraction": 0.05,
+                  "hold_max_frames": 3,
+                  "max_transforms": 1,
+                  "mode": "spatial",
+                  "noise_ball_std": 0.15,
+                  "noise_correlation": 0.95,
+                  "noise_player_std": 0.08,
+                  "operations": [
+                    "player_dropout"
+                  ],
+                  "patch_fraction": 0.15,
+                  "player_dropout_fraction": 0.05,
+                  "rotation_max_degrees": 2.0,
+                  "strength": 0.5,
+                  "temporal_shift_max_seconds": 0.12,
+                  "time_warp_knots": 4,
+                  "time_warp_max_rate": 0.1,
+                  "translation_max_meters": 1.0,
+                  "warmup_steps": 400
+                },
+                "model_kwargs": {
+                  "dilations": [
+                    1,
+                    2,
+                    4,
+                    8,
+                    16,
+                    32,
+                    64,
+                    128
+                  ],
+                  "global_dim": 9,
+                  "player_dim": 8,
+                  "pooling": "ball_attention",
+                  "width": 32
+                },
+                "outage_config": {
+                  "clean_probability": 0.2,
+                  "fraction_max": 0.66,
+                  "fraction_min": 0.3,
+                  "full_probability": 0.05,
+                  "long_gap_max_seconds": 30.0,
+                  "long_gap_min_seconds": 10.0,
+                  "long_gap_probability": 0.2,
+                  "max_gap_seconds": 10.0,
+                  "min_gap_seconds": 1.0,
+                  "mode": "legacy"
+                },
+                "schedule": {
+                  "kind": "constant",
+                  "min_lr_ratio": 1.0,
+                  "total_steps": 7200,
+                  "warmup_steps": 0
+                },
+                "training_args": {
+                  "augment": true,
+                  "boundary_pos_weight": 1.9798468176864876,
+                  "boundary_weight": 0.25,
+                  "center_size": 512,
+                  "learning_rate": 0.00146962307142756,
+                  "weight_decay": 0.0003780910117479338
+                }
+              },
+              "steps": 7200
+            }
+          ]
+        },
+        "settings": {
+          "confidence": 0.8,
+          "distill_weight": 0.25,
+          "lr_scale": 0.2,
+          "short_sampling_probability": 0.25,
+          "spell_weight": 0.25,
+          "start_steps": 7200,
+          "temperature": 2.0,
+          "total_extra_steps": 1200
+        },
+        "target_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/target/2027",
+        "training_source_sha256": {
+          "evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+          "evaluation/run_evaluation.py": "1c61564fe52499ba4af3006fb5eb4147b825e92bf516651add80de49d267b19f",
+          "evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+          "experiments/__init__.py": "5f448a1c558b65775041b601f1ca3ae8b5d78f4e329ea209b3478c460fd79fd1",
+          "experiments/audit.py": "dc6f3164c8a3843bd1ff1544e264cbb11d337bc7432a64864063a76cb64fd3e5",
+          "experiments/augmentation_evaluation.py": "487d5607e6f8039d0034811d2162ea2702bc08b4f7be2df961e33f56e1f59ac7",
+          "experiments/augmentation_tuning.py": "4565300d7dcad1fe7f66e4a6a683bda6cd7f0a58b0b41563527082b5005d4c36",
+          "experiments/campaign_decode.py": "575ae4c1966a33928c59cf7d0376a56a32d3955fb8d9a2f889ed22d91b017901",
+          "experiments/campaign_evaluation.py": "17d79c0f1049e5215f150cc7a5587058bc5753b7c8dfeffbdf7b99943e414cdd",
+          "experiments/campaign_protocol.py": "ef43d0e39a03dedf3deff93e11df603e09b6683b4e03ea5c9344156b23b0949d",
+          "experiments/campaign_refit.py": "6f3fdcb76831df04ab9ead6eeaa0f53a2051c48e1536c453ba4a75020cbc948f",
+          "experiments/campaign_search.py": "1e3c23f306bf62bdafdb02ec90421fd14f0b06e44735602f765dca451c04a40b",
+          "experiments/campaign_space.py": "8864a6f37c0d032593805512ea68e0243c6fcf6643fac3d547786ff77c17bd43",
+          "experiments/campaign_submission.py": "170e6dab3765184624f8be2fba6d2fda3008cc61121104b7b17ab28622695c27",
+          "experiments/campaign_training.py": "d75362782bab22625e537419e70d7cc1dff42fc58fc9fd4ef16188f508a283f7",
+          "experiments/coarse_context.py": "6aff8718847f6947b2efb2d087306fbc414b3b17b903a6e47e7b93531f4b75d5",
+          "experiments/coarse_stability.py": "a834f4771e0be05b748b037268511183633b1b1cb7dbb962f8399d99ad7c3ec2",
+          "experiments/coarse_submission.py": "90f726f785dfc8db33515d6086bc127406f5443148c059048e7156eb105a4ab0",
+          "experiments/convergence.py": "ba56b01081a0b090e1f478533d01399f4b45d852a147c37e388de681cca51494",
+          "experiments/cross_validation.py": "adcb83cc0d1dd2dd43e99db3109cc5121741051384cb957ec9a1c0e3c2c718ef",
+          "experiments/ema_calibration_audit.py": "8c21cbfb76378beec1a655219fdd5d28cbd33015f24115b92dcdecfd0d029c52",
+          "experiments/ema_stability.py": "52140e9e98ee322a9a371891e22c77643ec317cad49cb491286e45b574349958",
+          "experiments/ema_submission.py": "a768c0bd1cf79a824a58f2ad8d821b8c84e9fc16a7f84ce6ea5c8e9c95390ecc",
+          "experiments/ema_training.py": "2b7b0884436e51f140b64bebfeb6422a0133cd263c0b4b48e4c25a0d583f4c25",
+          "experiments/ensemble_bagging.py": "400b130d2324d5c652b9beaa7267e10a5c48310e486c538ccdc5eb79211135b2",
+          "experiments/ensemble_bagging_submission.py": "033bd11e69b03216ae54fa410156bafb9fd971bc992b4b9c7f021705e25bccb7",
+          "experiments/ensemble_polish.py": "37b2be867a2056881e24b26f100b5f7b9841a4f900722d54ea96d962a328562e",
+          "experiments/ensemble_polish_confirm.py": "5b416120c9771b6355e95510a99f9297621ecde0c151295252e17cea7aa4ca9b",
+          "experiments/ensemble_polish_search.py": "40e007e0c761e3b13cdbc66272bbfeea6cac436560232b1fd112365e266587be",
+          "experiments/ensemble_polish_submission.py": "614e1fc565a8cc4158fdb1505bee6c299a633274ea843a939655c8dcda951751",
+          "experiments/evaluate.py": "c867fbc144c8967ad030b725e77d6a0353eb3eaa6109c3099080c51d515c6dec",
+          "experiments/fetch_dfl.py": "84b1da87671dfa32686ba45450514f4c08925ea42480703bd5c0850030486b19",
+          "experiments/final_refit.py": "ab7dff1b8ac012ba7de11c4d1971666d0ebaab225c07ca983be52d860f64f0ca",
+          "experiments/finalize.py": "031f47bc7af36be237cfcecc624ae469126da3f25821a45925e7f33df6529036",
+          "experiments/focused_tuning.py": "d44788030cb13b4929e8225055ceb36642ddb4e3f3b22a163e7131c9dc632131",
+          "experiments/frozen_transfer.py": "01f58e1d8adcc1c267cbeaa4519b77452de34fbd777f47683f832f253e892c17",
+          "experiments/gpu_iou.py": "681078a2760e883d2487d5e93d7c21b46343f9c0cae1d82e4dd5af7f8dd1b121",
+          "experiments/gpu_runtime.py": "82083585126777115b9c44775b7bf897b2fc24921f800dc0fe6dc34f6a0d9d95",
+          "experiments/iou_followup_training.py": "4e9c49c21591bfaff06bb4db97dd603dd14c3eee700a866afc07b5e4bc5e9d25",
+          "experiments/live_dead_audit.py": "a03ecc4734ad668565f0ed954b5ef2de47fa83f766d4d3a1193452ec693cc28a",
+          "experiments/oof_selection.py": "0d1e2b835fd3e19a36e670e9fc034fba8babca29f4950b3b0a7f05ce160bc41b",
+          "experiments/overnight_tuning.py": "1e2c30cee24c244ac40d10507b1058b3d09756f888cda48c526bd8ee999af8e8",
+          "experiments/possession_objectives.py": "73b91ea5660907277a955f28214b6e967a727ba7ccb15f06a1298b8df56f62ae",
+          "experiments/possession_refinement.py": "a4c632f51fb67094e5f5d15c5803317a4e9e5606544646de26d3f10138adf131",
+          "experiments/prediction_store.py": "3a804322ecc541ff365be2c884a9e03f7b8c28303606482f541c7e76a1744ddd",
+          "experiments/prepare.py": "c6f57189884a20fb2e540974e0646d7bffd7b985540a3fcfa70c5596a67029ab",
+          "experiments/quality.py": "abec274549d2a38f310187321197243d17a24b3edeb33e887f17bb7844f5edc1",
+          "experiments/refinement_training.py": "d53ff00e657b56bcb7b9a4818b9d15aaf75b43246826a7cb3b174ceb6da94723",
+          "experiments/robustness.py": "59ef3d617adb28d468ff8159a20c5dbfe8be748e0c9f461a9ade0e368f4fc59b",
+          "experiments/select.py": "074c565c1259f32812bf7beb6686c2eddd75f1f298b35f12e65c75cffbca7e81",
+          "experiments/skillcorner_proxy.py": "d641a668ffc79932836fd889313c40b658fae9b2e347411bd89312019007dd65",
+          "experiments/spell_evidence_audit.py": "c13ba00cbdf3bdeee7a44cfe850c659c7845441c8b8c0f39f25d48cb3900a75b",
+          "experiments/target_gap_stress.py": "96429ec5a2091ea68a16db47928a43e4a282c268c267a148a9fa677cacf7dbbd",
+          "experiments/timing_cache.py": "ebd96cebbe0ae917d2a67d4f8d376108148f96d94481be50e6eeb2bf9f926a18",
+          "experiments/timing_nested.py": "542721e01cd980f982fcd73b148cf19822b8ea7687a37a6da32d6390e401e5ac",
+          "experiments/timing_study.py": "1cf273548d27217f03c517b09709136443c3e7d6c2ac432057aaef0fad093766",
+          "experiments/timing_validation.py": "625b7d820f681dbd1a2406acc9db294f336c3cbb1caa4d6689561a31ce891cda",
+          "experiments/tune.py": "8d2bee91039aead207fdd094d0233abbafe93137dfabee4a721c4d25a9642f8c",
+          "games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+          "possession/__init__.py": "13d8cf2fe33d6cf960cafe0d22ae48169c0a62245a936b62fa369efb1bde66d2",
+          "possession/_viterbi.py": "a993d6cda75c8166e0d3b31dd4f0e8872e6a67095ba5eea727bc6a3ae19bb06a",
+          "possession/augmentation.py": "2c5fe0bf972c2275721a465f551ee507577bcafc58afd3dca4fa4240e2863758",
+          "possession/calibrate.py": "1e3b6a3af9e408abde0af8b05799aae12598ed0552e89bd1fc946aee8cfe65c0",
+          "possession/cli.py": "23605f90dc348cdcce4449ed18be9e4e0660ff9787ba8095f238c6ec0a0a33f3",
+          "possession/decode.py": "2b0d30e97922f6cb8d97918d6dfa9701643aea6879cfe8c3add1b431c5e7f031",
+          "possession/deployment.py": "114b6cf26c4fc246199ef009bc2cf45f70a244eca7a3c309a1dbe20e3a3310c0",
+          "possession/diagnostics.py": "6473e29262f1447f11a8f5f15119dafc0e1840479c47197ddaf367c75cfe7bee",
+          "possession/ensemble.py": "0cbd6fb53fe18a9e0a1bb8361dcd9edbf8e9db616f2192abd67868d6ee9ccb0e",
+          "possession/features.py": "07c20139982b59ca03d5c11a9e93d982497e1dade03772cb3263a7cdb142712a",
+          "possession/interaction.py": "b9d193cee4577f652bb9ef08469ecfe7d95678df3123ef77c96adad070efb408",
+          "possession/io_atd.py": "4100c73f257125e9cacfa990fc78206dc018e7aae83b5cfb93de33c3b6d52abe",
+          "possession/io_dfl.py": "b370551089d4c54fa0e4ed148d24306d26c2858c701f2ea32286bddace66cdca",
+          "possession/losses.py": "b4923591e49c64614b928aa2bd7be69c8e9e82abff85d39925b76ba657aa2a57",
+          "possession/model.py": "27311d886a11e09767f5ad85caf927d0f8797902fa6e0ff5fa53d2265de4548e",
+          "possession/outages.py": "1ee685d0fd309b8f14e6e284f18af56d1859562204da9a4749e6398664a76b5b",
+          "possession/predict.py": "66d1e4d884f50480894194bc99bddee0ec2356c21772c205279a2699e719b5ac",
+          "possession/prepared.py": "134eaea4d3698c9a4194de8dea944f599da3aedef45679d35d946c0b86aa0e57",
+          "possession/provenance.py": "30c3fafa39c7e5a0883f737558a96254bd3a7f4a799f82cff8cc7639aaa6c1f7",
+          "possession/quality_blend.py": "1482797cc4f4fc4f23e319b98b8b060a90fd045e94539b249d7e4944efab4611",
+          "possession/recipe.py": "52ca8d0d69927621804222061d4bc6a302527c138ee0b724accb1780efeac745",
+          "possession/reference.py": "3781da8001440feedf923803f4d86e1c10526e0b5d5d01650d7cb681a8430234",
+          "possession/schema.py": "70cb746986b02ea4f01c0ed8a3c14feb7b29216bd8b0bfda55ce0bd98ecd1173",
+          "possession/storage.py": "11172f5bf5166c4b9f2e1ef3d675529632b93aa30b7b15cfcf063403a0a1cdbd",
+          "possession/temporal_augmentation.py": "397fb698cf46e43825a7d424e111939d6cf693cac2683520c7de88f2afc31cb8",
+          "possession/timing.py": "cb9fc56cb34d674c8eaf1850c9bf1cbff0d6b064d7a37ffcb85bf40e163a2750",
+          "possession/train.py": "71f5ee5692317d59be15f673b4051b03cba563f55fd0d830298921b42298a3ee",
+          "possession/training_session.py": "1503822eb5d7f1d3028c0cb2651374913d667d995272c82fbdb54165ef8f624f",
+          "pyproject.toml": "038a2959542102344604a0b88d98c4a7450322f6dda57cda88df9e59a842323e",
+          "uv.lock": "e8dd7552c1bab6d86b3b294318bcc98485eaac5907c1029cd364ce231debb6df"
+        },
+        "variants": [
+          "control",
+          "spell_balanced"
+        ]
+      }
+    },
+    "expected_new_fits": {
+      "ablation": 24,
+      "confirmation": 42,
+      "guard": 14
+    },
+    "expected_new_updates": 240000,
+    "frozen_unix": 1794867219.2718663,
+    "prespecified_analysis": {
+      "audit": "original ensemble, clean batch_1, official IoU .5; all six matches; same-team overlap degree >1 flags split/merge; dominant opponent overlap flags wrong-team; unmatched same-team overlap flags timing; otherwise phantom; exclusive precedence wrong-team, split, merge, timing, phantom; flags retained; WOH timeline uses largest increase in spurious events in fixed 60-second bins",
+      "automatic_promotion": false,
+      "bootstrap": {
+        "draws": 5000,
+        "interpretation": "descriptive; six reused matches",
+        "percentiles": [
+          0.025,
+          0.975
+        ],
+        "seed": 20261116,
+        "unit": "whole match"
+      },
+      "candidate": "spell_balanced; fixed before any new results; never replace with ablation winner",
+      "confirmation": "same comparison_gate against raw-parent EMA baseline and control: gain > .002, missing gain > 0, wins >= 4/6, both batches positive, each scenario >= -.01",
+      "factorial": "sampling_only-control, loss_only-control, combined-control, interaction=combined-sampling_only-loss_only+control; exploratory; no retuning",
+      "full_recipe_seed_confirmation": "fresh fine and coarse models, same masks and decoder",
+      "guard": "WMX candidate versus paired ensemble control and parent baseline: objective >= reference-.01 and every scenario >= reference-.01; also report both batches and individual fine seeds; no single-match CI",
+      "independent_test": false,
+      "sampling_pairing": "loss_only matches control windows; sampling_only matches combined windows",
+      "seed_mapping": "existing _seed_for_fold(base_seed, WMX, fold_index), including guard fold 0"
+    },
+    "schema": "gpu_iou_followup_v1",
+    "source_sha256": {
+      "evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+      "evaluation/run_evaluation.py": "1c61564fe52499ba4af3006fb5eb4147b825e92bf516651add80de49d267b19f",
+      "evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+      "experiments/__init__.py": "5f448a1c558b65775041b601f1ca3ae8b5d78f4e329ea209b3478c460fd79fd1",
+      "experiments/audit.py": "dc6f3164c8a3843bd1ff1544e264cbb11d337bc7432a64864063a76cb64fd3e5",
+      "experiments/augmentation_evaluation.py": "487d5607e6f8039d0034811d2162ea2702bc08b4f7be2df961e33f56e1f59ac7",
+      "experiments/augmentation_tuning.py": "4565300d7dcad1fe7f66e4a6a683bda6cd7f0a58b0b41563527082b5005d4c36",
+      "experiments/campaign_decode.py": "575ae4c1966a33928c59cf7d0376a56a32d3955fb8d9a2f889ed22d91b017901",
+      "experiments/campaign_evaluation.py": "17d79c0f1049e5215f150cc7a5587058bc5753b7c8dfeffbdf7b99943e414cdd",
+      "experiments/campaign_protocol.py": "ef43d0e39a03dedf3deff93e11df603e09b6683b4e03ea5c9344156b23b0949d",
+      "experiments/campaign_refit.py": "6f3fdcb76831df04ab9ead6eeaa0f53a2051c48e1536c453ba4a75020cbc948f",
+      "experiments/campaign_search.py": "1e3c23f306bf62bdafdb02ec90421fd14f0b06e44735602f765dca451c04a40b",
+      "experiments/campaign_space.py": "8864a6f37c0d032593805512ea68e0243c6fcf6643fac3d547786ff77c17bd43",
+      "experiments/campaign_submission.py": "170e6dab3765184624f8be2fba6d2fda3008cc61121104b7b17ab28622695c27",
+      "experiments/campaign_training.py": "d75362782bab22625e537419e70d7cc1dff42fc58fc9fd4ef16188f508a283f7",
+      "experiments/coarse_context.py": "6aff8718847f6947b2efb2d087306fbc414b3b17b903a6e47e7b93531f4b75d5",
+      "experiments/coarse_stability.py": "a834f4771e0be05b748b037268511183633b1b1cb7dbb962f8399d99ad7c3ec2",
+      "experiments/coarse_submission.py": "90f726f785dfc8db33515d6086bc127406f5443148c059048e7156eb105a4ab0",
+      "experiments/convergence.py": "ba56b01081a0b090e1f478533d01399f4b45d852a147c37e388de681cca51494",
+      "experiments/cross_validation.py": "adcb83cc0d1dd2dd43e99db3109cc5121741051384cb957ec9a1c0e3c2c718ef",
+      "experiments/ema_calibration_audit.py": "8c21cbfb76378beec1a655219fdd5d28cbd33015f24115b92dcdecfd0d029c52",
+      "experiments/ema_stability.py": "52140e9e98ee322a9a371891e22c77643ec317cad49cb491286e45b574349958",
+      "experiments/ema_submission.py": "a768c0bd1cf79a824a58f2ad8d821b8c84e9fc16a7f84ce6ea5c8e9c95390ecc",
+      "experiments/ema_training.py": "2b7b0884436e51f140b64bebfeb6422a0133cd263c0b4b48e4c25a0d583f4c25",
+      "experiments/ensemble_bagging.py": "400b130d2324d5c652b9beaa7267e10a5c48310e486c538ccdc5eb79211135b2",
+      "experiments/ensemble_bagging_submission.py": "033bd11e69b03216ae54fa410156bafb9fd971bc992b4b9c7f021705e25bccb7",
+      "experiments/ensemble_polish.py": "37b2be867a2056881e24b26f100b5f7b9841a4f900722d54ea96d962a328562e",
+      "experiments/ensemble_polish_confirm.py": "5b416120c9771b6355e95510a99f9297621ecde0c151295252e17cea7aa4ca9b",
+      "experiments/ensemble_polish_search.py": "40e007e0c761e3b13cdbc66272bbfeea6cac436560232b1fd112365e266587be",
+      "experiments/ensemble_polish_submission.py": "614e1fc565a8cc4158fdb1505bee6c299a633274ea843a939655c8dcda951751",
+      "experiments/evaluate.py": "c867fbc144c8967ad030b725e77d6a0353eb3eaa6109c3099080c51d515c6dec",
+      "experiments/fetch_dfl.py": "84b1da87671dfa32686ba45450514f4c08925ea42480703bd5c0850030486b19",
+      "experiments/final_refit.py": "ab7dff1b8ac012ba7de11c4d1971666d0ebaab225c07ca983be52d860f64f0ca",
+      "experiments/finalize.py": "031f47bc7af36be237cfcecc624ae469126da3f25821a45925e7f33df6529036",
+      "experiments/focused_tuning.py": "d44788030cb13b4929e8225055ceb36642ddb4e3f3b22a163e7131c9dc632131",
+      "experiments/frozen_transfer.py": "01f58e1d8adcc1c267cbeaa4519b77452de34fbd777f47683f832f253e892c17",
+      "experiments/gpu_iou.py": "681078a2760e883d2487d5e93d7c21b46343f9c0cae1d82e4dd5af7f8dd1b121",
+      "experiments/gpu_runtime.py": "82083585126777115b9c44775b7bf897b2fc24921f800dc0fe6dc34f6a0d9d95",
+      "experiments/iou_followup_training.py": "4e9c49c21591bfaff06bb4db97dd603dd14c3eee700a866afc07b5e4bc5e9d25",
+      "experiments/live_dead_audit.py": "a03ecc4734ad668565f0ed954b5ef2de47fa83f766d4d3a1193452ec693cc28a",
+      "experiments/oof_selection.py": "0d1e2b835fd3e19a36e670e9fc034fba8babca29f4950b3b0a7f05ce160bc41b",
+      "experiments/overnight_tuning.py": "1e2c30cee24c244ac40d10507b1058b3d09756f888cda48c526bd8ee999af8e8",
+      "experiments/possession_objectives.py": "73b91ea5660907277a955f28214b6e967a727ba7ccb15f06a1298b8df56f62ae",
+      "experiments/possession_refinement.py": "a4c632f51fb67094e5f5d15c5803317a4e9e5606544646de26d3f10138adf131",
+      "experiments/prediction_store.py": "3a804322ecc541ff365be2c884a9e03f7b8c28303606482f541c7e76a1744ddd",
+      "experiments/prepare.py": "c6f57189884a20fb2e540974e0646d7bffd7b985540a3fcfa70c5596a67029ab",
+      "experiments/quality.py": "abec274549d2a38f310187321197243d17a24b3edeb33e887f17bb7844f5edc1",
+      "experiments/refinement_training.py": "d53ff00e657b56bcb7b9a4818b9d15aaf75b43246826a7cb3b174ceb6da94723",
+      "experiments/robustness.py": "59ef3d617adb28d468ff8159a20c5dbfe8be748e0c9f461a9ade0e368f4fc59b",
+      "experiments/select.py": "074c565c1259f32812bf7beb6686c2eddd75f1f298b35f12e65c75cffbca7e81",
+      "experiments/skillcorner_proxy.py": "d641a668ffc79932836fd889313c40b658fae9b2e347411bd89312019007dd65",
+      "experiments/spell_evidence_audit.py": "c13ba00cbdf3bdeee7a44cfe850c659c7845441c8b8c0f39f25d48cb3900a75b",
+      "experiments/target_gap_stress.py": "96429ec5a2091ea68a16db47928a43e4a282c268c267a148a9fa677cacf7dbbd",
+      "experiments/timing_cache.py": "ebd96cebbe0ae917d2a67d4f8d376108148f96d94481be50e6eeb2bf9f926a18",
+      "experiments/timing_nested.py": "542721e01cd980f982fcd73b148cf19822b8ea7687a37a6da32d6390e401e5ac",
+      "experiments/timing_study.py": "1cf273548d27217f03c517b09709136443c3e7d6c2ac432057aaef0fad093766",
+      "experiments/timing_validation.py": "625b7d820f681dbd1a2406acc9db294f336c3cbb1caa4d6689561a31ce891cda",
+      "experiments/tune.py": "8d2bee91039aead207fdd094d0233abbafe93137dfabee4a721c4d25a9642f8c",
+      "games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+      "possession/__init__.py": "13d8cf2fe33d6cf960cafe0d22ae48169c0a62245a936b62fa369efb1bde66d2",
+      "possession/_viterbi.py": "a993d6cda75c8166e0d3b31dd4f0e8872e6a67095ba5eea727bc6a3ae19bb06a",
+      "possession/augmentation.py": "2c5fe0bf972c2275721a465f551ee507577bcafc58afd3dca4fa4240e2863758",
+      "possession/calibrate.py": "1e3b6a3af9e408abde0af8b05799aae12598ed0552e89bd1fc946aee8cfe65c0",
+      "possession/cli.py": "23605f90dc348cdcce4449ed18be9e4e0660ff9787ba8095f238c6ec0a0a33f3",
+      "possession/decode.py": "2b0d30e97922f6cb8d97918d6dfa9701643aea6879cfe8c3add1b431c5e7f031",
+      "possession/deployment.py": "114b6cf26c4fc246199ef009bc2cf45f70a244eca7a3c309a1dbe20e3a3310c0",
+      "possession/diagnostics.py": "6473e29262f1447f11a8f5f15119dafc0e1840479c47197ddaf367c75cfe7bee",
+      "possession/ensemble.py": "0cbd6fb53fe18a9e0a1bb8361dcd9edbf8e9db616f2192abd67868d6ee9ccb0e",
+      "possession/features.py": "07c20139982b59ca03d5c11a9e93d982497e1dade03772cb3263a7cdb142712a",
+      "possession/interaction.py": "b9d193cee4577f652bb9ef08469ecfe7d95678df3123ef77c96adad070efb408",
+      "possession/io_atd.py": "4100c73f257125e9cacfa990fc78206dc018e7aae83b5cfb93de33c3b6d52abe",
+      "possession/io_dfl.py": "b370551089d4c54fa0e4ed148d24306d26c2858c701f2ea32286bddace66cdca",
+      "possession/losses.py": "b4923591e49c64614b928aa2bd7be69c8e9e82abff85d39925b76ba657aa2a57",
+      "possession/model.py": "27311d886a11e09767f5ad85caf927d0f8797902fa6e0ff5fa53d2265de4548e",
+      "possession/outages.py": "1ee685d0fd309b8f14e6e284f18af56d1859562204da9a4749e6398664a76b5b",
+      "possession/predict.py": "66d1e4d884f50480894194bc99bddee0ec2356c21772c205279a2699e719b5ac",
+      "possession/prepared.py": "134eaea4d3698c9a4194de8dea944f599da3aedef45679d35d946c0b86aa0e57",
+      "possession/provenance.py": "30c3fafa39c7e5a0883f737558a96254bd3a7f4a799f82cff8cc7639aaa6c1f7",
+      "possession/quality_blend.py": "1482797cc4f4fc4f23e319b98b8b060a90fd045e94539b249d7e4944efab4611",
+      "possession/recipe.py": "52ca8d0d69927621804222061d4bc6a302527c138ee0b724accb1780efeac745",
+      "possession/reference.py": "3781da8001440feedf923803f4d86e1c10526e0b5d5d01650d7cb681a8430234",
+      "possession/schema.py": "70cb746986b02ea4f01c0ed8a3c14feb7b29216bd8b0bfda55ce0bd98ecd1173",
+      "possession/storage.py": "11172f5bf5166c4b9f2e1ef3d675529632b93aa30b7b15cfcf063403a0a1cdbd",
+      "possession/temporal_augmentation.py": "397fb698cf46e43825a7d424e111939d6cf693cac2683520c7de88f2afc31cb8",
+      "possession/timing.py": "cb9fc56cb34d674c8eaf1850c9bf1cbff0d6b064d7a37ffcb85bf40e163a2750",
+      "possession/train.py": "71f5ee5692317d59be15f673b4051b03cba563f55fd0d830298921b42298a3ee",
+      "possession/training_session.py": "1503822eb5d7f1d3028c0cb2651374913d667d995272c82fbdb54165ef8f624f",
+      "pyproject.toml": "038a2959542102344604a0b88d98c4a7450322f6dda57cda88df9e59a842323e",
+      "uv.lock": "e8dd7552c1bab6d86b3b294318bcc98485eaac5907c1029cd364ce231debb6df"
+    },
+    "upstream_sha256": {
+      "historical-masks/protocol.json": "0c55e40766ce6b484b21078dc5b659cf787e2a781f8cfa0f9021b9c839f11c60",
+      "historical-masks/reference/labels.npz": "dc558df5e0429c544b4cc2ffe21891bcdcc1604ff60c44393c6f8c4682dbabe8",
+      "historical-masks/reference/manifest.json": "987a011838891706e9070517d947f68a5a9ea49726254e3e2c9005dd3d3db8b3",
+      "protocol.json": "351a02358c30a3f998901b759167b50e2d5a67c93f3266b9a9bd1fa76a617ad9",
+      "training.json": "0aaefa6d43cfc62058d3fd9fbaa8550486c5f671721b8af20f6ef80493e0b7b5"
+    }
+  },
+  "sha256": "38dfb51664cdc13a0ea7e4ed2f3b0f0d08bc7fb1cc9bcc30418331652fea7712"
+}

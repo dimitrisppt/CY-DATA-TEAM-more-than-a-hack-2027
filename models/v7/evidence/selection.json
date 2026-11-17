@@ -1,0 +1,228 @@
+{
+  "payload": {
+    "completed_full_candidates": 3,
+    "decoder_evaluations": 540,
+    "id": "trial_0017",
+    "pipeline": {
+      "candidate_weight": 0.20312829527615286,
+      "coarse_seconds": 3.2188621495092677,
+      "coarse_weight": 0.3183571885346476,
+      "decoder": {
+        "blend_mode": "static",
+        "boundary_scale": 1.580428631733627,
+        "boundary_temperature": 1.0,
+        "live_temperature": 3.254195210340297,
+        "missing_live_weight": 0.520106045174508,
+        "missing_neural_weight": 0.520106045174508,
+        "missing_owner_weight": 0.520106045174508,
+        "neural_weight": 0.44730977610332145,
+        "owner_temperature": 0.5172580363597693,
+        "reference": {
+          "activity_smoothing_seconds": 0.4518465343546813,
+          "owner_smoothing_seconds": 0.2145050672196841,
+          "owner_strength": 1.8478499721437216
+        },
+        "reference_mode": "tuned",
+        "switch_cost": {
+          "from_dead": 1.2222181044207399,
+          "owner_switch": 1.8013290639844683,
+          "to_dead": 3.362795121502884
+        },
+        "switch_cost_type": "typed",
+        "transition_seconds": 2.0,
+        "version": 1,
+        "visible_live_weight": 0.520106045174508,
+        "visible_neural_weight": 0.520106045174508,
+        "visible_owner_weight": 0.520106045174508
+      }
+    },
+    "proposal": {
+      "distributions": {
+        "augmentation": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [\"none\", \"coordinate_noise\", \"player_dropout\", \"geometry\", \"sensor\", \"combined\"]}}",
+        "augmentation_clean": "{\"name\": \"FloatDistribution\", \"attributes\": {\"step\": null, \"low\": 0.2, \"high\": 0.8, \"log\": false}}",
+        "augmentation_strength": "{\"name\": \"FloatDistribution\", \"attributes\": {\"step\": null, \"low\": 0.2, \"high\": 1.0, \"log\": false}}",
+        "boundary_pos_weight": "{\"name\": \"FloatDistribution\", \"attributes\": {\"step\": null, \"low\": 1.0, \"high\": 20.0, \"log\": true}}",
+        "boundary_weight": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [0.0, 0.1, 0.25, 0.5]}}",
+        "center_size": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [256, 512, 768]}}",
+        "depth": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [7, 8, 9]}}",
+        "export": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [\"ema\", \"raw\"]}}",
+        "learning_rate": "{\"name\": \"FloatDistribution\", \"attributes\": {\"step\": null, \"low\": 0.0003, \"high\": 0.003, \"log\": true}}",
+        "outage": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [\"legacy\", \"correlated\"]}}",
+        "outage_clean": "{\"name\": \"FloatDistribution\", \"attributes\": {\"step\": null, \"low\": 0.15, \"high\": 0.4, \"log\": false}}",
+        "outage_long": "{\"name\": \"FloatDistribution\", \"attributes\": {\"step\": null, \"low\": 0.0, \"high\": 0.3, \"log\": false}}",
+        "pooling": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [\"mean\", \"ball_attention\", \"interaction\"]}}",
+        "schedule": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [\"constant\", \"cosine\"]}}",
+        "short_sampling_probability": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [0.0, 0.15, 0.3, 0.5]}}",
+        "spell_weight": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [0.0, 0.1, 0.25, 0.5]}}",
+        "total_steps": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [7200, 9600]}}",
+        "weight_decay": "{\"name\": \"FloatDistribution\", \"attributes\": {\"step\": null, \"low\": 1e-06, \"high\": 0.003, \"log\": true}}",
+        "width": "{\"name\": \"CategoricalDistribution\", \"attributes\": {\"choices\": [32, 48, 64]}}"
+      },
+      "id": "trial_0017",
+      "index": 17,
+      "params": {
+        "augmentation": "player_dropout",
+        "augmentation_clean": 0.69847565147725,
+        "augmentation_strength": 0.7508241121976357,
+        "boundary_pos_weight": 9.49280461791512,
+        "boundary_weight": 0.1,
+        "center_size": 768,
+        "depth": 7,
+        "export": "raw",
+        "learning_rate": 0.000862334107121614,
+        "outage": "legacy",
+        "outage_clean": 0.27732832975003346,
+        "outage_long": 0.06368016808015983,
+        "pooling": "ball_attention",
+        "schedule": "constant",
+        "short_sampling_probability": 0.5,
+        "spell_weight": 0.25,
+        "total_steps": 9600,
+        "weight_decay": 1.8391096254753197e-06,
+        "width": 64
+      },
+      "protocol_sha256": "ec41abbc7db202b62ae847ae392f73ff8c9d7a0e2170ffac885c36612eb2d780",
+      "recipe": {
+        "export": "raw",
+        "short_sampling_probability": 0.5,
+        "spec": {
+          "augmentation_config": {
+            "blur_radius": 2,
+            "clean_probability": 0.69847565147725,
+            "dropout_max_seconds": 0.5,
+            "frame_dropout_fraction": 0.05,
+            "hold_max_frames": 3,
+            "max_transforms": 1,
+            "mode": "spatial",
+            "noise_ball_std": 0.15,
+            "noise_correlation": 0.95,
+            "noise_player_std": 0.08,
+            "operations": [
+              "player_dropout"
+            ],
+            "patch_fraction": 0.15,
+            "player_dropout_fraction": 0.05,
+            "rotation_max_degrees": 2.0,
+            "strength": 0.7508241121976357,
+            "temporal_shift_max_seconds": 0.12,
+            "time_warp_knots": 4,
+            "time_warp_max_rate": 0.1,
+            "translation_max_meters": 1.0,
+            "warmup_steps": 400
+          },
+          "model_kwargs": {
+            "dilations": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              64
+            ],
+            "global_dim": 9,
+            "player_dim": 8,
+            "pooling": "ball_attention",
+            "width": 64
+          },
+          "outage_config": {
+            "clean_probability": 0.27732832975003346,
+            "fraction_max": 0.66,
+            "fraction_min": 0.3,
+            "full_probability": 0.05,
+            "long_gap_max_seconds": 30.0,
+            "long_gap_min_seconds": 10.0,
+            "long_gap_probability": 0.06368016808015983,
+            "max_gap_seconds": 10.0,
+            "min_gap_seconds": 1.0,
+            "mode": "legacy"
+          },
+          "schedule": {
+            "kind": "constant",
+            "min_lr_ratio": 1.0,
+            "total_steps": 9600,
+            "warmup_steps": 0
+          },
+          "training_args": {
+            "augment": true,
+            "boundary_pos_weight": 9.49280461791512,
+            "boundary_weight": 0.1,
+            "center_size": 768,
+            "learning_rate": 0.000862334107121614,
+            "weight_decay": 1.8391096254753197e-06
+          }
+        },
+        "spell_weight": 0.25
+      }
+    },
+    "search_scores": {
+      "by_match": {
+        "DFL-MAT-J03WN1": {
+          "clean": 0.6549356223175966,
+          "long": 0.5439613526570048,
+          "replay": 0.5368047337278107,
+          "short": 0.5544827586206897
+        },
+        "DFL-MAT-J03WOH": {
+          "clean": 0.6976090014064698,
+          "long": 0.5882706766917293,
+          "replay": 0.5429892141756549,
+          "short": 0.5590138674884437
+        },
+        "DFL-MAT-J03WOY": {
+          "clean": 0.6560386473429951,
+          "long": 0.5457894736842105,
+          "replay": 0.5434954007884363,
+          "short": 0.5609254498714653
+        },
+        "DFL-MAT-J03WPY": {
+          "clean": 0.6707535121328225,
+          "long": 0.554985754985755,
+          "replay": 0.5887640449438202,
+          "short": 0.5671724137931036
+        },
+        "DFL-MAT-J03WQQ": {
+          "clean": 0.7069408740359897,
+          "long": 0.6406732117812062,
+          "replay": 0.6090784044016506,
+          "short": 0.5816666666666667
+        },
+        "DFL-MAT-J03WR9": {
+          "clean": 0.7170868347338936,
+          "long": 0.6031152647975079,
+          "replay": 0.6159879336349924,
+          "short": 0.5916795069337443
+        }
+      },
+      "diagnostics": {
+        "matched": 1649,
+        "short_matched": 248,
+        "short_true": 728,
+        "spurious": 547,
+        "true": 2550
+      },
+      "iou_curve": {
+        "0.1": 0.7704192028441024,
+        "0.2": 0.7609616006593128,
+        "0.3": 0.7412816927885243,
+        "0.4": 0.7015914898019192,
+        "0.5": 0.6408993387398123,
+        "0.6": 0.5710172468672451,
+        "0.7": 0.4883416473026432,
+        "0.8": 0.3897485539112407,
+        "0.9": 0.2697301868989365
+      },
+      "means": {
+        "clean": 0.6838940819949612,
+        "long": 0.5794659557662356,
+        "replay": 0.5728532886120609,
+        "short": 0.5691567772290189
+      },
+      "objective": 0.6286262831000289
+    },
+    "selected_unix": 1794894037.781756,
+    "selection_inputs": "completed search-seed whole-match OOF scores on batch_1 only",
+    "steps": 9600
+  },
+  "sha256": "a0e6bd40189dda2e5a1d4fe53f0081b2224d98576837664a3170b4f3ac92f8ea"
+}

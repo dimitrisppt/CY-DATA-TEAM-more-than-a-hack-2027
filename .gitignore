@@ -9,6 +9,8 @@ possession_by_frame.pkl
 *.gzip
 *.pl3container
 *.pdf
+!/submission/CY-DATA-TEAM.pdf
+!/submission/archive/v6/CY-DATA-TEAM.pdf
 organizers/
 
 # Generated evaluation files. Official public baselines remain versioned.

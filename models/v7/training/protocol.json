@@ -1,0 +1,695 @@
+{
+  "payload": {
+    "coarse_data_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/artifacts/gpu-iou-v1/coarse-data",
+    "data_dir": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/processed/dfl",
+    "environment": {
+      "thread_environment": {
+        "MKL_NUM_THREADS": null,
+        "NUMEXPR_NUM_THREADS": null,
+        "OMP_DYNAMIC": null,
+        "OMP_NUM_THREADS": null,
+        "OPENBLAS_NUM_THREADS": null,
+        "VECLIB_MAXIMUM_THREADS": null
+      },
+      "torch_num_interop_threads": 2,
+      "torch_num_threads": 2,
+      "versions": {
+        "numba": "0.68.0",
+        "numpy": "2.5.4",
+        "optuna": "5.0.0",
+        "pandas": "3.1.0",
+        "python": "3.12.11",
+        "scikit-learn": "1.9.1",
+        "torch": "2.14.1"
+      }
+    },
+    "folds": [
+      {
+        "train": [
+          "DFL-MAT-J03WMX",
+          "DFL-MAT-J03WN1",
+          "DFL-MAT-J03WOH",
+          "DFL-MAT-J03WOY",
+          "DFL-MAT-J03WPY",
+          "DFL-MAT-J03WQQ",
+          "DFL-MAT-J03WR9"
+        ],
+        "validation": []
+      }
+    ],
+    "parent_ema": {
+      "decay": 0.99,
+      "start": 7000,
+      "updates": 200
+    },
+    "prepared": {
+      "caches": [
+        {
+          "cache": "DFL-MAT-J03WMX_half1.npz",
+          "match_id": "DFL-MAT-J03WMX",
+          "period": 1,
+          "sha256": "3d01c1f0563770cc849fc5a01a311e62ece780d265faba8be8d93c74a9bb8836"
+        },
+        {
+          "cache": "DFL-MAT-J03WMX_half2.npz",
+          "match_id": "DFL-MAT-J03WMX",
+          "period": 2,
+          "sha256": "710b36797a7a632c9a17faf42334a1a9540a4620367d407ffee090d3f425a7d1"
+        },
+        {
+          "cache": "DFL-MAT-J03WN1_half1.npz",
+          "match_id": "DFL-MAT-J03WN1",
+          "period": 1,
+          "sha256": "260dde8707cc06c8724b9ac473650ddf8b9902107436360cf37d88f5df50e567"
+        },
+        {
+          "cache": "DFL-MAT-J03WN1_half2.npz",
+          "match_id": "DFL-MAT-J03WN1",
+          "period": 2,
+          "sha256": "209aa1839a8550e39794f2889ecc7ada9f7ff1464742e915448df7292d355906"
+        },
+        {
+          "cache": "DFL-MAT-J03WOH_half1.npz",
+          "match_id": "DFL-MAT-J03WOH",
+          "period": 1,
+          "sha256": "eb6b77333c3341d488c8edcb988c64cf6571fe91ef0563c31749ae6d8fce83b2"
+        },
+        {
+          "cache": "DFL-MAT-J03WOH_half2.npz",
+          "match_id": "DFL-MAT-J03WOH",
+          "period": 2,
+          "sha256": "f129588988663bcc2b7aaf4000252a584e4e0ef694bd3f6af615ac714582a4a7"
+        },
+        {
+          "cache": "DFL-MAT-J03WOY_half1.npz",
+          "match_id": "DFL-MAT-J03WOY",
+          "period": 1,
+          "sha256": "89299ac730ee15c8dfab10e8b3224e34bcc800b636ff7ce7470a9b0b455b59bb"
+        },
+        {
+          "cache": "DFL-MAT-J03WOY_half2.npz",
+          "match_id": "DFL-MAT-J03WOY",
+          "period": 2,
+          "sha256": "fc18f5be5253a2edf87b88929d535d21b3b9bf68f92929fd0575830fd89bcf0a"
+        },
+        {
+          "cache": "DFL-MAT-J03WPY_half1.npz",
+          "match_id": "DFL-MAT-J03WPY",
+          "period": 1,
+          "sha256": "0ca77a7fd068e914c10b02d592df7836b0ffca30f95d1e8a24ed3ee1937fe417"
+        },
+        {
+          "cache": "DFL-MAT-J03WPY_half2.npz",
+          "match_id": "DFL-MAT-J03WPY",
+          "period": 2,
+          "sha256": "7d7240787ca369bd59a3cc55bda8fa32b51d2346f3d8418187858be6e454af56"
+        },
+        {
+          "cache": "DFL-MAT-J03WQQ_half1.npz",
+          "match_id": "DFL-MAT-J03WQQ",
+          "period": 1,
+          "sha256": "125b12f7a235559f0dbba04a39827171a96e83ae9eacaad9adc2b915b6285068"
+        },
+        {
+          "cache": "DFL-MAT-J03WQQ_half2.npz",
+          "match_id": "DFL-MAT-J03WQQ",
+          "period": 2,
+          "sha256": "a8e6470d04a0fe49c2ccaa7f4e50fed82c20e32662e24727b2ff54397066c984"
+        },
+        {
+          "cache": "DFL-MAT-J03WR9_half1.npz",
+          "match_id": "DFL-MAT-J03WR9",
+          "period": 1,
+          "sha256": "12fc7ef737e84d8308c48ee870e8d8692739b7f449c2c8d5e7468585df4ea9bb"
+        },
+        {
+          "cache": "DFL-MAT-J03WR9_half2.npz",
+          "match_id": "DFL-MAT-J03WR9",
+          "period": 2,
+          "sha256": "b7f1ec57d2cdfd8ca3ba0e9568e87e0c850eb47c9a5886aa24fd3118c9ac6874"
+        }
+      ],
+      "manifest_version": 1,
+      "sources": {
+        "DFL-MAT-J03WMX": {
+          "match_info": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+            "sha256": "a884728647a564cf8b20e5223a1d04a5da6f6725e1e506c8651505327c197ba9"
+          },
+          "positions": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+            "sha256": "d3dd92e509421a6466acb0a083c009035f1751bc5fd9ef42ffa8f20d01cf7d49"
+          }
+        },
+        "DFL-MAT-J03WN1": {
+          "match_info": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+            "sha256": "5490286436c86e6f80a538d2b1b379d0efd016e0defcaf594bc59d9ef5079f4c"
+          },
+          "positions": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+            "sha256": "56ef948961a18e150dba0b7b16869d0008ff66f3050a0c355d31fa5b8ec2fcec"
+          }
+        },
+        "DFL-MAT-J03WOH": {
+          "match_info": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+            "sha256": "f23b3ee13b988b1ff9a0bce438c416dac47e71355bbc7ee1dab21aaf3e33c18c"
+          },
+          "positions": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+            "sha256": "ec4dcf30200aad694dea263d5289485fcd0ca42badddaeb7c81f5cd5a4229d4f"
+          }
+        },
+        "DFL-MAT-J03WOY": {
+          "match_info": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+            "sha256": "4c497fac683eee8292901c18ca02c0be1d9609d0b9d4bd8aa092c61f9e0b19e9"
+          },
+          "positions": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+            "sha256": "a228ef0e676d009cefff1580fcb721b53f598454eb120ec347e0a628a3a4646b"
+          }
+        },
+        "DFL-MAT-J03WPY": {
+          "match_info": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+            "sha256": "566dd5e4c86e124ab90fcdba51100881f0436e22afa71832945a451a2d95a420"
+          },
+          "positions": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+            "sha256": "845202c29ad93d696653436da426a7cdaefb848298e07b7343de6529581671e1"
+          }
+        },
+        "DFL-MAT-J03WQQ": {
+          "match_info": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+            "sha256": "e976aa0c5dba862cfa898ea57ec226efce9d1bc04b23b8d775908db86aa6fa41"
+          },
+          "positions": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+            "sha256": "cbefcb0bd7f39f3b94ee69a7bc97aac0f936425062c1cc1b144733df36804d6f"
+          }
+        },
+        "DFL-MAT-J03WR9": {
+          "match_info": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+            "sha256": "429b584e89df3e3e8b81f4bd0d004b38bd0b4298bb390b8fb43efccb60963e01"
+          },
+          "positions": {
+            "path": "/home/dimitris_papatheodoulou/CY-DATA-TEAM-more-than-a-hack-2027/data/external/dfl/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+            "sha256": "70b63069189019066fb7e3d9db891122edfe787f3a43ba522ebe45ed89ea0269"
+          }
+        }
+      },
+      "status": "verified_manifest"
+    },
+    "recipe": {
+      "candidate_recipe": {
+        "export": "raw",
+        "short_sampling_probability": 0.5,
+        "spec": {
+          "augmentation_config": {
+            "blur_radius": 2,
+            "clean_probability": 0.69847565147725,
+            "dropout_max_seconds": 0.5,
+            "frame_dropout_fraction": 0.05,
+            "hold_max_frames": 3,
+            "max_transforms": 1,
+            "mode": "spatial",
+            "noise_ball_std": 0.15,
+            "noise_correlation": 0.95,
+            "noise_player_std": 0.08,
+            "operations": [
+              "player_dropout"
+            ],
+            "patch_fraction": 0.15,
+            "player_dropout_fraction": 0.05,
+            "rotation_max_degrees": 2.0,
+            "strength": 0.7508241121976357,
+            "temporal_shift_max_seconds": 0.12,
+            "time_warp_knots": 4,
+            "time_warp_max_rate": 0.1,
+            "translation_max_meters": 1.0,
+            "warmup_steps": 400
+          },
+          "model_kwargs": {
+            "dilations": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32,
+              64
+            ],
+            "global_dim": 9,
+            "player_dim": 8,
+            "pooling": "ball_attention",
+            "width": 64
+          },
+          "outage_config": {
+            "clean_probability": 0.27732832975003346,
+            "fraction_max": 0.66,
+            "fraction_min": 0.3,
+            "full_probability": 0.05,
+            "long_gap_max_seconds": 30.0,
+            "long_gap_min_seconds": 10.0,
+            "long_gap_probability": 0.06368016808015983,
+            "max_gap_seconds": 10.0,
+            "min_gap_seconds": 1.0,
+            "mode": "legacy"
+          },
+          "schedule": {
+            "kind": "constant",
+            "min_lr_ratio": 1.0,
+            "total_steps": 9600,
+            "warmup_steps": 0
+          },
+          "training_args": {
+            "augment": true,
+            "boundary_pos_weight": 9.49280461791512,
+            "boundary_weight": 0.1,
+            "center_size": 768,
+            "learning_rate": 0.000862334107121614,
+            "weight_decay": 1.8391096254753197e-06
+          }
+        },
+        "spell_weight": 0.25
+      },
+      "candidate_seeds": [
+        20261119,
+        20261120
+      ],
+      "coarse_spec": {
+        "augmentation_config": {
+          "mode": "none"
+        },
+        "model_kwargs": {
+          "dilations": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "global_dim": 9,
+          "player_dim": 8,
+          "pooling": "mean",
+          "width": 32
+        },
+        "outage_config": {
+          "clean_probability": 0.2,
+          "fraction_max": 0.66,
+          "fraction_min": 0.3,
+          "full_probability": 0.05,
+          "long_gap_max_seconds": 30.0,
+          "long_gap_min_seconds": 10.0,
+          "long_gap_probability": 0.2,
+          "max_gap_seconds": 10.0,
+          "min_gap_seconds": 1.0,
+          "mode": "legacy"
+        },
+        "schedule": {
+          "kind": "constant",
+          "min_lr_ratio": 1.0,
+          "total_steps": 7200,
+          "warmup_steps": 0
+        },
+        "training_args": {
+          "augment": true,
+          "boundary_pos_weight": 1.0,
+          "boundary_weight": 0.0,
+          "center_size": 32,
+          "learning_rate": 0.0003,
+          "weight_decay": 0.0001
+        }
+      },
+      "evidence": {
+        "confirmation.json": "2c99fb5a88b0396059175bf80ec0ad80c45998e26fcac3dcdb4cb12c77bea7a5",
+        "guard.json": "432942a019055d873e13abc370194b8268d1b7f836419cc885e67039aa2431ee",
+        "selection.json": "5c69696eb8a6171be8496b80edebab23e459009226f73ce22830ecf1f29ede82",
+        "verification.json": "903301f267b47ef11f1ab5f77e6446ce40b06dbc5c7ec4eba6c33bc417c31ec2"
+      },
+      "followup_protocol_sha256": "babec860470071d7f0ce6abc676307920f32be3a7d042557780f1148f101a52f",
+      "incumbent_seeds": [
+        20261117,
+        20261118
+      ],
+      "matches": [
+        "DFL-MAT-J03WMX",
+        "DFL-MAT-J03WN1",
+        "DFL-MAT-J03WOH",
+        "DFL-MAT-J03WOY",
+        "DFL-MAT-J03WPY",
+        "DFL-MAT-J03WQQ",
+        "DFL-MAT-J03WR9"
+      ],
+      "parent_ema": {
+        "decay": 0.99,
+        "start": 7000,
+        "updates": 200
+      },
+      "pipeline": {
+        "candidate_weight": 0.20312829527615286,
+        "coarse_seconds": 3.2188621495092677,
+        "coarse_weight": 0.3183571885346476,
+        "decoder": {
+          "blend_mode": "static",
+          "boundary_scale": 1.580428631733627,
+          "boundary_temperature": 1.0,
+          "live_temperature": 3.254195210340297,
+          "missing_live_weight": 0.520106045174508,
+          "missing_neural_weight": 0.520106045174508,
+          "missing_owner_weight": 0.520106045174508,
+          "neural_weight": 0.44730977610332145,
+          "owner_temperature": 0.5172580363597693,
+          "reference": {
+            "activity_smoothing_seconds": 0.4518465343546813,
+            "owner_smoothing_seconds": 0.2145050672196841,
+            "owner_strength": 1.8478499721437216
+          },
+          "reference_mode": "tuned",
+          "switch_cost": {
+            "from_dead": 1.2222181044207399,
+            "owner_switch": 1.8013290639844683,
+            "to_dead": 3.362795121502884
+          },
+          "switch_cost_type": "typed",
+          "transition_seconds": 2.0,
+          "version": 1,
+          "visible_live_weight": 0.520106045174508,
+          "visible_neural_weight": 0.520106045174508,
+          "visible_owner_weight": 0.520106045174508
+        }
+      },
+      "schema": "gpu_tuned_release_recipe_v1",
+      "seed_policy": "Fixed before final fitting and target prediction; no selection using target outputs.",
+      "selected_trial": "trial_0017",
+      "selection": {
+        "blend_weight": 0.6198620103020451,
+        "decoder": {
+          "blend_mode": "static",
+          "boundary_scale": 1.373212083582826,
+          "boundary_temperature": 1.0,
+          "live_temperature": 3.507823783298422,
+          "missing_live_weight": 0.520106045174508,
+          "missing_neural_weight": 0.520106045174508,
+          "missing_owner_weight": 0.520106045174508,
+          "neural_weight": 0.520106045174508,
+          "owner_temperature": 0.9166758148761088,
+          "reference": {},
+          "reference_mode": "default",
+          "switch_cost": {
+            "from_dead": 3.110657743041,
+            "owner_switch": 0.016673208086668168,
+            "to_dead": 3.9417670855791185
+          },
+          "switch_cost_type": "typed",
+          "transition_seconds": 2.0,
+          "version": 1,
+          "visible_live_weight": 0.520106045174508,
+          "visible_neural_weight": 0.520106045174508,
+          "visible_owner_weight": 0.520106045174508
+        },
+        "kind": "convex_pair",
+        "members": [
+          {
+            "id": "mean_007",
+            "spec": {
+              "augmentation_config": {
+                "blur_radius": 2,
+                "clean_probability": 0.2,
+                "dropout_max_seconds": 2.0,
+                "frame_dropout_fraction": 0.05,
+                "hold_max_frames": 3,
+                "max_transforms": 1,
+                "mode": "spatial",
+                "noise_ball_std": 0.15,
+                "noise_correlation": 0.5,
+                "noise_player_std": 0.08,
+                "operations": [
+                  "coordinate_noise"
+                ],
+                "patch_fraction": 0.15,
+                "player_dropout_fraction": 0.15,
+                "rotation_max_degrees": 2.0,
+                "strength": 1.0,
+                "temporal_shift_max_seconds": 0.12,
+                "time_warp_knots": 4,
+                "time_warp_max_rate": 0.1,
+                "translation_max_meters": 1.0,
+                "warmup_steps": 400
+              },
+              "model_kwargs": {
+                "dilations": [
+                  1,
+                  2,
+                  4,
+                  8,
+                  16,
+                  32,
+                  64,
+                  128
+                ],
+                "global_dim": 9,
+                "player_dim": 8,
+                "pooling": "mean",
+                "width": 32
+              },
+              "outage_config": {
+                "clean_probability": 0.2,
+                "fraction_max": 0.66,
+                "fraction_min": 0.3,
+                "full_probability": 0.05,
+                "long_gap_max_seconds": 30.0,
+                "long_gap_min_seconds": 10.0,
+                "long_gap_probability": 0.2,
+                "max_gap_seconds": 10.0,
+                "min_gap_seconds": 1.0,
+                "mode": "legacy"
+              },
+              "schedule": {
+                "kind": "cosine",
+                "min_lr_ratio": 0.25,
+                "total_steps": 7200,
+                "warmup_steps": 600
+              },
+              "training_args": {
+                "augment": true,
+                "boundary_pos_weight": 9.012769618609058,
+                "boundary_weight": 0.5,
+                "center_size": 512,
+                "learning_rate": 0.001712567077468907,
+                "weight_decay": 6.790736778198919e-05
+              }
+            },
+            "steps": 7200
+          },
+          {
+            "id": "ball_attention_002",
+            "spec": {
+              "augmentation_config": {
+                "blur_radius": 2,
+                "clean_probability": 0.5,
+                "dropout_max_seconds": 0.5,
+                "frame_dropout_fraction": 0.05,
+                "hold_max_frames": 3,
+                "max_transforms": 1,
+                "mode": "spatial",
+                "noise_ball_std": 0.15,
+                "noise_correlation": 0.95,
+                "noise_player_std": 0.08,
+                "operations": [
+                  "player_dropout"
+                ],
+                "patch_fraction": 0.15,
+                "player_dropout_fraction": 0.05,
+                "rotation_max_degrees": 2.0,
+                "strength": 0.5,
+                "temporal_shift_max_seconds": 0.12,
+                "time_warp_knots": 4,
+                "time_warp_max_rate": 0.1,
+                "translation_max_meters": 1.0,
+                "warmup_steps": 400
+              },
+              "model_kwargs": {
+                "dilations": [
+                  1,
+                  2,
+                  4,
+                  8,
+                  16,
+                  32,
+                  64,
+                  128
+                ],
+                "global_dim": 9,
+                "player_dim": 8,
+                "pooling": "ball_attention",
+                "width": 32
+              },
+              "outage_config": {
+                "clean_probability": 0.2,
+                "fraction_max": 0.66,
+                "fraction_min": 0.3,
+                "full_probability": 0.05,
+                "long_gap_max_seconds": 30.0,
+                "long_gap_min_seconds": 10.0,
+                "long_gap_probability": 0.2,
+                "max_gap_seconds": 10.0,
+                "min_gap_seconds": 1.0,
+                "mode": "legacy"
+              },
+              "schedule": {
+                "kind": "constant",
+                "min_lr_ratio": 1.0,
+                "total_steps": 7200,
+                "warmup_steps": 0
+              },
+              "training_args": {
+                "augment": true,
+                "boundary_pos_weight": 1.9798468176864876,
+                "boundary_weight": 0.25,
+                "center_size": 512,
+                "learning_rate": 0.00146962307142756,
+                "weight_decay": 0.0003780910117479338
+              }
+            },
+            "steps": 7200
+          }
+        ]
+      },
+      "settings": {
+        "confidence": 0.8,
+        "distill_weight": 0.25,
+        "lr_scale": 0.2,
+        "short_sampling_probability": 0.25,
+        "spell_weight": 0.25,
+        "start_steps": 7200,
+        "temperature": 2.0,
+        "total_extra_steps": 1200
+      },
+      "version": "v7"
+    },
+    "recipe_sha256": "e051c5fdadf7f4c09dd5a4d61864b49950ea6de36c2638bbf8067fa88fd2734d",
+    "resources": {
+      "device": "cuda:0"
+    },
+    "schema": "v7_full_public_refit_v1",
+    "settings": {
+      "confidence": 0.8,
+      "distill_weight": 0.25,
+      "lr_scale": 0.2,
+      "short_sampling_probability": 0.25,
+      "spell_weight": 0.25,
+      "start_steps": 7200,
+      "temperature": 2.0,
+      "total_extra_steps": 1200
+    },
+    "source_sha256": {
+      "evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+      "evaluation/run_evaluation.py": "1c61564fe52499ba4af3006fb5eb4147b825e92bf516651add80de49d267b19f",
+      "evaluation/validate_submission.py": "07ac29499acbd337e1dc1de1832d63f6e1fa1d981e22f6ad08212529e2bbee14",
+      "experiments/__init__.py": "5f448a1c558b65775041b601f1ca3ae8b5d78f4e329ea209b3478c460fd79fd1",
+      "experiments/audit.py": "dc6f3164c8a3843bd1ff1544e264cbb11d337bc7432a64864063a76cb64fd3e5",
+      "experiments/augmentation_evaluation.py": "487d5607e6f8039d0034811d2162ea2702bc08b4f7be2df961e33f56e1f59ac7",
+      "experiments/augmentation_tuning.py": "4565300d7dcad1fe7f66e4a6a683bda6cd7f0a58b0b41563527082b5005d4c36",
+      "experiments/campaign_decode.py": "575ae4c1966a33928c59cf7d0376a56a32d3955fb8d9a2f889ed22d91b017901",
+      "experiments/campaign_evaluation.py": "17d79c0f1049e5215f150cc7a5587058bc5753b7c8dfeffbdf7b99943e414cdd",
+      "experiments/campaign_protocol.py": "ef43d0e39a03dedf3deff93e11df603e09b6683b4e03ea5c9344156b23b0949d",
+      "experiments/campaign_refit.py": "6f3fdcb76831df04ab9ead6eeaa0f53a2051c48e1536c453ba4a75020cbc948f",
+      "experiments/campaign_search.py": "1e3c23f306bf62bdafdb02ec90421fd14f0b06e44735602f765dca451c04a40b",
+      "experiments/campaign_space.py": "8864a6f37c0d032593805512ea68e0243c6fcf6643fac3d547786ff77c17bd43",
+      "experiments/campaign_submission.py": "170e6dab3765184624f8be2fba6d2fda3008cc61121104b7b17ab28622695c27",
+      "experiments/campaign_training.py": "d75362782bab22625e537419e70d7cc1dff42fc58fc9fd4ef16188f508a283f7",
+      "experiments/coarse_context.py": "6aff8718847f6947b2efb2d087306fbc414b3b17b903a6e47e7b93531f4b75d5",
+      "experiments/coarse_stability.py": "a834f4771e0be05b748b037268511183633b1b1cb7dbb962f8399d99ad7c3ec2",
+      "experiments/coarse_submission.py": "90f726f785dfc8db33515d6086bc127406f5443148c059048e7156eb105a4ab0",
+      "experiments/convergence.py": "ba56b01081a0b090e1f478533d01399f4b45d852a147c37e388de681cca51494",
+      "experiments/cross_validation.py": "adcb83cc0d1dd2dd43e99db3109cc5121741051384cb957ec9a1c0e3c2c718ef",
+      "experiments/ema_calibration_audit.py": "8c21cbfb76378beec1a655219fdd5d28cbd33015f24115b92dcdecfd0d029c52",
+      "experiments/ema_stability.py": "52140e9e98ee322a9a371891e22c77643ec317cad49cb491286e45b574349958",
+      "experiments/ema_submission.py": "a768c0bd1cf79a824a58f2ad8d821b8c84e9fc16a7f84ce6ea5c8e9c95390ecc",
+      "experiments/ema_training.py": "2b7b0884436e51f140b64bebfeb6422a0133cd263c0b4b48e4c25a0d583f4c25",
+      "experiments/ensemble_bagging.py": "400b130d2324d5c652b9beaa7267e10a5c48310e486c538ccdc5eb79211135b2",
+      "experiments/ensemble_bagging_submission.py": "033bd11e69b03216ae54fa410156bafb9fd971bc992b4b9c7f021705e25bccb7",
+      "experiments/ensemble_polish.py": "37b2be867a2056881e24b26f100b5f7b9841a4f900722d54ea96d962a328562e",
+      "experiments/ensemble_polish_confirm.py": "5b416120c9771b6355e95510a99f9297621ecde0c151295252e17cea7aa4ca9b",
+      "experiments/ensemble_polish_search.py": "40e007e0c761e3b13cdbc66272bbfeea6cac436560232b1fd112365e266587be",
+      "experiments/ensemble_polish_submission.py": "614e1fc565a8cc4158fdb1505bee6c299a633274ea843a939655c8dcda951751",
+      "experiments/evaluate.py": "c867fbc144c8967ad030b725e77d6a0353eb3eaa6109c3099080c51d515c6dec",
+      "experiments/fetch_dfl.py": "84b1da87671dfa32686ba45450514f4c08925ea42480703bd5c0850030486b19",
+      "experiments/final_refit.py": "ab7dff1b8ac012ba7de11c4d1971666d0ebaab225c07ca983be52d860f64f0ca",
+      "experiments/finalize.py": "031f47bc7af36be237cfcecc624ae469126da3f25821a45925e7f33df6529036",
+      "experiments/focused_tuning.py": "d44788030cb13b4929e8225055ceb36642ddb4e3f3b22a163e7131c9dc632131",
+      "experiments/frozen_transfer.py": "01f58e1d8adcc1c267cbeaa4519b77452de34fbd777f47683f832f253e892c17",
+      "experiments/gpu_iou.py": "681078a2760e883d2487d5e93d7c21b46343f9c0cae1d82e4dd5af7f8dd1b121",
+      "experiments/gpu_iou_evaluation.py": "3cff0513b52aebf63f55e9c96e407ec5b1b97f1040f4fc16594f167a51194ac7",
+      "experiments/gpu_iou_historical_masks.py": "6444197d4149a592a4ee4e99232d8ca0659534b4b6c09eae3bb2c51b354c4332",
+      "experiments/gpu_runtime.py": "82083585126777115b9c44775b7bf897b2fc24921f800dc0fe6dc34f6a0d9d95",
+      "experiments/gpu_tuning.py": "0d2e6cb3c0f2ef111d30bdeb06ee699e460f7e2d9f136d62a282a9f532fcbf71",
+      "experiments/gpu_tuning_evaluation.py": "7136cac859a03e0d6b5cfa8fd2ec635616263a244ca8f108ab8ecb3a2832391f",
+      "experiments/gpu_tuning_space.py": "b3d2cbc3b8e5e46683ac59b1973816c99c5ea3b4ad6feec241958103558a604d",
+      "experiments/gpu_tuning_training.py": "4594a3434ed7783ec60dc28b52d08634d021ad77a18c644e36121344748eb01b",
+      "experiments/iou_followup_evaluation.py": "0c41735191a463f968441a17ed55cc787c7f5df2de86603584947af9c5f95144",
+      "experiments/iou_followup_training.py": "4e9c49c21591bfaff06bb4db97dd603dd14c3eee700a866afc07b5e4bc5e9d25",
+      "experiments/live_dead_audit.py": "a03ecc4734ad668565f0ed954b5ef2de47fa83f766d4d3a1193452ec693cc28a",
+      "experiments/oof_selection.py": "0d1e2b835fd3e19a36e670e9fc034fba8babca29f4950b3b0a7f05ce160bc41b",
+      "experiments/overnight_tuning.py": "1e2c30cee24c244ac40d10507b1058b3d09756f888cda48c526bd8ee999af8e8",
+      "experiments/possession_objectives.py": "73b91ea5660907277a955f28214b6e967a727ba7ccb15f06a1298b8df56f62ae",
+      "experiments/possession_refinement.py": "a4c632f51fb67094e5f5d15c5803317a4e9e5606544646de26d3f10138adf131",
+      "experiments/prediction_store.py": "3a804322ecc541ff365be2c884a9e03f7b8c28303606482f541c7e76a1744ddd",
+      "experiments/prepare.py": "c6f57189884a20fb2e540974e0646d7bffd7b985540a3fcfa70c5596a67029ab",
+      "experiments/quality.py": "abec274549d2a38f310187321197243d17a24b3edeb33e887f17bb7844f5edc1",
+      "experiments/refinement_training.py": "d53ff00e657b56bcb7b9a4818b9d15aaf75b43246826a7cb3b174ceb6da94723",
+      "experiments/robustness.py": "59ef3d617adb28d468ff8159a20c5dbfe8be748e0c9f461a9ade0e368f4fc59b",
+      "experiments/select.py": "074c565c1259f32812bf7beb6686c2eddd75f1f298b35f12e65c75cffbca7e81",
+      "experiments/skillcorner_proxy.py": "d641a668ffc79932836fd889313c40b658fae9b2e347411bd89312019007dd65",
+      "experiments/spell_evidence_audit.py": "c13ba00cbdf3bdeee7a44cfe850c659c7845441c8b8c0f39f25d48cb3900a75b",
+      "experiments/target_gap_stress.py": "96429ec5a2091ea68a16db47928a43e4a282c268c267a148a9fa677cacf7dbbd",
+      "experiments/timing_cache.py": "ebd96cebbe0ae917d2a67d4f8d376108148f96d94481be50e6eeb2bf9f926a18",
+      "experiments/timing_nested.py": "542721e01cd980f982fcd73b148cf19822b8ea7687a37a6da32d6390e401e5ac",
+      "experiments/timing_study.py": "1cf273548d27217f03c517b09709136443c3e7d6c2ac432057aaef0fad093766",
+      "experiments/timing_validation.py": "625b7d820f681dbd1a2406acc9db294f336c3cbb1caa4d6689561a31ce891cda",
+      "experiments/tune.py": "8d2bee91039aead207fdd094d0233abbafe93137dfabee4a721c4d25a9642f8c",
+      "games.py": "3b2122794e9e0476e2b3a871d14880e5fa47c4feaeacf99caef054c2309076ce",
+      "possession/__init__.py": "13d8cf2fe33d6cf960cafe0d22ae48169c0a62245a936b62fa369efb1bde66d2",
+      "possession/_viterbi.py": "a993d6cda75c8166e0d3b31dd4f0e8872e6a67095ba5eea727bc6a3ae19bb06a",
+      "possession/augmentation.py": "2c5fe0bf972c2275721a465f551ee507577bcafc58afd3dca4fa4240e2863758",
+      "possession/calibrate.py": "1e3b6a3af9e408abde0af8b05799aae12598ed0552e89bd1fc946aee8cfe65c0",
+      "possession/cli.py": "23605f90dc348cdcce4449ed18be9e4e0660ff9787ba8095f238c6ec0a0a33f3",
+      "possession/decode.py": "2b0d30e97922f6cb8d97918d6dfa9701643aea6879cfe8c3add1b431c5e7f031",
+      "possession/deployment.py": "114b6cf26c4fc246199ef009bc2cf45f70a244eca7a3c309a1dbe20e3a3310c0",
+      "possession/diagnostics.py": "6473e29262f1447f11a8f5f15119dafc0e1840479c47197ddaf367c75cfe7bee",
+      "possession/ensemble.py": "0cbd6fb53fe18a9e0a1bb8361dcd9edbf8e9db616f2192abd67868d6ee9ccb0e",
+      "possession/features.py": "07c20139982b59ca03d5c11a9e93d982497e1dade03772cb3263a7cdb142712a",
+      "possession/interaction.py": "b9d193cee4577f652bb9ef08469ecfe7d95678df3123ef77c96adad070efb408",
+      "possession/io_atd.py": "4100c73f257125e9cacfa990fc78206dc018e7aae83b5cfb93de33c3b6d52abe",
+      "possession/io_dfl.py": "b370551089d4c54fa0e4ed148d24306d26c2858c701f2ea32286bddace66cdca",
+      "possession/losses.py": "b4923591e49c64614b928aa2bd7be69c8e9e82abff85d39925b76ba657aa2a57",
+      "possession/model.py": "27311d886a11e09767f5ad85caf927d0f8797902fa6e0ff5fa53d2265de4548e",
+      "possession/outages.py": "1ee685d0fd309b8f14e6e284f18af56d1859562204da9a4749e6398664a76b5b",
+      "possession/predict.py": "66d1e4d884f50480894194bc99bddee0ec2356c21772c205279a2699e719b5ac",
+      "possession/prepared.py": "134eaea4d3698c9a4194de8dea944f599da3aedef45679d35d946c0b86aa0e57",
+      "possession/provenance.py": "30c3fafa39c7e5a0883f737558a96254bd3a7f4a799f82cff8cc7639aaa6c1f7",
+      "possession/quality_blend.py": "1482797cc4f4fc4f23e319b98b8b060a90fd045e94539b249d7e4944efab4611",
+      "possession/recipe.py": "52ca8d0d69927621804222061d4bc6a302527c138ee0b724accb1780efeac745",
+      "possession/reference.py": "3781da8001440feedf923803f4d86e1c10526e0b5d5d01650d7cb681a8430234",
+      "possession/schema.py": "70cb746986b02ea4f01c0ed8a3c14feb7b29216bd8b0bfda55ce0bd98ecd1173",
+      "possession/storage.py": "11172f5bf5166c4b9f2e1ef3d675529632b93aa30b7b15cfcf063403a0a1cdbd",
+      "possession/temporal_augmentation.py": "397fb698cf46e43825a7d424e111939d6cf693cac2683520c7de88f2afc31cb8",
+      "possession/timing.py": "cb9fc56cb34d674c8eaf1850c9bf1cbff0d6b064d7a37ffcb85bf40e163a2750",
+      "possession/train.py": "71f5ee5692317d59be15f673b4051b03cba563f55fd0d830298921b42298a3ee",
+      "possession/training_session.py": "1503822eb5d7f1d3028c0cb2651374913d667d995272c82fbdb54165ef8f624f",
+      "pyproject.toml": "038a2959542102344604a0b88d98c4a7450322f6dda57cda88df9e59a842323e",
+      "scripts/refit_v7.py": "66812ac3f19edd5594d20320c345704aaf1442ca9409e6699239b5ecfcff9d9f",
+      "uv.lock": "e8dd7552c1bab6d86b3b294318bcc98485eaac5907c1029cd364ce231debb6df"
+    },
+    "target_ground_truth_used": false,
+    "target_inputs_used": false
+  },
+  "sha256": "f2b1f5401ae48677af3b37cc31fbb7199beaeeaa7cfe24cf4c30b55b3201c553"
+}

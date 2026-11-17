@@ -1,13 +1,23 @@
 {
+  "cpu_gpu_byte_identical": true,
   "csv": "CY-DATA-TEAM.csv",
   "excluded_frames": 40462,
   "frame_end": 199318,
   "frame_start": 0,
   "ground_truth_used": false,
   "halftime_excluded_frames": 20156,
-  "model_directory": "models/v6",
-  "model_manifest_sha256": "076b3b86e0e7a0f7abea0a6d8a609dc039e18e17fef77c4ba9cd6ece534be1df",
+  "inference_device": "cuda:0",
+  "label_counts": {
+    "A": 43581,
+    "D": 52138,
+    "H": 63138,
+    "X": 40462
+  },
+  "model_directory": "models/v7",
+  "model_manifest_sha256": "3a86d2510ddba01e37205d5f82d1e1aa292a555efa2438158f70c720aa5fb947",
+  "previous_version": "archive/v6/CY-DATA-TEAM.csv",
+  "recipe_sha256": "e051c5fdadf7f4c09dd5a4d61864b49950ea6de36c2638bbf8067fa88fd2734d",
   "rows": 199319,
-  "sha256": "4c22b0171509ae1f93c57b72e9394a10623e19bcc1834290c2a9ec640edfea1b",
-  "version": "v6"
+  "sha256": "d187fcf9f3840cd1391f2089dc678f07de4a7760ae09b016ce8da15c61236170",
+  "version": "v7"
 }

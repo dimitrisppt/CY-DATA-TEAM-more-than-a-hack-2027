@@ -23,7 +23,15 @@ At clean IoU 0.5, short possessions recovered increased from **214 to 249 out of
 
 The final verification reproduced **26 saved-label assessment results** exactly and checked **121 exported checkpoints** plus **92 optimizer states and split transcripts**. Source and upstream artifact hashes were preserved. Detailed local evidence is in `artifacts/gpu-tuning-8h-v1/report.md`, `confirmation.json`, `guard.json`, `stability.json`, `verification.json` and `exit.json`.
 
-The delivered model and `submission/CY-DATA-TEAM.csv` still use **v6**. This campaign has not yet refit and packaged its winning pipeline for challenge inference or generated an updated submission CSV. Data, checkpoints and full run artifacts remain local under the repository's existing ignore rules; this document records the completed results for the public repository.
+**Release follow-through:** the selected pipeline is now delivered as **v7** in
+`submission/CY-DATA-TEAM.csv`. Four possession-balanced fine models, two coarse
+models and two `trial_0017` attention models are refitted on all seven public
+matches using the frozen recipe in `configs/v7-recipe.json`. The original
+v6 CSV is archived under `submission/archive/v6/`. Portable inference weights
+and training receipts are in `models/v7/`; compact development-score evidence
+is in `benchmarks/v7/`. The full training and tuning caches remain local.
+See [reproduction](REPRODUCIBILITY.md) for current commands. Development scores
+above describe the validated recipe, not a hidden-target score for the final fits.
 
 ## Scope and evaluation
 
