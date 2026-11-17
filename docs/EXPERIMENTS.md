@@ -5,6 +5,39 @@ whole-match spell F1 aggregates unless stated otherwise. Values from different
 folds, masks, seeds, and objectives are not interchangeable. None is a
 challenge-match score.
 
+The fresh CUDA reconstruction of the complete possession-refinement comparison
+is documented in [Comprehensive GPU IoU study](GPU_IOU_EXPERIMENT.md). It rebuilds
+the missing historical parents and evaluates all three folds, two seeds and
+three continuation variants, with a temporal-IoU sweep from 0.1 through 0.9.
+All 54 GPU fits completed. On the historical refinement masks, spell balancing
+scored 0.611849 against 0.604216 for the matched control and 0.596663 for the
+fresh GPU baseline. It passed the development screen under both assessment
+mask sets; masked-teacher consistency failed against control. Spell balancing
+also increased short-possession recall and spurious events. That screen
+advanced it to fresh-seed confirmation, with no change to the delivered v6 model.
+
+The subsequent 80-fit GPU follow-up completed on 17 November. The frozen
+combined recipe passed fresh-seed confirmation (+0.002796 versus matched
+control, five of six match wins) and the separate WMX guard (+0.020419).
+The gain depends on the two-seed ensemble: both individual fine-seed
+comparisons declined in the six-match repeat. Sampling-only and loss-only
+ablations gained +0.002493 and +0.003172 using the original parents, but each
+won only three of six matches and failed the breadth gate. The combined
+recipe remains the strongest tested condition, with a persistent increase in
+spurious short/wrong-team possessions. The delivered v6 model is unchanged;
+new fully labeled matches are the next validation priority. Details and
+artifact paths are in the follow-up section of the GPU study document.
+
+The subsequent [eight-hour holistic GPU campaign](GPU_TUNING.md) finished on
+17 November after 7 hours 50 minutes. It completed 23 screening recipes,
+5 full-budget recipes and 540 decoder trials. The frozen `trial_0017` addition
+and selected decoder improved the six-match weighted confirmation objective
+from 0.604912 to 0.629368 and the WMX guard from 0.557923 to 0.569078.
+Both confirmation seeds and all three additional fixed-recipe seed checks
+improved. These remain development results on historically reused matches.
+The winning pipeline has not yet been packaged for challenge inference;
+the delivered v6 model and submission CSV are unchanged.
+
 ## Chronology
 
 | Date | Phase | Scope and method | Result and decision |
@@ -58,11 +91,12 @@ changes. It is not an estimate of challenge leaderboard performance.
 
 The coarse branch adds parameters and compute as well as longer temporal
 context. A same-capacity fine-only control has not been run. One-hertz sampling
-may miss brief events and high-frequency player motion. Longer fine training,
-teacher-student consistency, a fold-safe sequence model, improved handling of
-very long gaps, and evaluation on additional compatible labeled matches remain
-untested hypotheses. They should be tested with frozen folds, seeds and
-promotion rules before changing the delivered recipe.
+may miss brief events and high-frequency player motion. The later GPU study
+tests longer fine training, complete-possession balancing, and masked-teacher
+consistency. A fold-safe sequence model, improved handling of very long gaps,
+and evaluation on additional compatible labeled matches remain untested
+hypotheses. They should be tested with frozen folds, seeds and promotion rules
+before changing the delivered recipe.
 
 The frozen v4-v6 per-match scores and decoded labels are in
 `benchmarks/v6/public-reference/`. The model bundle contains authenticated

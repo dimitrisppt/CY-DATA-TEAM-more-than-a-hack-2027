@@ -172,6 +172,15 @@ matched continuation control. Their saved scores can be reproduced with
 Segment-level decoding and additional compatible labeled matches remain research
 directions.
 
+Subsequent [GPU IoU experiments](docs/GPU_IOU_EXPERIMENT.md) completed the
+54-fit comparison and an 80-fit confirmation and ablation study. The
+[eight-hour GPU tuning campaign](docs/GPU_TUNING.md) then completed 23 screening
+recipes, 5 full-budget recipes and 540 decoder trials. Its winning pipeline
+improved weighted development spellF1 from **0.604912 to 0.629368** and passed
+the separate WMX guard. These scores use historically reused external matches;
+they are not challenge leaderboard scores. The tuned pipeline is experimental:
+the packaged model and `submission/CY-DATA-TEAM.csv` still use **v6**.
+
 ## Data and possession semantics
 
 Supervised training uses the public **Sportec Solutions/DFL dataset** released

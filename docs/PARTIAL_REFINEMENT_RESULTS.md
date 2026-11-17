@@ -108,6 +108,20 @@ two matches equal weight. It uses 0.50 clean, 0.20 short-gap, 0.15 long-gap and
 0.15 replay spell F1. The missing-ball aggregate is the last three weighted
 terms divided by 0.50. Seeds and masks are not independent matches.
 
+Inspect a descriptive temporal-IoU sweep from 0.1 to 0.9, with a CSV and a
+readable report, using:
+
+```bash
+uv run --no-sync python -m scripts.analyze_partial_iou
+```
+
+The official objective averages IoUs 0.3, 0.4, 0.5, 0.6 and 0.7. The sweep
+checks that it reproduces this objective and preserves both matched-seed
+comparisons. Add `--prepared-dir data/processed/dfl` to verify that freshly
+prepared public DFL truth exactly matches all four saved assessment halves.
+Outputs default to `outputs/possession-refinement/iou-analysis/`. This analysis
+does not resume training or evaluate the complete-study advancement gate.
+
 The published reference contains only public DFL ground truth, decoded labels
 and compact scores. It includes no participant inputs, target labels, neural
 outputs, checkpoints or raw cache metadata. Its two-seed baseline and ground
